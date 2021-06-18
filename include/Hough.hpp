@@ -3,6 +3,7 @@
 
 #include <math.h>
 #include <stdlib.h>
+#include <stdio.h>
 
 void plotLineLow(unsigned char* data_in, int x1, int y1, int x2, int y2, int width);
 void plotLineHigh(unsigned char* data_in, int x1, int y1, int x2, int y2, int width);
@@ -26,9 +27,12 @@ class Hough_Algorithm{
 
     void run(unsigned char *data_in, int x1, int y1, int x2, int y2){
         unsigned int *acc = (unsigned int*)calloc(rho_len_acc * theta_len_acc, sizeof(unsigned int));
-        
+        printf("run_0\n");
+
         houghTransform(data_in, acc);
+        printf("run_1\n");
         getMaxLine(acc, x1, y1, x2, y2);
+        printf("run_2\n");
 
         free(acc);
     }
@@ -38,6 +42,7 @@ class Hough_Algorithm{
         double center_x = imageWidth / 2;
 		double center_y = imageHeight / 2;
         double r = 0;
+        printf("transform_0\n");
 
         for (int y = 0; y < imageHeight; y++){
             for (int x = 0; x < imageWidth; x++){
@@ -49,6 +54,7 @@ class Hough_Algorithm{
                 }
             }
         }
+        printf("transform_1\n");
     }
 
     void getMaxLine(unsigned int *acc, int x1, int y1, int x2, int y2){

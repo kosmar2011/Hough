@@ -1,5 +1,6 @@
 {
     "files.associations": {
-        "cstdlib": "cpp"
+        "bmp_io.h": "c",
+        "iostream": "cpp"
     }
 }

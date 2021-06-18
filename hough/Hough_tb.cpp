@@ -13,20 +13,20 @@
 using namespace std;
 
 #include "Hough.hpp"
-#include "bmp_io.h"
+#include "bmp_io.hpp"
 
-#include <stdio.h>
-#include <stdlib.h>
+
 //#include <mc_scverify.h>
 
 int main(int argc, char *argv[]){
     const int iW = 1296;
     const int iH = 864;
+    int bsize = 24;
 
     Hough_Algorithm inst0;
 
-    unsigned long int width = iW;
-    long int height         = iH;
+    int width = iW;
+    int height = iH;
     unsigned char *rarray = new unsigned char[iW*iH];
     unsigned char *garray = new unsigned char[iW*iH];
     unsigned char *barray = new unsigned char[iW*iH];
@@ -41,7 +41,7 @@ int main(int argc, char *argv[]){
     std::string bmpIn(argv[1]);  // input bitmap file
     std::string bmpAlg(argv[2]); // output bitmap (algorithm)
 
-    bmp_read((char*)bmpIn.c_str(), &width, &height, &rarray, &garray, &barray);
+    bmp_read((char*)bmpIn.c_str(), &width, &height, &bsize, &rarray, &garray, &barray);
     assert(width==iW);
     assert(height==iH);
 
@@ -73,7 +73,9 @@ int main(int argc, char *argv[]){
     cout << "3\n";
 
     cout << "Writing algorithmic bitmap output to: " << bmpAlg << endl;
-    bmp_24_write((char*)bmpAlg.c_str(), iW,  iH, garray, garray, garray);
+    // bmp_24_write((char*)bmpAlg.c_str(), iW,  iH, garray, garray, garray);
+    bmp_write((char*)bmpAlg.c_str(), iW,  iH, bsize, garray, garray, garray);
+
 
     delete(dat_in_orig);
     delete(rarray);
