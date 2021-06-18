@@ -33,8 +33,8 @@ int main(int argc, char *argv[]){
 
     cout << "Loading Input File" << endl;
 
-    if (argc < 3){
-      cout << "Usage: " << argv[0] << " <inputbmp> <outputbmp_alg> <outputbmp_ba>" << endl;
+    if (argc < 2){
+      cout << "Usage: " << argv[0] << " <inputbmp> <outputbmp>" << endl;
       return(-1);
     }
 
@@ -57,11 +57,11 @@ int main(int argc, char *argv[]){
     }
 
     cout << "Running" << endl;
-
+    cout << "0\n";
     inst0.run(dat_in_orig, x1, y1, x2, y2);
-
+    cout << "1\n";
     plotLine(dat_in_orig, x1, y1, x2, y2, iW);
-
+    cout << "2\n";
     cnt = 0;
     for (int y = 0; y < iH; y++){
         for (int x = 0; x < iW; x++){
@@ -70,6 +70,7 @@ int main(int argc, char *argv[]){
             garray[cnt] = alg;  // repurposing 'green' array to the original algorithmic edge-detect output
         }
     }
+    cout << "3\n";
 
     cout << "Writing algorithmic bitmap output to: " << bmpAlg << endl;
     bmp_24_write((char*)bmpAlg.c_str(), iW,  iH, garray, garray, garray);
