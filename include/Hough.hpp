@@ -10,15 +10,13 @@ void plotLineHigh(unsigned char* data_in, int x1, int y1, int x2, int y2, int wi
 void plotLine(unsigned char* data_in, int x1, int y1, int x2, int y2, int width);
 
 class Hough_Algorithm{
-    enum{
-        imageWidth  = 1296,
-        imageHeight =  864
-    };
 
-    const int theta_len_acc = 180;
+    int imageWidth  = 1296;
+    int imageHeight =  864;
+    int theta_len_acc = 180;
     const double rho_len_acc = rho_len * 2.0;
     double rho_len = ( (sqrt(2.0) * (double)(imageHeight > imageWidth ? imageHeight : imageWidth)) / 2.0);
-    const float DEG2RAD = 0.017453293f;
+    const double DEG2RAD = 0.017453293;
 
     public:
 
@@ -43,14 +41,23 @@ class Hough_Algorithm{
 		double center_y = imageHeight / 2;
         double r = 0;
         printf("transform_0\n");
+        int count = 0;
 
         for (int y = 0; y < imageHeight; y++){
+            printf("y = %d\n", y);
             for (int x = 0; x < imageWidth; x++){
-                if (data_in[ (y * imageWidth) + x] > 250){
-                    for (int t = 0; t < theta_len_acc; t++){
+                printf("x = %d\n", x);
+                printf("data_in = %d\n", (int)(data_in[y * imageWidth + x]));
+                if ((int)(data_in[y * imageWidth + x]) > 200){
+                    printf("in the if: %d\n", ++count); //to proto pou ftanei edo error
+                    for (int t = 0; t < 180; t++){
+                        printf("t = %d", t);
                         r = ( ((double)x - center_x) * cos((double)t * DEG2RAD)) + (((double)y - center_y) * sin((double)t * DEG2RAD));
+                        // printf("%d", ++count);
 						acc[ (int)((round(r + rho_len) * 180.0)) + t]++;
+                        // printf("%d\n", ++count);
                     }
+                    printf("in the if after loop\n");
                 }
             }
         }

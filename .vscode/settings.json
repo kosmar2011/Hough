@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "bmp_io.h": "c",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "algorithm": "cpp"
     }
 }
