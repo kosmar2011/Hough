@@ -24,15 +24,15 @@ class Hough_Algorithm{
     // Constructor
     Hough_Algorithm() {}
 
-    void run(unsigned char *data_in, int x1, int y1, int x2, int y2){
+    void run(unsigned char *data_in, int &x1, int &y1, int &x2, int &y2){
         unsigned int *acc = (unsigned int*)calloc(rho_len_acc * theta_len_acc, sizeof(unsigned int));
-        printf("run_0\n");
+        // printf("run_0\n");
         // printf("rho_len_acc * theta_len_acc = %f\n", rho_len_acc * theta_len_acc);
 
         houghTransform(data_in, acc);
-        printf("run_1\n");
+        // printf("run_1\n");
         getMaxLine(acc, x1, y1, x2, y2);
-        printf("run_2\n");
+        // printf("run_2\n");
 
         free(acc);
     }
@@ -42,7 +42,7 @@ class Hough_Algorithm{
         double center_x = imageWidth / 2;
 		double center_y = imageHeight / 2;
         double r = 0;
-        printf("transform_0\n");
+        // printf("transform_0\n");
         int count = 0;
 
         for (int y = 0; y < imageHeight; y++){
@@ -65,11 +65,11 @@ class Hough_Algorithm{
                 }
             }
         }
-        printf("transform_1\n");
+        // printf("transform_1\n");
     }
 
     void getMaxLine(unsigned int *acc, int &x1, int &y1, int &x2, int &y2){
-        printf("max_line_0");
+        // printf("max_line_0\n");
         int max = 0;
         for (int r = 0, i = 0; r < rho_len_acc; r++){   
             for (int t = 0; t < theta_len_acc; t++){
@@ -94,8 +94,8 @@ class Hough_Algorithm{
 
             }
         }
-        printf("max_line_0\n");
-
+        // printf("max_line_1\n");
+        // printf("x1 = %d, y1 = %d, x2 = %d, y2 = %d\n", x1, y1, x2, y2);
     }
 
 };

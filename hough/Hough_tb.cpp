@@ -58,12 +58,14 @@ int main(int argc, char *argv[]){
         }
     }
 
-    cout << "Running" << endl;
-    cout << "0\n";
+    cout << "Running\n";
     inst0.run(dat_in_orig, x1, y1, x2, y2);
-    cout << "1\n";
-    plotLine(line, x1, y1, x2, y2, iW); //krasarei
-    cout << "2\n";
+    printf("LINE POINTS: x1 = %d, y1 = %d, x2 = %d, y2 = %d\n", x1, y1, x2, y2);
+
+    cout << "Drawing Line\n";
+    plotLine(line, x1, y1, x2, y2, iW); 
+    
+    cout << " Calculating RGB bitmap\n";
     cnt = 0;
     for (int y = 0; y < iH; y++){
         for (int x = 0; x < iW; x++){
@@ -74,7 +76,6 @@ int main(int argc, char *argv[]){
             barray[cnt] = ln;
         }
     }
-    cout << "3\n";
 
     cout << "Writing algorithmic bitmap output to: " << bmpAlg << endl;
     // bmp_24_write((char*)bmpAlg.c_str(), iW,  iH, garray, garray, garray);
@@ -85,7 +86,6 @@ int main(int argc, char *argv[]){
     delete(rarray);
     delete(garray);
     delete(barray);
-    printf("x1 = %d, y1 = %d, x2 = %d, y2 = %d\n", x1, y1, x2, y2);
     cout << "Finished" << endl;
     return(0);
 }
