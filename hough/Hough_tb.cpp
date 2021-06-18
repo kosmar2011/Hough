@@ -46,7 +46,9 @@ int main(int argc, char *argv[]){
     assert(height==iH);
 
     unsigned char* dat_in_orig = new unsigned char[iH*iW];
-    int x1, y1, x2, y2;
+    unsigned char* line        = new unsigned char[iH*iW];
+
+    int x1 = 0, y1 = 0, x2 = 0, y2 = 0;
 
     unsigned  cnt = 0;
     for (int y = 0; y < iH; y++){
@@ -60,14 +62,16 @@ int main(int argc, char *argv[]){
     cout << "0\n";
     inst0.run(dat_in_orig, x1, y1, x2, y2);
     cout << "1\n";
-    plotLine(dat_in_orig, x1, y1, x2, y2, iW);
+    plotLine(line, x1, y1, x2, y2, iW); //krasarei
     cout << "2\n";
     cnt = 0;
     for (int y = 0; y < iH; y++){
         for (int x = 0; x < iW; x++){
             int alg = (int)*(dat_in_orig+cnt);
+            int ln  = (int)*(line+cnt);
             cnt++;
             garray[cnt] = alg;  // repurposing 'green' array to the original algorithmic edge-detect output
+            barray[cnt] = ln;
         }
     }
     cout << "3\n";
@@ -81,7 +85,7 @@ int main(int argc, char *argv[]){
     delete(rarray);
     delete(garray);
     delete(barray);
-
+    printf("x1 = %d, y1 = %d, x2 = %d, y2 = %d\n", x1, y1, x2, y2);
     cout << "Finished" << endl;
     return(0);
 }
