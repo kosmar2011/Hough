@@ -4,6 +4,10 @@
 #include <math.h>
 #include <stdlib.h>
 
+void plotLineLow(unsigned char* data_in, int x1, int y1, int x2, int y2, int width);
+void plotLineHigh(unsigned char* data_in, int x1, int y1, int x2, int y2, int width);
+void plotLine(unsigned char* data_in, int x1, int y1, int x2, int y2, int width);
+
 class Hough_Algorithm{
     enum{
         imageWidth  = 1296,
@@ -73,5 +77,63 @@ class Hough_Algorithm{
     }
 
 };
+
+void plotLine(unsigned char *data_in, int x1, int y1, int x2, int y2, int iW){
+    if(abs(y2 - y1) < abs(x2 - x1)){
+        if(x1 > x2) {
+            plotLineLow(data_in, x2, y2, x1, y1, iW);
+        } else {
+            plotLineLow(data_in, x1, y1, x2, y2, iW);
+        }
+    } else {
+        if(y1 > y2){
+            plotLineHigh(data_in, x2, y2, x1, y1, iW);
+        } else {
+            plotLineHigh(data_in, x1, y1, x2, y2, iW);
+        }
+    }
+}
+
+void plotLineLow(unsigned char *data_in, int x1, int y1, int x2, int y2, int iW){
+    int dx = x2-x1;
+    int dy = y2-y1;
+    int yi = 1;
+    if(dy < 0){
+        yi = -1;
+        dy = -dy;
+    }
+    int D = (2 * dy) - dx;
+    int y = y1;
+    for (int x = x1; x < x2; x++){
+        data_in[y * iW + x] = 255; // isos lathso
+        if (D > 0){
+            y = y + yi;
+            D = D + (2 * (dy - dx));
+        } else {
+            D = D + 2*dy;
+        }
+    }   
+}
+
+void plotLineHigh(unsigned char *data_in, int x1, int y1, int x2, int y2, int iW){
+    int dx = x2-x1;
+    int dy = y2-y1;
+    int xi = 1;
+    if(dx < 0){
+        xi = -1;
+        dx = -dx;
+    }
+    int D = (2 * dx) - dy;
+    int x = x1;
+    for (int y = y1; y < y2; y++){
+        data_in[y * iW + x] = 255;
+        if (D > 0){
+            x = x + xi;
+            D = D + (2 * (dx - dy));
+        } else {
+            D = D + 2*dx;
+        }
+    }   
+}
 
 #endif
