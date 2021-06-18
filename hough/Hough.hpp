@@ -10,15 +10,17 @@ class Hough_Algorithm{
         imageHeight =  864
     };
 
-public:
+    const int theta_len_acc = 180;
+    const double rho_len_acc = rho_len * 2.0;
+    double rho_len = ( (sqrt(2.0) * (double)(imageHeight > imageWidth ? imageHeight : imageWidth)) / 2.0);
+    const float DEG2RAD = 0.017453293f;
+
+    public:
 
     // Constructor
     Hough_Algorithm() {}
 
     void run(unsigned char *data_in, int x1, int y1, int x2, int y2){
-        double rho_len = ( (sqrt(2.0) * (double)(imageHeight > imageWidth ? imageHeight : imageWidth)) / 2.0);
-	    static const double rho_len_acc = rho_len * 2.0;
-	    static const int theta_len_acc = 180;
         unsigned int *acc = (unsigned int*)calloc(rho_len_acc * theta_len_acc, sizeof(unsigned int));
         
         houghTransform(data_in, acc);
@@ -29,8 +31,6 @@ public:
 
     void houghTransform(unsigned char *data_in, unsigned int *acc){
         
-        static const float DEG2RAD = 0.017453293f;
-
         double center_x = imageWidth / 2;
 		double center_y = imageHeight / 2;
         double r = 0;
@@ -72,6 +72,6 @@ public:
         }
     }
 
-}
+};
 
 #endif

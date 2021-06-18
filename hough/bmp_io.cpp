@@ -1,11 +1,4 @@
-# include <cstdlib>
-# include <iostream>
-# include <iomanip>
-# include <fstream>
-
-using namespace std;
-
-# include "bmp_io.hpp"
+# include "bmp_io.h"
 
 //
 //  BMP_BYTE_SWAP controls how the program assumes that the bytes in 

@@ -1,3 +1,13 @@
+#include <iomanip>
+
+#include <fstream>
+#include <iostream>
+#include <cstdlib>
+#include <cmath>
+#include "assert.h"
+
+using namespace std;
+
 bool bmp_byte_swap_get ( void );
 void bmp_byte_swap_set ( bool value );
 
