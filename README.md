@@ -1,2 +1,2 @@
 # hough
-Hough Transform in C for Catapult HLS Synthesis 
+Hough Transform in C for Catapult HLS 
