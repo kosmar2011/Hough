@@ -21,7 +21,7 @@ using namespace std;
 int main(int argc, char *argv[]){
     const int iW = 1296;
     const int iH = 864;
-    int bsize = 24;
+    int bsize = 8;
 
     Hough_Algorithm inst0;
 
@@ -54,6 +54,7 @@ int main(int argc, char *argv[]){
     for (int y = 0; y < iH; y++){
         for (int x = 0; x < iW; x++){
           dat_in_orig[cnt] = rarray[cnt]; // just using red component (pseudo monochrome)
+          line[cnt] = 0;
           cnt++;
         }
     }
@@ -72,14 +73,15 @@ int main(int argc, char *argv[]){
             int alg = (int)*(dat_in_orig+cnt);
             int ln  = (int)*(line+cnt);
             cnt++;
-            garray[cnt] = alg;  // repurposing 'green' array to the original algorithmic edge-detect output
-            barray[cnt] = ln;
+            rarray[cnt] = alg;  // repurposing 'green' array to the original algorithmic edge-detect output
+            garray[cnt] = alg;
+            barray[cnt] = (ln == 0) ? alg : 0 ;
         }
     }
 
     cout << "Writing algorithmic bitmap output to: " << bmpAlg << endl;
-    // bmp_24_write((char*)bmpAlg.c_str(), iW,  iH, garray, garray, garray);
-    bmp_write((char*)bmpAlg.c_str(), iW,  iH, bsize, garray, garray, garray);
+
+    bmp_write((char*)bmpAlg.c_str(), iW,  iH, bsize, rarray, barray, garray);
 
 
     delete(dat_in_orig);

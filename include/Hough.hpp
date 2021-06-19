@@ -4,6 +4,7 @@
 #include <math.h>
 #include <stdlib.h>
 #include <stdio.h>
+#include "assert.h"
 
 void plotLineLow(unsigned char* data_in, int x1, int y1, int x2, int y2, int width);
 void plotLineHigh(unsigned char* data_in, int x1, int y1, int x2, int y2, int width);
@@ -50,7 +51,7 @@ class Hough_Algorithm{
             for (int x = 0; x < imageWidth; x++){
                 // printf("x = %d\n", x);
                 // printf("data_in = %d\n", (int)(data_in[y * imageWidth + x]));
-                if ((int)(data_in[(y * imageWidth) + x]) > 200){
+                if ((int)(data_in[(y * imageWidth) + x]) > 250){
                     // printf("in the if: %d\n", ++count); //to proto pou ftanei edo error
                     for (int t = 0; t < 180; t++){
                         // printf("t = %d\n", t);
@@ -73,18 +74,19 @@ class Hough_Algorithm{
         int max = 0;
         for (int r = 0, i = 0; r < rho_len_acc; r++){   
             for (int t = 0; t < theta_len_acc; t++){
-                if ((int)acc[ (r * theta_len_acc) + t ] >= max){
+                if ((int)acc[ (r * theta_len_acc) + t ] >= 300){
+
                     max = (int)acc[ (r * theta_len_acc) + t ];
-                    // int x1 = 0, x2 = 0, y1 = 0, y2 = 0;
+
                     if ( t>= 45 && t<=135){
                         // y = (r - x cos(t)) / sin(t)
-                        // x1 = 0;
+                        x1 = 0;
 						y1 = ((double)(r-(rho_len_acc/2)) - ((x1 - (imageWidth/2) ) * cos(t * DEG2RAD))) / sin(t * DEG2RAD) + (imageHeight / 2);
                         x2 = imageWidth - 0;
                         y2 = ((double)(r-(rho_len_acc/2)) - ((x2 - (imageWidth/2) ) * cos(t * DEG2RAD))) / sin(t * DEG2RAD) + (imageHeight / 2);
                     } else {
                         // x = (r - y sin(t)) / cos(t);
-                        // y1 = 0;
+                        y1 = 0;
 						x1 = ((double)(r-(rho_len_acc/2)) - ((y1 - (imageHeight/2) ) * sin(t * DEG2RAD))) / cos(t * DEG2RAD) + (imageWidth / 2);
 						y2 = imageHeight - 0;
 						x2 = ((double)(r-(rho_len_acc/2)) - ((y2 - (imageHeight/2) ) * sin(t * DEG2RAD))) / cos(t * DEG2RAD) + (imageWidth / 2);
@@ -101,19 +103,28 @@ class Hough_Algorithm{
 };
 
 void plotLine(unsigned char *data_in, int x1, int y1, int x2, int y2, int iW){
+    auto tmp = data_in;
     if(abs(y2 - y1) < abs(x2 - x1)){
         if(x1 > x2) {
+            printf("plotLine_1\n");
             plotLineLow(data_in, x2, y2, x1, y1, iW);
         } else {
+            printf("plotLine_2\n");
+
             plotLineLow(data_in, x1, y1, x2, y2, iW);
         }
     } else {
         if(y1 > y2){
+            printf("plotLine_3\n");
+
             plotLineHigh(data_in, x2, y2, x1, y1, iW);
         } else {
+            printf("plotLine_4\n");
+
             plotLineHigh(data_in, x1, y1, x2, y2, iW);
         }
     }
+    // assert(tmp != data_in); // prepei na exei allaksei kati as poume ti fasi
 }
 
 void plotLineLow(unsigned char *data_in, int x1, int y1, int x2, int y2, int iW){
@@ -127,7 +138,7 @@ void plotLineLow(unsigned char *data_in, int x1, int y1, int x2, int y2, int iW)
     int D = (2 * dy) - dx;
     int y = y1;
     for (int x = x1; x < x2; x++){
-        data_in[y * iW + x] = 255; // isos lathso
+        data_in[y * iW + x] = 255; 
         if (D > 0){
             y = y + yi;
             D = D + (2 * (dy - dx));
