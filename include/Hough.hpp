@@ -59,7 +59,7 @@ class Hough_Algorithm{
                         // printf("r = %f\n", r);
                         // printf("r + rho_len = %f\n", r + rho_len);
                         // printf("index = %d\n", (int)((round(r + rho_len) * 180.0)) + t);
-						acc[ (int)((round(r + rho_len) * 180.0)) + t]++;
+                        acc[ (int)((round(r + rho_len) * 180.0)) + t]++;
                         // printf("%d\n", ++count);
                     }
                     // printf("in the if after loop\n");
@@ -81,13 +81,13 @@ class Hough_Algorithm{
                     if ( t>= 45 && t<=135){
                         // y = (r - x cos(t)) / sin(t)
                         x1 = 0;
-						y1 = ((double)(r-(rho_len_acc/2)) - ((x1 - (imageWidth/2) ) * cos(t * DEG2RAD))) / sin(t * DEG2RAD) + (imageHeight / 2);
+                        y1 = ((double)(r-(rho_len_acc/2)) - ((x1 - (imageWidth/2) ) * cos(t * DEG2RAD))) / sin(t * DEG2RAD) + (imageHeight / 2);
                         x2 = imageWidth - 0;
                         y2 = ((double)(r-(rho_len_acc/2)) - ((x2 - (imageWidth/2) ) * cos(t * DEG2RAD))) / sin(t * DEG2RAD) + (imageHeight / 2);
                     } else {
                         // x = (r - y sin(t)) / cos(t);
                         y1 = 0;
-						x1 = ((double)(r-(rho_len_acc/2)) - ((y1 - (imageHeight/2) ) * sin(t * DEG2RAD))) / cos(t * DEG2RAD) + (imageWidth / 2);
+                        x1 = ((double)(r-(rho_len_acc/2)) - ((y1 - (imageHeight/2) ) * sin(t * DEG2RAD))) / cos(t * DEG2RAD) + (imageWidth / 2);
 						y2 = imageHeight - 0;
 						x2 = ((double)(r-(rho_len_acc/2)) - ((y2 - (imageHeight/2) ) * sin(t * DEG2RAD))) / cos(t * DEG2RAD) + (imageWidth / 2);
                     }
@@ -110,17 +110,14 @@ void plotLine(unsigned char *data_in, int x1, int y1, int x2, int y2, int iW){
             plotLineLow(data_in, x2, y2, x1, y1, iW);
         } else {
             printf("plotLine_2\n");
-
             plotLineLow(data_in, x1, y1, x2, y2, iW);
         }
     } else {
         if(y1 > y2){
             printf("plotLine_3\n");
-
             plotLineHigh(data_in, x2, y2, x1, y1, iW);
         } else {
             printf("plotLine_4\n");
-
             plotLineHigh(data_in, x1, y1, x2, y2, iW);
         }
     }
