@@ -52,7 +52,7 @@ class Hough_Algorithm{
                 // printf("x = %d\n", x);
                 // printf("data_in = %d\n", (int)(data_in[y * imageWidth + x]));
                 if ((int)(data_in[(y * imageWidth) + x]) > 250){
-                    // printf("in the if: %d\n", ++count); //to proto pou ftanei edo error
+                    // printf("in the if: %d\n", ++count); 
                     for (int t = 0; t < 180; t++){
                         // printf("t = %d\n", t);
                         r = ( ((double)x - center_x) * cos((double)t * DEG2RAD)) + (((double)y - center_y) * sin((double)t * DEG2RAD));
@@ -66,17 +66,34 @@ class Hough_Algorithm{
                 }
             }
         }
+        return;
         // printf("transform_1\n");
     }
 
     void getMaxLine(unsigned int *acc, int &x1, int &y1, int &x2, int &y2){
         // printf("max_line_0\n");
+        int threshold = imageWidth > imageHeight ? imageWidth/4 : imageHeight/4;
+        printf("threshold = %d\n", threshold);
         int max = 0;
         for (int r = 0, i = 0; r < rho_len_acc; r++){   
             for (int t = 0; t < theta_len_acc; t++){
-                if ((int)acc[ (r * theta_len_acc) + t ] >= 300){
+                if ((int)acc[ (r * theta_len_acc) + t ] >= threshold){
 
-                    max = (int)acc[ (r * theta_len_acc) + t ];
+                    int max = acc[(r * theta_len_acc) + t];
+
+                    for(int ly=-4;ly<=4;ly++){
+                        for(int lx=-4;lx<=4;lx++){
+                            if( (ly+r>=0 && ly+r<rho_len_acc) && (lx+t>=0 && lx+t<theta_len_acc) ){
+                                if( (int)acc[( (r+ly)*theta_len_acc) + (t+lx)] > max ){
+                                    max = acc[( (r+ly)*theta_len_acc) + (t+lx)];
+                                    ly = lx = 5;
+                                }
+                            }
+                        }
+                    }
+
+                    if(max > (int)acc[(r * theta_len_acc) + t])
+                        continue;
 
                     if ( t>= 45 && t<=135){
                         // y = (r - x cos(t)) / sin(t)

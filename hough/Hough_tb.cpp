@@ -1,9 +1,3 @@
-// read bmp image
-// run canny+blur in matlab
-// run hough algorithm to get biggest line
-// plot line to see if correct
-// save image with red line from coordinates
-
 // HOUGH 
 // https://github.com/brunokeymolen/hough/blob/master/hough.cpp
 
@@ -75,7 +69,7 @@ int main(int argc, char *argv[]){
             cnt++;
             rarray[cnt] = alg;  // repurposing 'green' array to the original algorithmic edge-detect output
             garray[cnt] = alg;
-            barray[cnt] = (ln == 0) ? alg : 0 ;
+            barray[cnt] = alg + ln;
         }
     }
 

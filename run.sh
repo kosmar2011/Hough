@@ -13,7 +13,7 @@ g++ -I "$SCRIPT_DIR"/include/ -g -o "$SCRIPT_DIR"/build/main "$SCRIPT_DIR"/hough
 #g++ -I ./include/ -o ./build/main ./hough/bmp_io.cpp ./hough/Hough_tb.cpp
 
 #Run Build
-"$SCRIPT_DIR"/build/main "$SCRIPT_DIR"/people_gray.bmp "$SCRIPT_DIR"/out.bmp
+"$SCRIPT_DIR"/build/main "$SCRIPT_DIR"/canny.bmp "$SCRIPT_DIR"/out.bmp
 
 #Run Build CMD
-#./build/main ./people_gray.bmp ./out.bmp
+#./build/main ./canny.bmp ./out.bmp
