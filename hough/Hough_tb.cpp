@@ -6,15 +6,15 @@
 
 using namespace std;
 
-#include "Hough.hpp"
-#include "bmp_io.hpp"
+#include "Hough.hh"
+#include "bmp_io.hh"
 
 
 //#include <mc_scverify.h>
 
 int main(int argc, char *argv[]){
-    const int iW = 1296;
-    const int iH = 864;
+    const unsigned short iW = 1296;
+    const unsigned short iH = 864;
     int bsize = 8;
 
     Hough_Algorithm inst0;

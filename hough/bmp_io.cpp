@@ -2,7 +2,7 @@
 /* Version 1.1 Apr 19, 2003 */
 
 
-#include "bmp_io.hpp"
+#include "bmp_io.hh"
 
 #define TRUE 1
 
