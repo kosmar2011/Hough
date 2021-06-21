@@ -67,9 +67,9 @@ int main(int argc, char *argv[]){
             int alg = (int)*(dat_in_orig+cnt);
             int ln  = (int)*(line+cnt);
             cnt++;
-            rarray[cnt] = alg;  // repurposing 'green' array to the original algorithmic edge-detect output
-            garray[cnt] = alg;
-            barray[cnt] = alg + ln;
+            rarray[cnt] = (ln==0) ? alg :  0;  // repurposing 'green' array to the original algorithmic edge-detect output
+            garray[cnt] = (ln==0) ? alg :  0;
+            barray[cnt] = (ln==0) ? alg : ln;
         }
     }
 
