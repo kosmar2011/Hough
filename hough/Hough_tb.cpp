@@ -67,15 +67,15 @@ CCS_MAIN(int argc, char *argv[]){
             int alg = (int)*(dat_in_orig+cnt);
             int ln  = (int)*(line+cnt);
             cnt++;
-            rarray[cnt] = alg;  // repurposing 'green' array to the original algorithmic edge-detect output
-            garray[cnt] = alg;
-            barray[cnt] = alg + ln;
+            rarray[cnt] = (ln==0) ? alg :  0;
+            garray[cnt] = (ln==0) ? alg : ln;
+            barray[cnt] = (ln==0) ? alg :  0;
         }
     }
 
     cout << "Writing algorithmic bitmap output to: " << bmpAlg << endl;
 
-    bmp_write((char*)bmpAlg.c_str(), iW,  iH, bsize, rarray, barray, garray);
+    bmp_write((char*)bmpAlg.c_str(), iW,  iH, bsize, rarray, garray, barray);
 
 
     delete(dat_in_orig);
