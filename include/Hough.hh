@@ -6,70 +6,112 @@
 #include <stdio.h>
 #include "assert.h"
 
+#include <ac_fixed.h>
+#include <ac_channel.h>
+#include <ac_math/ac_sincos_cordic.h>
+#include <ac_math/ac_sqrt_pwl.h>
+
+
+#include <mc_scverify.h>
+
 void plotLineLow(unsigned char* data_in, int x1, int y1, int x2, int y2, int width);
 void plotLineHigh(unsigned char* data_in, int x1, int y1, int x2, int y2, int width);
 void plotLine(unsigned char* data_in, int x1, int y1, int x2, int y2, int width);
 
+template<int imageWidth, int imageHeight>
 class Hough_Algorithm{
+	
+    typedef uint8       pixelType;
 
-    int imageWidth  = 1296;
-    int imageHeight =  864;
-    int theta_len_acc = 180;
-    const double rho_len = ( (sqrt(2.0) * (double)(imageHeight > imageWidth ? imageHeight : imageWidth)) / 2.0);
+    pixelType theta_len_acc = 180;
 
-    const double rho_len_acc = rho_len * 2.0;
-    const double DEG2RAD = 0.017453293;
+    ac_fixed<2,2,false> two = 2;
+    ac_fixed<4,1,false> sqrt_two;
+    ac_math::ac_sqrt_pwl(two, sqrt_two);
+    ac_fixed<12, 10, false> rho_len = ( (sqrt_two * (ac_fixed<1,1,false>)(imageHeight > imageWidth ? imageHeight : imageWidth)) / 2.0); //thelei prosoxi i diairesi kai o poll/smos
+    ac_fixed<13, 11, false> rho_len_acc = rho_len * 2.0;
+    ac_fixed<8,1,false> DEG2RAD = 0.017453293;
+    
+    //pixelType *acc = (unsigned int*)malloc(rho_len_acc * theta_len_acc * sizeof(unsigned int));
+    ac_channel<pixelType> acc;
+		
+public:	
 
-    public:
-
-    // Constructor
+    typedef ac_int<ac::nbits<imageWidth+1>::val, false>  maxW;
+    typedef ac_int<ac::nbits<imageHeight+1>::val, false> maxH;
     Hough_Algorithm() {}
 
-    void run(unsigned char *data_in, int &x1, int &y1, int &x2, int &y2){
-        unsigned int *acc = (unsigned int*)calloc(rho_len_acc * theta_len_acc, sizeof(unsigned int));
+#pragma hls_design interface
+    void CCS_BLOCK(run)(ac_channel<pixelType> &data_in,
+						maxW &widthIn,
+						maxH &heightIn,
+						ac_channel<pixelType> &x1, ac_channel<pixelType> &y1, 
+						ac_channel<pixelType> &x2, ac_channel<pixelType> &y2) //points are pixelType because they take indeces from data_in
+	{
         // printf("run_0\n");
         // printf("rho_len_acc * theta_len_acc = %f\n", rho_len_acc * theta_len_acc);
 
-        houghTransform(data_in, acc);
+        houghTransform(data_in, widthIn, heightIn, acc);
+
         // printf("run_1\n");
-        getMaxLine(acc, x1, y1, x2, y2);
+
+        getMaxLine(acc, widthIn, heightIn, x1, y1, x2, y2);
+
         // printf("run_2\n");
 
-        free(acc);
     }
 
-    void houghTransform(unsigned char *data_in, unsigned int *acc){
-        
-        double center_x = imageWidth / 2;
-		double center_y = imageHeight / 2;
-        double r = 0;
-        // printf("transform_0\n");
-        int count = 0;
+private:
 
-        for (int y = 0; y < imageHeight; y++){
+#pragma hls_design
+    void houghTransform(ac_channel<pixelType> &data_in,
+                        maxW &widthIn,
+                        maxH &heightIn, 
+                        ac_channel<pixelType> acc){
+        
+
+        ac_fixed<ac::nbits<imageWidth+1>::val, 4,false>  center_x = widthIn  / 2;
+		ac_fixed<ac::nbits<imageHeight+1>::val, 4,false> center_y = heightIn / 2;
+        ac_fixed<16, 10, false> r = 0;
+        // printf("transform_0\n");
+        // int count = 0;
+
+        HROW: for (maxH y = 0; ; y++){
             // printf("y = %d\n", y);
-            for (int x = 0; x < imageWidth; x++){
+            HCOL: for (maxW x = 0; ; x++){
                 // printf("x = %d\n", x);
-                // printf("data_in = %d\n", (int)(data_in[y * imageWidth + x]));
-                if ((int)(data_in[(y * imageWidth) + x]) > 250){
+                // printf("data_in = %d\n", (int)(data_in[y * widthIn + x]));
+                if ( (data_in[(y * widthIn) + x]) > 250 ){ //Mipos xreiazetai na valo .to_uint() ????
                     // printf("in the if: %d\n", ++count); 
-                    for (int t = 0; t < 180; t++){
+                    HACC: for (pixelType t = 0; t < theta_len_acc; t++){
                         // printf("t = %d\n", t);
-                        r = ( ((double)x - center_x) * cos((double)t * DEG2RAD)) + (((double)y - center_y) * sin((double)t * DEG2RAD));
+                        
+                        ac_math::ac_cos_cordic((double)t * DEG2RAD, cos_out)
+                        ac_math::ac_sin_cordic((double)t * DEG2RAD, sin_out)
+                        r = ( (ac_fixed<>)x - center_x) * cos_out + ((double)y - center_y) * sin_out;
+                        
+
                         // printf("r = %f\n", r);
                         // printf("r + rho_len = %f\n", r + rho_len);
                         // printf("index = %d\n", (int)((round(r + rho_len) * 180.0)) + t);
+                        
                         acc[ (int)((round(r + rho_len) * 180.0)) + t]++;
+                        
                         // printf("%d\n", ++count);
+                        if(x == maxW(widthIn-1))
+                            break;
                     }
-                    // printf("in the if after loop\n");
                 }
+
+                if(y == maxH(heightIn-1))
+                    break;
             }
         }
         return;
         // printf("transform_1\n");
     }
 
+#pragma hls_design
     void getMaxLine(unsigned int *acc, int &x1, int &y1, int &x2, int &y2){
         // printf("max_line_0\n");
         int threshold = imageWidth > imageHeight ? imageWidth/4 : imageHeight/4;
@@ -120,7 +162,7 @@ class Hough_Algorithm{
 };
 
 void plotLine(unsigned char *data_in, int x1, int y1, int x2, int y2, int iW){
-    auto tmp = data_in;
+    // auto tmp = data_in;
     if(abs(y2 - y1) < abs(x2 - x1)){
         if(x1 > x2) {
             printf("plotLine_1\n");
