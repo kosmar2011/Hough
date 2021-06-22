@@ -3,6 +3,7 @@
         "bmp_io.h": "c",
         "iostream": "cpp",
         "algorithm": "cpp",
-        "new": "cpp"
+        "new": "cpp",
+        "cmath": "cpp"
     }
 }
