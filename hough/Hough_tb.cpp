@@ -12,7 +12,7 @@ using namespace std;
 
 //#include <mc_scverify.h>
 
-int main(int argc, char *argv[]){
+CCS_MAIN(int argc, char *argv[]){
     const unsigned short iW = 1296;
     const unsigned short iH = 864;
     int bsize = 8;
