@@ -4,6 +4,7 @@
         "iostream": "cpp",
         "algorithm": "cpp",
         "new": "cpp",
-        "cmath": "cpp"
+        "cmath": "cpp",
+        "ostream": "cpp"
     }
 }
