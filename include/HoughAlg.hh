@@ -28,7 +28,8 @@ class Hough_Algorithm{
     void run(unsigned char *data_in, int &x1, int &y1, int &x2, int &y2){
         unsigned int *acc = (unsigned int*)calloc(rho_len_acc * theta_len_acc, sizeof(unsigned int));
         // printf("run_0\n");
-        // printf("rho_len_acc * theta_len_acc = %f\n", rho_len_acc * theta_len_acc);
+        printf("rho_len_acc * theta_len_acc = %f\n", rho_len_acc * theta_len_acc);
+        // printf("rho_len_acc = %f\n", rho_len_acc);
 
         houghTransform(data_in, acc);
         // printf("run_1\n");
@@ -59,7 +60,8 @@ class Hough_Algorithm{
                         // printf("r = %f\n", r);
                         // printf("r + rho_len = %f\n", r + rho_len);
                         // printf("index = %d\n", (int)((round(r + rho_len) * 180.0)) + t);
-                        acc[ (int)((round(r + rho_len) * 180.0)) + t]++;
+                        int idx = (int)((round(r + rho_len) * 180.0)) + t;
+                        acc[idx]++;
                         // printf("%d\n", ++count);
                     }
                     // printf("in the if after loop\n");
@@ -78,22 +80,6 @@ class Hough_Algorithm{
         for (int r = 0, i = 0; r < rho_len_acc; r++){   
             for (int t = 0; t < theta_len_acc; t++){
                 if ((int)acc[ (r * theta_len_acc) + t ] >= threshold){
-
-                    int max = acc[(r * theta_len_acc) + t];
-
-                    for(int ly=-4;ly<=4;ly++){
-                        for(int lx=-4;lx<=4;lx++){
-                            if( (ly+r>=0 && ly+r<rho_len_acc) && (lx+t>=0 && lx+t<theta_len_acc) ){
-                                if( (int)acc[( (r+ly)*theta_len_acc) + (t+lx)] > max ){
-                                    max = acc[( (r+ly)*theta_len_acc) + (t+lx)];
-                                    ly = lx = 5;
-                                }
-                            }
-                        }
-                    }
-
-                    if(max > (int)acc[(r * theta_len_acc) + t])
-                        continue;
 
                     if ( t>= 45 && t<=135){
                         // y = (r - x cos(t)) / sin(t)

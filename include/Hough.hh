@@ -22,14 +22,14 @@ template<int imageWidth, int imageHeight>
 class Hough_Algorithm{
 	
     typedef uint8       pixelType;
-
+    typedef ac_fixed<8,3,true>  angType;
     pixelType theta_len_acc = 180;
-
+    
     ac_fixed<2,2,false> two = 2;
     ac_fixed<4,1,false> sqrt_two;
     ac_math::ac_sqrt_pwl(two, sqrt_two);
     ac_fixed<12, 10, false> rho_len = ( (sqrt_two * (ac_fixed<1,1,false>)(imageHeight > imageWidth ? imageHeight : imageWidth)) / 2.0); //thelei prosoxi i diairesi kai o poll/smos
-    ac_fixed<13, 11, false> rho_len_acc = rho_len * 2.0;
+    ac_fixed<19, 14, false> rho_len_acc = rho_len * 2.0;
     ac_fixed<8,1,false> DEG2RAD = 0.017453293;
     
     //pixelType *acc = (unsigned int*)malloc(rho_len_acc * theta_len_acc * sizeof(unsigned int));
@@ -67,44 +67,49 @@ private:
     void houghTransform(ac_channel<pixelType> &data_in,
                         maxW &widthIn,
                         maxH &heightIn, 
-                        ac_channel<pixelType> acc){
+                        ac_channel<pixelType> &acc){
         
 
-        ac_fixed<ac::nbits<imageWidth+1>::val, 4,false>  center_x = widthIn  / 2;
-		ac_fixed<ac::nbits<imageHeight+1>::val, 4,false> center_y = heightIn / 2;
-        ac_fixed<16, 10, false> r = 0;
+        ac_fixed<ac::nbits<imageWidth+1>::val+4, ac::nbits<imageWidth+1>::val,false> center_x = widthIn  / 2;
+		ac_fixed<ac::nbits<imageHeight+1>::val+4, ac::nbits<imageHeight+1>::val,false> center_y = heightIn / 2;
+        ac_fixed<17, 11, true> r = 0;
+
+        pixelType acc_buf;
+        angType cos_out;
+        angType sin_out;
         // printf("transform_0\n");
         // int count = 0;
-
-        HROW: for (maxH y = 0; ; y++){
+    
+        HROW: for (maxH y = 0; y < heightIn; y++){
             // printf("y = %d\n", y);
-            HCOL: for (maxW x = 0; ; x++){
+            HCOL: for (maxW x = 0; x < widthIn; x++){
                 // printf("x = %d\n", x);
                 // printf("data_in = %d\n", (int)(data_in[y * widthIn + x]));
-                if ( (data_in[(y * widthIn) + x]) > 250 ){ //Mipos xreiazetai na valo .to_uint() ????
+                
+                // if ( (data_in[(y * widthIn) + x]) > 250 ){ 
+                pixelType din = data_in.read();
+                if ( din > 250 ){ //Mipos xreiazetai na valo .to_uint() ????
                     // printf("in the if: %d\n", ++count); 
                     HACC: for (pixelType t = 0; t < theta_len_acc; t++){
                         // printf("t = %d\n", t);
                         
-                        ac_math::ac_cos_cordic((double)t * DEG2RAD, cos_out)
-                        ac_math::ac_sin_cordic((double)t * DEG2RAD, sin_out)
-                        r = ( (ac_fixed<>)x - center_x) * cos_out + ((double)y - center_y) * sin_out;
-                        
+                        ac_math::ac_cos_cordic((ac_fixed<9,9,false>)t * DEG2RAD, cos_out)
+                        ac_math::ac_sin_cordic((ac_fixed<9,9,false>)t * DEG2RAD, sin_out)
+                        r = ( (ac_fixed<ac::nbits<imageWidth+1>::val+2, ac::nbits<imageWidth+1>::val,false>)x - center_x) * cos_out;
+                        r = r + ((ac_fixed<ac::nbits<imageHeight+1>::val+2, ac::nbits<imageHeight+1>::val,false>)y - center_y) * sin_out;
 
                         // printf("r = %f\n", r);
                         // printf("r + rho_len = %f\n", r + rho_len);
                         // printf("index = %d\n", (int)((round(r + rho_len) * 180.0)) + t);
                         
-                        acc[ (int)((round(r + rho_len) * 180.0)) + t]++;
+                        // acc[ (int)((round(r + rho_len) * 180.0)) + t]++;
+
+
+
                         
                         // printf("%d\n", ++count);
-                        if(x == maxW(widthIn-1))
-                            break;
                     }
                 }
-
-                if(y == maxH(heightIn-1))
-                    break;
             }
         }
         return;
@@ -120,22 +125,6 @@ private:
         for (int r = 0, i = 0; r < rho_len_acc; r++){   
             for (int t = 0; t < theta_len_acc; t++){
                 if ((int)acc[ (r * theta_len_acc) + t ] >= threshold){
-
-                    int max = acc[(r * theta_len_acc) + t];
-
-                    for(int ly=-4;ly<=4;ly++){
-                        for(int lx=-4;lx<=4;lx++){
-                            if( (ly+r>=0 && ly+r<rho_len_acc) && (lx+t>=0 && lx+t<theta_len_acc) ){
-                                if( (int)acc[( (r+ly)*theta_len_acc) + (t+lx)] > max ){
-                                    max = acc[( (r+ly)*theta_len_acc) + (t+lx)];
-                                    ly = lx = 5;
-                                }
-                            }
-                        }
-                    }
-
-                    if(max > (int)acc[(r * theta_len_acc) + t])
-                        continue;
 
                     if ( t>= 45 && t<=135){
                         // y = (r - x cos(t)) / sin(t)
