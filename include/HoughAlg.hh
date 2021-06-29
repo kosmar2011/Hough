@@ -76,7 +76,7 @@ class Hough_Algorithm{
         // printf("max_line_0\n");
         int threshold = imageWidth > imageHeight ? imageWidth/4 : imageHeight/4;
         printf("threshold = %d\n", threshold);
-        int max = 0;
+
         for (int r = 0, i = 0; r < rho_len_acc; r++){   
             for (int t = 0; t < theta_len_acc; t++){
                 if ((int)acc[ (r * theta_len_acc) + t ] >= threshold){

@@ -14,17 +14,15 @@
 
 #include <mc_scverify.h>
 
-void plotLineLow(unsigned char* data_in, int x1, int y1, int x2, int y2, int width);
-void plotLineHigh(unsigned char* data_in, int x1, int y1, int x2, int y2, int width);
-void plotLine(unsigned char* data_in, int x1, int y1, int x2, int y2, int width);
+
 
 template<int imageWidth, int imageHeight>
 class Hough_Algorithm{
 	
-    typedef uint8       pixelType;
+    typedef uint8               pixelType;
     typedef ac_fixed<8,3,true>  angType;
-    pixelType theta_len_acc = 180;
-    
+
+    pixelType theta_len_acc = 180;    
     ac_fixed<2,2,false> two = 2;
     ac_fixed<4,1,false> sqrt_two;
     ac_math::ac_sqrt_pwl(two, sqrt_two);
@@ -32,7 +30,8 @@ class Hough_Algorithm{
     ac_fixed<19, 14, false> rho_len_acc = rho_len * 2.0;
     ac_fixed<8,1,false> DEG2RAD = 0.017453293;
     
-    //pixelType *acc = (unsigned int*)malloc(rho_len_acc * theta_len_acc * sizeof(unsigned int));
+    uint19 acc_tmp_len = rho_len_acc.to_uint() * theta_len_acc + 1; 
+    pixelType acc_tmp[acc_tmp_len];
     ac_channel<pixelType> acc;
 		
 public:	
@@ -74,12 +73,15 @@ private:
 		ac_fixed<ac::nbits<imageHeight+1>::val+4, ac::nbits<imageHeight+1>::val,false> center_y = heightIn / 2;
         ac_fixed<17, 11, true> r = 0;
 
-        pixelType acc_buf;
         angType cos_out;
         angType sin_out;
         // printf("transform_0\n");
         // int count = 0;
-    
+        
+        for (uint19 i = 0; i < acc_tmp_len; i++){
+            acc_tmp[i] = 0;
+        }
+
         HROW: for (maxH y = 0; y < heightIn; y++){
             // printf("y = %d\n", y);
             HCOL: for (maxW x = 0; x < widthIn; x++){
@@ -102,26 +104,35 @@ private:
                         // printf("r + rho_len = %f\n", r + rho_len);
                         // printf("index = %d\n", (int)((round(r + rho_len) * 180.0)) + t);
                         
-                        // acc[ (int)((round(r + rho_len) * 180.0)) + t]++;
-
-
-
-                        
+                        acc_tmp[ (int)((round(r + rho_len) * 180.0)) + t]++;
                         // printf("%d\n", ++count);
                     }
                 }
             }
+        }
+
+        for (uint19 i = 0; i < acc_tmp_len; i++){
+            acc.write(acc_tmp[i])
         }
         return;
         // printf("transform_1\n");
     }
 
 #pragma hls_design
-    void getMaxLine(unsigned int *acc, int &x1, int &y1, int &x2, int &y2){
+    void getMaxLine(ac_channel<pixelType> &acc, 
+                        maxW &widthIn,
+						maxH &heightIn,
+						ac_channel<pixelType> &x1, ac_channel<pixelType> &y1, 
+						ac_channel<pixelType> &x2, ac_channel<pixelType> &y2){
         // printf("max_line_0\n");
-        int threshold = imageWidth > imageHeight ? imageWidth/4 : imageHeight/4;
+        if(widthIn > heightIn){
+            maxW threshold = widthIn/4;
+        } else {
+            maxH threshold = heightIn/4;
+        }
+
         printf("threshold = %d\n", threshold);
-        int max = 0;
+
         for (int r = 0, i = 0; r < rho_len_acc; r++){   
             for (int t = 0; t < theta_len_acc; t++){
                 if ((int)acc[ (r * theta_len_acc) + t ] >= threshold){
@@ -150,68 +161,6 @@ private:
 
 };
 
-void plotLine(unsigned char *data_in, int x1, int y1, int x2, int y2, int iW){
-    // auto tmp = data_in;
-    if(abs(y2 - y1) < abs(x2 - x1)){
-        if(x1 > x2) {
-            printf("plotLine_1\n");
-            plotLineLow(data_in, x2, y2, x1, y1, iW);
-        } else {
-            printf("plotLine_2\n");
-            plotLineLow(data_in, x1, y1, x2, y2, iW);
-        }
-    } else {
-        if(y1 > y2){
-            printf("plotLine_3\n");
-            plotLineHigh(data_in, x2, y2, x1, y1, iW);
-        } else {
-            printf("plotLine_4\n");
-            plotLineHigh(data_in, x1, y1, x2, y2, iW);
-        }
-    }
-    // assert(tmp != data_in); // prepei na exei allaksei kati as poume ti fasi
-}
 
-void plotLineLow(unsigned char *data_in, int x1, int y1, int x2, int y2, int iW){
-    int dx = x2-x1;
-    int dy = y2-y1;
-    int yi = 1;
-    if(dy < 0){
-        yi = -1;
-        dy = -dy;
-    }
-    int D = (2 * dy) - dx;
-    int y = y1;
-    for (int x = x1; x < x2; x++){
-        data_in[y * iW + x] = 255; 
-        if (D > 0){
-            y = y + yi;
-            D = D + (2 * (dy - dx));
-        } else {
-            D = D + 2*dy;
-        }
-    }   
-}
-
-void plotLineHigh(unsigned char *data_in, int x1, int y1, int x2, int y2, int iW){
-    int dx = x2-x1;
-    int dy = y2-y1;
-    int xi = 1;
-    if(dx < 0){
-        xi = -1;
-        dx = -dx;
-    }
-    int D = (2 * dx) - dy;
-    int x = x1;
-    for (int y = y1; y < y2; y++){
-        data_in[y * iW + x] = 255;
-        if (D > 0){
-            x = x + xi;
-            D = D + (2 * (dx - dy));
-        } else {
-            D = D + 2*dx;
-        }
-    }   
-}
 
 #endif

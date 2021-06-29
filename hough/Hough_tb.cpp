@@ -9,6 +9,10 @@ using namespace std;
 #include "Hough.hh"
 #include "bmp_io.hh"
 
+void plotLineLow(unsigned char* data_in, int x1, int y1, int x2, int y2, int width);
+void plotLineHigh(unsigned char* data_in, int x1, int y1, int x2, int y2, int width);
+void plotLine(unsigned char* data_in, int x1, int y1, int x2, int y2, int width);
+
 
 //#include <mc_scverify.h>
 
@@ -84,4 +88,68 @@ CCS_MAIN(int argc, char *argv[]){
     delete(barray);
     cout << "Finished" << endl;
     return(0);
+}
+
+void plotLine(unsigned char *data_in, int x1, int y1, int x2, int y2, int iW){
+    // auto tmp = data_in;
+    if(abs(y2 - y1) < abs(x2 - x1)){
+        if(x1 > x2) {
+            printf("plotLine_1\n");
+            plotLineLow(data_in, x2, y2, x1, y1, iW);
+        } else {
+            printf("plotLine_2\n");
+            plotLineLow(data_in, x1, y1, x2, y2, iW);
+        }
+    } else {
+        if(y1 > y2){
+            printf("plotLine_3\n");
+            plotLineHigh(data_in, x2, y2, x1, y1, iW);
+        } else {
+            printf("plotLine_4\n");
+            plotLineHigh(data_in, x1, y1, x2, y2, iW);
+        }
+    }
+    // assert(tmp != data_in); // prepei na exei allaksei kati as poume ti fasi
+}
+
+void plotLineLow(unsigned char *data_in, int x1, int y1, int x2, int y2, int iW){
+    int dx = x2-x1;
+    int dy = y2-y1;
+    int yi = 1;
+    if(dy < 0){
+        yi = -1;
+        dy = -dy;
+    }
+    int D = (2 * dy) - dx;
+    int y = y1;
+    for (int x = x1; x < x2; x++){
+        data_in[y * iW + x] = 255; 
+        if (D > 0){
+            y = y + yi;
+            D = D + (2 * (dy - dx));
+        } else {
+            D = D + 2*dy;
+        }
+    }   
+}
+
+void plotLineHigh(unsigned char *data_in, int x1, int y1, int x2, int y2, int iW){
+    int dx = x2-x1;
+    int dy = y2-y1;
+    int xi = 1;
+    if(dx < 0){
+        xi = -1;
+        dx = -dx;
+    }
+    int D = (2 * dx) - dy;
+    int x = x1;
+    for (int y = y1; y < y2; y++){
+        data_in[y * iW + x] = 255;
+        if (D > 0){
+            x = x + xi;
+            D = D + (2 * (dx - dy));
+        } else {
+            D = D + 2*dx;
+        }
+    }   
 }
