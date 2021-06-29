@@ -54,7 +54,7 @@ CCS_MAIN(int argc, char *argv[]){
 
 
     int x1_alg = 0, y1_alg = 0, x2_alg = 0, y2_alg = 0;
-    int x1 = 0, y1 = 0, x2 = 0, y2 = 0;
+    unsigned int x1 = 0, y1 = 0, x2 = 0, y2 = 0;
 
 
     unsigned  cnt = 0;
@@ -70,22 +70,27 @@ CCS_MAIN(int argc, char *argv[]){
     cout << "Running\n";
     inst0.run(dat_in_orig, x1_alg, y1_alg, x2_alg, y2_alg);
     inst1.run(dat_in, widthIn, heightIn, x1_hw, y1_hw, x2_hw, y2_hw);
-    printf("LINE POINTS: x1_alg = %d, y1_alg = %d, x2_alg = %d, y2_alg = %d\n", x1_alg, y1_alg, x2_alg, y2_alg);
+    
 
     x1 = x1_hw.read();
     y1 = y1_hw.read();
     x2 = x2_hw.read();
     y2 = y2_hw.read();
-    
+
     cout << "Drawing Line\n";
     // plotLine(line, x1_alg, y1_alg, x2_alg, y2_alg, iW); //normal algorithm
     plotLine(line, x1, y1, x2, y2, iW);                 //hardware
     
+    cout << "Calculating difference between output points: \n" << endl << endl;
+    printf("ALG POINTS: x1_alg = %d, y1_alg = %d, x2_alg = %d, y2_alg = %d\n", x1_alg, y1_alg, x2_alg, y2_alg);
+    printf("HW  POINTS: x1_hw  = %d, y1_hw  = %d, x2_hw  = %d, y2_hw  = %d\n", x1, y1, x2, y2);
+
     cout << " Calculating RGB bitmap\n";
     cnt = 0;
     for (int y = 0; y < iH; y++){
         for (int x = 0; x < iW; x++){
             int alg = (int)*(dat_in_orig+cnt);
+
             int ln  = (int)*(line+cnt);
             cnt++;
             rarray[cnt] = (ln==0) ? alg :  0;
