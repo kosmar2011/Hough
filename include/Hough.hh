@@ -82,9 +82,9 @@ private:
             acc_tmp[i] = 0;
         }
 
-        HROW: for (maxH y = 0; y < heightIn; y++){
+        HROW: for (maxH y = 0; ; y++){
             // printf("y = %d\n", y);
-            HCOL: for (maxW x = 0; x < widthIn; x++){
+            HCOL: for (maxW x = 0; ; x++){
                 // printf("x = %d\n", x);
                 // printf("data_in = %d\n", (int)(data_in[y * widthIn + x]));
                 
@@ -108,7 +108,11 @@ private:
                         // printf("%d\n", ++count);
                     }
                 }
+                if (x == maxW(widthIn-1)) 
+                    break;
             }
+            if (y == maxH(heightIn-1)) 
+                break;
         }
 
         for (uint19 i = 0; i < acc_tmp_len; i++){
@@ -126,41 +130,57 @@ private:
 						ac_channel<pixelType> &x2, ac_channel<pixelType> &y2){
         // printf("max_line_0\n");
         if(widthIn > heightIn){
-            maxW threshold = widthIn/4;
+            ac_fixed<ac::nbits<imageWidth+1>::val+4, ac::nbits<imageWidth+1>::val,false> threshold = widthIn/4;
+            // maxW threshold = widthIn/4;
         } else {
-            maxH threshold = heightIn/4;
+            ac_fixed<ac::nbits<imageHeight+1>::val+4, ac::nbits<imageHeight+1>::val,false> threshold = heightIn/4;    
+            // maxH threshold = heightIn/4;
         }
+        maxW x1_t, x2_t;
+        maxH y1_t, y2_t;
 
-        printf("threshold = %d\n", threshold);
+        angType cos_t;
+        angType sin_t;
+        // printf("threshold = %d\n", threshold);
 
-        for (int r = 0, i = 0; r < rho_len_acc; r++){   
-            for (int t = 0; t < theta_len_acc; t++){
-                if ((int)acc[ (r * theta_len_acc) + t ] >= threshold){
-
+        R_LINE: for (uint14 r = 0; r < rho_len_acc; r++){   
+            T_LINE: for (pixelType t = 0; t < theta_len_acc; t++){
+                // if ((int)acc[ (r * theta_len_acc) + t ] >= threshold){
+                acc_in = acc.read();
+                if (acc_in >= threshold){
+                    
+                    ac_math::ac_cos_cordic((ac_fixed<9,9,false>)t * DEG2RAD, cos_t);
+                    ac_math::ac_sin_cordic((ac_fixed<9,9,false>)t * DEG2RAD, sin_t);
+                    // cos_t = cos(t * DEG2RAD);
+                    // sin_t = sin(t * DEG2RAD);
+                    
                     if ( t>= 45 && t<=135){
                         // y = (r - x cos(t)) / sin(t)
-                        x1 = 0;
-                        y1 = ((double)(r-(rho_len_acc/2)) - ((x1 - (imageWidth/2) ) * cos(t * DEG2RAD))) / sin(t * DEG2RAD) + (imageHeight / 2);
-                        x2 = imageWidth - 0;
-                        y2 = ((double)(r-(rho_len_acc/2)) - ((x2 - (imageWidth/2) ) * cos(t * DEG2RAD))) / sin(t * DEG2RAD) + (imageHeight / 2);
+                        x1_t = 0;
+                        y1_t = ((double)(r-(rho_len_acc/2)) - ((x1_t - (widthIn/2) ) * cos_t)) / sin_t + (heightIn / 2);
+                        x2_t = widthIn - 0;
+                        y2_t = ((double)(r-(rho_len_acc/2)) - ((x2_t - (widthIn/2) ) * cos_t)) / sin_t + (heightIn / 2);
                     } else {
                         // x = (r - y sin(t)) / cos(t);
-                        y1 = 0;
-                        x1 = ((double)(r-(rho_len_acc/2)) - ((y1 - (imageHeight/2) ) * sin(t * DEG2RAD))) / cos(t * DEG2RAD) + (imageWidth / 2);
-						y2 = imageHeight - 0;
-						x2 = ((double)(r-(rho_len_acc/2)) - ((y2 - (imageHeight/2) ) * sin(t * DEG2RAD))) / cos(t * DEG2RAD) + (imageWidth / 2);
+                        y1_t = 0;
+                        x1_t = ((double)(r-(rho_len_acc/2)) - ((y1_t - (heightIn/2) ) * sin_t)) / cos_t + (widthIn / 2);
+						y2_t = heightIn - 0;
+						x2_t = ((double)(r-(rho_len_acc/2)) - ((y2_t - (heightIn/2) ) * sin_t)) / cos_t + (widthIn / 2);
                     }
                 }
-                // printf("x1 = %d, y1 = %d, x2 = %d, y2 = %d\n", x1, y1, x2, y2);
+                // printf("x1_t = %d, y1_t = %d, x2_t = %d, y2_t = %d\n", x1_t, y1_t, x2_t, y2_t);
 
             }
         }
         // printf("max_line_1\n");
-        // printf("x1 = %d, y1 = %d, x2 = %d, y2 = %d\n", x1, y1, x2, y2);
+        // printf("x1_t = %d, y1_t = %d, x2_t = %d, y2_t = %d\n", x1_t, y1_t, x2_t, y2_t);
+
+        x1.write(x1_t);
+        y1.write(y1_t);
+        x2.write(x2_t);
+        y2.write(y2_t);
     }
 
 };
-
-
 
 #endif
