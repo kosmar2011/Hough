@@ -5,6 +5,7 @@
         "algorithm": "cpp",
         "new": "cpp",
         "cmath": "cpp",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "*.tcc": "cpp"
     }
 }

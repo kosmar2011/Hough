@@ -7,14 +7,14 @@
 using namespace std;
 
 #include "Hough.hh"
+#include "HoughAlg.hh"
 #include "bmp_io.hh"
+
+#include <mc_scverify.h>
 
 void plotLineLow(unsigned char* data_in, int x1, int y1, int x2, int y2, int width);
 void plotLineHigh(unsigned char* data_in, int x1, int y1, int x2, int y2, int width);
 void plotLine(unsigned char* data_in, int x1, int y1, int x2, int y2, int width);
-
-
-//#include <mc_scverify.h>
 
 CCS_MAIN(int argc, char *argv[]){
     const unsigned short iW = 1296;
@@ -28,6 +28,9 @@ CCS_MAIN(int argc, char *argv[]){
     unsigned char *rarray = new unsigned char[iW*iH];
     unsigned char *garray = new unsigned char[iW*iH];
     unsigned char *barray = new unsigned char[iW*iH];
+
+    Hough<iW,iH>::maxW widthIn = iW;
+    Hough<iW,iH>::maxH heightIn = iH;
 
     cout << "Loading Input File" << endl;
 
@@ -46,11 +49,18 @@ CCS_MAIN(int argc, char *argv[]){
     unsigned char* dat_in_orig = new unsigned char[iH*iW];
     unsigned char* line        = new unsigned char[iH*iW];
 
+    ac_channel<uint8> dat_in;
+    ac_channel<uint8> x1_hw, y1_hw, x2_hw, y2_hw;
+
+
+    int x1_alg = 0, y1_alg = 0, x2_alg = 0, y2_alg = 0;
     int x1 = 0, y1 = 0, x2 = 0, y2 = 0;
+
 
     unsigned  cnt = 0;
     for (int y = 0; y < iH; y++){
         for (int x = 0; x < iW; x++){
+          dat_in.write(rarray[cnt]);
           dat_in_orig[cnt] = rarray[cnt]; // just using red component (pseudo monochrome)
           line[cnt] = 0;
           cnt++;
@@ -58,11 +68,18 @@ CCS_MAIN(int argc, char *argv[]){
     }
 
     cout << "Running\n";
-    inst0.run(dat_in_orig, x1, y1, x2, y2);
-    printf("LINE POINTS: x1 = %d, y1 = %d, x2 = %d, y2 = %d\n", x1, y1, x2, y2);
+    inst0.run(dat_in_orig, x1_alg, y1_alg, x2_alg, y2_alg);
+    inst1.run(dat_in, widthIn, heightIn, x1_hw, y1_hw, x2_hw, y2_hw);
+    printf("LINE POINTS: x1_alg = %d, y1_alg = %d, x2_alg = %d, y2_alg = %d\n", x1_alg, y1_alg, x2_alg, y2_alg);
 
+    x1 = x1_hw.read();
+    y1 = y1_hw.read();
+    x2 = x2_hw.read();
+    y2 = y2_hw.read();
+    
     cout << "Drawing Line\n";
-    plotLine(line, x1, y1, x2, y2, iW); 
+    // plotLine(line, x1_alg, y1_alg, x2_alg, y2_alg, iW); //normal algorithm
+    plotLine(line, x1, y1, x2, y2, iW);                 //hardware
     
     cout << " Calculating RGB bitmap\n";
     cnt = 0;
