@@ -84,12 +84,14 @@ class Hough_Algorithm{
                     if ( t>= 45 && t<=135){
                         // y = (r - x cos(t)) / sin(t)
                         x1 = 0;
+                        printf("r-(rho_len_acc/2) = %f\n", (double)(r-(rho_len_acc/2)));
                         y1 = ((double)(r-(rho_len_acc/2)) - ((x1 - (imageWidth/2) ) * cos(t * DEG2RAD))) / sin(t * DEG2RAD) + (imageHeight / 2);
                         x2 = imageWidth - 0;
                         y2 = ((double)(r-(rho_len_acc/2)) - ((x2 - (imageWidth/2) ) * cos(t * DEG2RAD))) / sin(t * DEG2RAD) + (imageHeight / 2);
                     } else {
                         // x = (r - y sin(t)) / cos(t);
                         y1 = 0;
+                        printf("r-(rho_len_acc/2) = %f\n", (double)(r-(rho_len_acc/2)));
                         x1 = ((double)(r-(rho_len_acc/2)) - ((y1 - (imageHeight/2) ) * sin(t * DEG2RAD))) / cos(t * DEG2RAD) + (imageWidth / 2);
 						y2 = imageHeight - 0;
 						x2 = ((double)(r-(rho_len_acc/2)) - ((y2 - (imageHeight/2) ) * sin(t * DEG2RAD))) / cos(t * DEG2RAD) + (imageWidth / 2);

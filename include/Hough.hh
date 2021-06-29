@@ -157,15 +157,15 @@ private:
                     if ( t>= 45 && t<=135){
                         // y = (r - x cos(t)) / sin(t)
                         x1_t = 0;
-                        y1_t = ((double)(r-(rho_len_acc/2)) - ((x1_t - (widthIn/2) ) * cos_t)) / sin_t + (heightIn / 2);
+                        y1_t = ((ac_fixed<13,8,true>)(r-(rho_len_acc/2)) - ((x1_t - (widthIn/2) ) * cos_t)) / sin_t + (heightIn / 2);
                         x2_t = widthIn - 0;
-                        y2_t = ((double)(r-(rho_len_acc/2)) - ((x2_t - (widthIn/2) ) * cos_t)) / sin_t + (heightIn / 2);
+                        y2_t = ((ac_fixed<13,8,true>)(r-(rho_len_acc/2)) - ((x2_t - (widthIn/2) ) * cos_t)) / sin_t + (heightIn / 2);
                     } else {
                         // x = (r - y sin(t)) / cos(t);
                         y1_t = 0;
-                        x1_t = ((double)(r-(rho_len_acc/2)) - ((y1_t - (heightIn/2) ) * sin_t)) / cos_t + (widthIn / 2);
+                        x1_t = ((ac_fixed<13,8,true>)(r-(rho_len_acc/2)) - ((y1_t - (heightIn/2) ) * sin_t)) / cos_t + (widthIn / 2);
 						y2_t = heightIn - 0;
-						x2_t = ((double)(r-(rho_len_acc/2)) - ((y2_t - (heightIn/2) ) * sin_t)) / cos_t + (widthIn / 2);
+						x2_t = ((ac_fixed<13,8,true>)(r-(rho_len_acc/2)) - ((y2_t - (heightIn/2) ) * sin_t)) / cos_t + (widthIn / 2);
                     }
                 }
                 // printf("x1_t = %d, y1_t = %d, x2_t = %d, y2_t = %d\n", x1_t, y1_t, x2_t, y2_t);
@@ -175,10 +175,10 @@ private:
         // printf("max_line_1\n");
         // printf("x1_t = %d, y1_t = %d, x2_t = %d, y2_t = %d\n", x1_t, y1_t, x2_t, y2_t);
 
-        x1.write(x1_t);
-        y1.write(y1_t);
-        x2.write(x2_t);
-        y2.write(y2_t);
+        x1.write(x1_t.to_uint());
+        y1.write(y1_t.to_uint());
+        x2.write(x2_t.to_uint());
+        y2.write(y2_t.to_uint());
     }
 
 };
