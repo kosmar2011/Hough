@@ -9,7 +9,6 @@
 #include <ac_fixed.h>
 #include <ac_channel.h>
 #include <ac_math/ac_sincos_cordic.h>
-#include <ac_math/ac_sqrt_pwl.h>
 
 
 #include <mc_scverify.h>
@@ -17,28 +16,30 @@
 
 
 template<int imageWidth, int imageHeight>
-class Hough_Algorithm{
-	
+class Hough_Algorithm_HW{
     typedef uint8               pixelType;
     typedef ac_fixed<8,3,true>  angType;
+public:	
 
-    pixelType theta_len_acc = 180;    
-    ac_fixed<2,2,false> two = 2;
-    ac_fixed<4,1,false> sqrt_two;
-    ac_math::ac_sqrt_pwl(two, sqrt_two);
-    ac_fixed<12, 10, false> rho_len = ( (sqrt_two * (ac_fixed<1,1,false>)(imageHeight > imageWidth ? imageHeight : imageWidth)) / 2.0); //thelei prosoxi i diairesi kai o poll/smos
-    ac_fixed<19, 14, false> rho_len_acc = rho_len * 2.0;
-    ac_fixed<8,1,false> DEG2RAD = 0.017453293;
+    // static pixelType theta_len_acc = 180;    
+    static ac_fixed<8, 1, false> sqrt_two = 1.41421356;
+    static ac_fixed<12, 10, false> rho_len= ( (sqrt_two * (ac_fixed<1,1,false>)(imageHeight > imageWidth ? imageHeight : imageWidth)) / 2); //thelei prosoxi i diairesi kai o poll/smos
+    static ac_fixed<19, 14, false> rho_len_acc = rho_len * (ac_fixed<2,2,false>)(2);
+    static ac_fixed<8,1,false> DEG2RAD = 0.017453293;
     
-    uint19 acc_tmp_len = rho_len_acc.to_uint() * theta_len_acc + 1; 
-    pixelType acc_tmp[acc_tmp_len];
+    // uint19 acc_tmp_len = rho_len_acc.to_uint() * theta_len_acc + 1; 
+	static ac_int<19,false> acc_tmp_len = 400000; // megalytero apo to kanoniko afoy to thelei constant 
+
+    static pixelType acc_tmp[400000]; //must have constant value 
     ac_channel<pixelType> acc;
 		
-public:	
+
+
 
     typedef ac_int<ac::nbits<imageWidth+1>::val, false>  maxW;
     typedef ac_int<ac::nbits<imageHeight+1>::val, false> maxH;
-    Hough_Algorithm() {}
+    
+    Hough_Algorithm_HW() {}
 
 #pragma hls_design interface
     void CCS_BLOCK(run)(ac_channel<pixelType> &data_in,
@@ -92,11 +93,11 @@ private:
                 pixelType din = data_in.read();
                 if ( din > 250 ){ //Mipos xreiazetai na valo .to_uint() ????
                     // printf("in the if: %d\n", ++count); 
-                    HACC: for (pixelType t = 0; t < theta_len_acc; t++){
+                    HACC: for (pixelType t = 0; t < 180; t++){
                         // printf("t = %d\n", t);
                         
-                        ac_math::ac_cos_cordic((ac_fixed<9,9,false>)t * DEG2RAD, cos_out)
-                        ac_math::ac_sin_cordic((ac_fixed<9,9,false>)t * DEG2RAD, sin_out)
+                        ac_math::ac_cos_cordic((ac_fixed<9,9,false>)t * DEG2RAD, cos_out);
+                        ac_math::ac_sin_cordic((ac_fixed<9,9,false>)t * DEG2RAD, sin_out);
                         r = ( (ac_fixed<ac::nbits<imageWidth+1>::val+2, ac::nbits<imageWidth+1>::val,false>)x - center_x) * cos_out;
                         r = r + ((ac_fixed<ac::nbits<imageHeight+1>::val+2, ac::nbits<imageHeight+1>::val,false>)y - center_y) * sin_out;
 
@@ -144,7 +145,7 @@ private:
         // printf("threshold = %d\n", threshold);
 
         R_LINE: for (uint14 r = 0; r < rho_len_acc; r++){   
-            T_LINE: for (pixelType t = 0; t < theta_len_acc; t++){
+            T_LINE: for (pixelType t = 0; t < 180; t++){
                 // if ((int)acc[ (r * theta_len_acc) + t ] >= threshold){
                 acc_in = acc.read();
                 if (acc_in >= threshold){

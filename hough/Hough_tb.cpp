@@ -20,17 +20,21 @@ CCS_MAIN(int argc, char *argv[]){
     const unsigned short iW = 1296;
     const unsigned short iH = 864;
     int bsize = 8;
+	
 
-    Hough_Algorithm inst0;
+	
+    Hough_Algorithm    		  inst0;
+    Hough_Algorithm_HW<iW,iH> inst1;
 
     int width = iW;
     int height = iH;
     unsigned char *rarray = new unsigned char[iW*iH];
     unsigned char *garray = new unsigned char[iW*iH];
     unsigned char *barray = new unsigned char[iW*iH];
-
-    Hough<iW,iH>::maxW widthIn = iW;
-    Hough<iW,iH>::maxH heightIn = iH;
+	
+	Hough_Algorithm_HW<iW,iH>::maxW widthIn = iW;
+    Hough_Algorithm_HW<iW,iH>::maxH heightIn = iH;
+    
 
     cout << "Loading Input File" << endl;
 
@@ -109,7 +113,7 @@ CCS_MAIN(int argc, char *argv[]){
     delete(garray);
     delete(barray);
     cout << "Finished" << endl;
-    return(0);
+    CCS_RETURN(0);
 }
 
 void plotLine(unsigned char *data_in, int x1, int y1, int x2, int y2, int iW){
