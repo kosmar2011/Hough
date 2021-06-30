@@ -6,8 +6,15 @@
 
 using namespace std;
 
+#include <math.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include "assert.h"
+
 #include "HoughAlg.hh"
 #include "bmp_io.hh"
+
+
 
 
 //#include <mc_scverify.h>

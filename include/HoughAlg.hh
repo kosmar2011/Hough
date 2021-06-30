@@ -1,12 +1,6 @@
 #ifndef _INCLUDED_HOUGH_H_
 #define _INCLUDED_HOUGH_H_
 
-#include <math.h>
-#include <stdlib.h>
-#include <stdio.h>
-#include "assert.h"
-
-
 class Hough_Algorithm{
 
     int imageWidth  = 1296;
@@ -17,10 +11,10 @@ class Hough_Algorithm{
     const double rho_len_acc = rho_len * 2.0;
     const double DEG2RAD = 0.017453293;
 
-    public:
+public:
 
     // Constructor
-    Hough_Algorithm() {}
+    Hough_Algorithm() {};
 
     void run(unsigned char *data_in, int &x1, int &y1, int &x2, int &y2){
         unsigned int *acc = (unsigned int*)calloc(rho_len_acc * theta_len_acc, sizeof(unsigned int));

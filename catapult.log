@@ -319,3 +319,38 @@ go compile
 # Input file has changed
 solution file set {$PROJECT_HOME/include/Hough.hh} -updated
 # Info: Branching solution 'solution.v4' at state 'new' (PRJ-2)
+go analyze
+# Info: Starting transformation 'analyze' on solution 'solution.v4' (SOL-8)
+# Front End called with arguments: -- /home/user2/Desktop/Hough/hough/Hough_tb.cpp /home/user2/Desktop/Hough/include/Hough.hh (CIN-69)
+# Edison Design Group C++/C Front End - Version 5.1 (CIN-1)
+# Error: $PROJECT_HOME/hough/Hough_tb.cpp(9): cannot open source file "Hough.hh" (CRD-1696)
+# Error: Compilation aborted (CIN-5)
+# Info: Completed transformation 'new' on solution 'solution.v4': elapsed time 0.01 seconds, memory usage 1446904kB, peak memory usage 1447508kB (SOL-9)
+# Error: go analyze: Failed analyze
+go analyze
+# Info: Starting transformation 'analyze' on solution 'solution.v4' (SOL-8)
+# Front End called with arguments: -- /home/user2/Desktop/Hough/hough/Hough_tb.cpp /home/user2/Desktop/Hough/include/Hough.hh (CIN-69)
+# Edison Design Group C++/C Front End - Version 5.1 (CIN-1)
+# Error: $PROJECT_HOME/hough/Hough_tb.cpp(9): cannot open source file "Hough.hh" (CRD-1696)
+# Error: Compilation aborted (CIN-5)
+# Info: Completed transformation 'new' on solution 'solution.v4': elapsed time 0.02 seconds, memory usage 1446904kB, peak memory usage 1447508kB (SOL-9)
+# Error: go analyze: Failed analyze
+solution file remove {$PROJECT_HOME/hough/Hough_tb.cpp}
+# Info: Branching solution 'solution.v5' at state 'new' (PRJ-2)
+go analyze
+# Info: Starting transformation 'analyze' on solution 'solution.v5' (SOL-8)
+# Front End called with arguments: -- /home/user2/Desktop/Hough/include/Hough.hh (CIN-69)
+# Edison Design Group C++/C Front End - Version 5.1 (CIN-1)
+# Source file analysis completed (CIN-68)
+# Info: Completed transformation 'analyze' on solution 'solution.v5': elapsed time 1.44 seconds, memory usage 1446904kB, peak memory usage 1447508kB (SOL-9)
+go compile
+# Info: Starting transformation 'compile' on solution 'solution.v5' (SOL-8)
+# Generating synthesis internal form... (CIN-3)
+# Error: No design detected (CIN-21)
+# Error: Design hierarchy must be selected interactively or using pragma 'hls_design top' (CIN-21)
+# Error: Compilation aborted (CIN-5)
+# Info: Completed transformation 'analyze' on solution 'solution.v5': elapsed time 0.68 seconds, memory usage 1446904kB, peak memory usage 1447508kB (SOL-9)
+# Error: go compile: Failed compile
+quit
+# Saving project file '/home/user2/Desktop/Hough/Catapult.ccs'. (PRJ-5)
+// Finish time Wed Jun 30 10:55:34 2021, time elapsed 1:14:35, peak memory 1.38GB, exit status 0
