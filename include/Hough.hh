@@ -22,15 +22,13 @@ class Hough_Algorithm_HW{
 public:	
 
     // static pixelType theta_len_acc = 180;    
-    static ac_fixed<8, 1, false> sqrt_two = 1.41421356;
+    // static  sqrt_two = ;
     
     
-    static ac_fixed<8,1,false> DEG2RAD = 0.017453293;
+    //static 
     
     // uint19 acc_tmp_len = rho_len_acc.to_uint() * theta_len_acc + 1; 
-	static ac_int<19,false> acc_tmp_len = 400000; // megalytero apo to kanoniko afoy to thelei constant 
-
-    static pixelType acc_tmp[400000]; //must have constant value 
+	
     ac_channel<pixelType> acc;
 		
 
@@ -73,17 +71,22 @@ private:
         ac_fixed<ac::nbits<imageWidth+1>::val+4, ac::nbits<imageWidth+1>::val,false> center_x = widthIn  / 2;
 		ac_fixed<ac::nbits<imageHeight+1>::val+4, ac::nbits<imageHeight+1>::val,false> center_y = heightIn / 2;
         ac_fixed<17, 11, true> r = 0;
+        
+        static ac_int<19,false> acc_tmp_len = 400000; // megalytero apo to kanoniko afoy to thelei constant 
+
+		static pixelType acc_tmp[400000]; //must have constant value 
 
         angType cos_out;
         angType sin_out;
         // printf("transform_0\n");
         // int count = 0;
         
-        static ac_fixed<12, 10, false> rho_len = ( (sqrt_two * (ac_fixed<1,1,false>)(imageHeight > imageWidth ? imageHeight : imageWidth)) / 2); //thelei prosoxi i diairesi kai o poll/smos
+        static ac_fixed<12, 10, false> rho_len = ( ((ac_fixed<8, 1, false>)(1.41421356) * (ac_fixed<1,1,false>)(imageHeight > imageWidth ? imageHeight : imageWidth)) / 2); //thelei prosoxi i diairesi kai o poll/smos
         for (uint19 i = 0; i < acc_tmp_len; i++){
             acc_tmp[i] = 0;
         }
 
+		ac_fixed<8,1,false> DEG2RAD = 0.017453293;
         HROW: for (maxH y = 0; ; y++){
             // printf("y = %d\n", y);
             HCOL: for (maxW x = 0; ; x++){
@@ -144,6 +147,7 @@ private:
         angType cos_t;
         angType sin_t;
         // printf("threshold = %d\n", threshold);
+        ac_fixed<8,1,false> DEG2RAD = 0.017453293;
 
         static ac_fixed<19, 14, false> rho_len_acc = rho_len * (ac_fixed<2,2,false>)(2);
 
