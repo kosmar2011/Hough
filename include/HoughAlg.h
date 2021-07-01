@@ -1,9 +1,9 @@
 #ifndef _INCLUDED_HOUGH_H_
 #define _INCLUDED_HOUGH_H_
 
-class Hough_Algorithm{
+class Hough_Algorithm_Alg{
 
-    int imageWidth  = 1296;
+    const int imageWidth  = 1296;
     int imageHeight =  864;
     int theta_len_acc = 180;
     const double rho_len = ( (sqrt(2.0) * (double)(imageHeight > imageWidth ? imageHeight : imageWidth)) / 2.0);
@@ -14,7 +14,7 @@ class Hough_Algorithm{
 public:
 
     // Constructor
-    Hough_Algorithm() {};
+    Hough_Algorithm_Alg() {};
 
     void run(unsigned char *data_in, int &x1, int &y1, int &x2, int &y2){
         unsigned int *acc = (unsigned int*)calloc(rho_len_acc * theta_len_acc, sizeof(unsigned int));

@@ -1,0 +1,39 @@
+
+# Messages from "go new"
+
+
+# Messages from "go analyze"
+
+# Info: Completed transformation 'analyze' on solution 'solution.v2': elapsed time 1.12 seconds, memory usage 1381368kB, peak memory usage 1381972kB (SOL-9)
+Edison Design Group C++/C Front End - Version 5.1 (CIN-1)
+Front End called with arguments: -- /home/user2/Desktop/Hough/include/Hough.hh (CIN-69)
+# Info: Starting transformation 'analyze' on solution 'solution.v2' (SOL-8)
+go analyze
+Source file analysis completed (CIN-68)
+# Info: Branching solution 'solution.v2' at state 'new' (PRJ-2)
+# Info: Completed transformation 'analyze' on solution 'solution.v1': elapsed time 1.15 seconds, memory usage 1381828kB, peak memory usage 1381828kB (SOL-9)
+solution file add ./include/Hough.hh
+go analyze
+/INPUTFILES/1
+Source file analysis completed (CIN-68)
+Edison Design Group C++/C Front End - Version 5.1 (CIN-1)
+Front End called with arguments: -- /home/user2/Desktop/Hough/include/Hough.hh (CIN-69)
+# Info: Starting transformation 'analyze' on solution 'solution.v1' (SOL-8)
+Moving session transcript to file "/home/user2/Desktop/Hough/catapult.log"
+
+# Messages from "go compile"
+
+# Error: Compilation aborted (CIN-5)
+Generating synthesis internal form... (CIN-3)
+# Info: Starting transformation 'compile' on solution 'solution.v2' (SOL-8)
+# Error: Design hierarchy must be selected interactively or using pragma 'hls_design top' (CIN-21)
+# Error: No design detected (CIN-21)
+# Error: No design detected (CIN-21)
+# Error: go compile: Failed compile
+Generating synthesis internal form... (CIN-3)
+# Info: Completed transformation 'analyze' on solution 'solution.v2': elapsed time 0.59 seconds, memory usage 1381368kB, peak memory usage 1381972kB (SOL-9)
+# Error: Compilation aborted (CIN-5)
+# Error: Design hierarchy must be selected interactively or using pragma 'hls_design top' (CIN-21)
+go compile
+go compile
+# Info: Starting transformation 'compile' on solution 'solution.v2' (SOL-8)

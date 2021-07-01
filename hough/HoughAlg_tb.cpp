@@ -11,8 +11,8 @@ using namespace std;
 #include <stdio.h>
 #include "assert.h"
 
-#include "HoughAlg.hh"
-#include "bmp_io.hh"
+#include "HoughAlg.h"
+#include "bmp_io.hpp"
 
 
 

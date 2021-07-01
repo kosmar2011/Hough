@@ -11,9 +11,9 @@ using namespace std;
 #include <stdio.h>
 #include "assert.h"
 
-#include "Hough.hh"
-#include "HoughAlg.hh"
-#include "bmp_io.hh"
+#include "HoughHW.h"
+//#include "HoughAlg.h"
+#include "bmp_io.hpp"
 
 #include <mc_scverify.h>
 
@@ -24,10 +24,10 @@ void plotLine(unsigned char* data_in, int x1, int y1, int x2, int y2, int width)
 CCS_MAIN(int argc, char *argv[]){
     const int iW = 1296;
     const int iH = 864;
-    int bsize = 8;
-    Hough_Algorithm 		  inst0;
+    //Hough_Algorithm_Alg       inst0;
     Hough_Algorithm_HW<iW,iH> inst1;
 
+	int bsize = 8;
     int width = iW;
     int height = iH;
     unsigned char *rarray = new unsigned char[iW*iH];
@@ -53,7 +53,8 @@ CCS_MAIN(int argc, char *argv[]){
     assert(height==iH);
 
     unsigned char* dat_in_orig = new unsigned char[iH*iW];
-    unsigned char* line        = new unsigned char[iH*iW];
+    //unsigned char* line1        = new unsigned char[iH*iW];
+    unsigned char* line2        = new unsigned char[iH*iW];
 
     ac_channel<uint8> dat_in;
     ac_channel<Hough_Algorithm_HW<iW,iH>::maxW> x1_hw, x2_hw;
@@ -67,36 +68,36 @@ CCS_MAIN(int argc, char *argv[]){
         for (int x = 0; x < iW; x++){
           dat_in.write(rarray[cnt]);
           dat_in_orig[cnt] = rarray[cnt]; // just using red component (pseudo monochrome)
-          line[cnt] = 0;
+          //line1[cnt] = 0;
+          line2[cnt] = 0;
           cnt++;
         }
     }
 
-    cout << "Running\n";
-    inst0.run(dat_in_orig, x1_alg, y1_alg, x2_alg, y2_alg);
+    cout << "Running" << endl;
+    //inst0.run(dat_in_orig, x1_alg, y1_alg, x2_alg, y2_alg);
     inst1.run(dat_in, widthIn, heightIn, x1_hw, y1_hw, x2_hw, y2_hw);
     
 
-    x1 = (int)(x1_hw.read());
-    y1 = (int)(y1_hw.read());
-    x2 = (int)(x2_hw.read());
-    y2 = (int)(y2_hw.read());
+    x1 = x1_hw.read();
+    y1 = y1_hw.read();
+    x2 = x2_hw.read();
+    y2 = y2_hw.read();
 
     cout << "Drawing Line\n";
-    // plotLine(line, x1_alg, y1_alg, x2_alg, y2_alg, iW); //normal algorithm
-    plotLine(line, x1, y1, x2, y2, iW);                 //hardware
+    // plotLine(line1, x1_alg, y1_alg, x2_alg, y2_alg, iW); //normal algorithm
+    plotLine(line2, x1, y1, x2, y2, iW);                 //hardware
     
-    cout << "Calculating difference between output points: \n" << endl << endl;
-    printf("ALG POINTS: x1_alg = %d, y1_alg = %d, x2_alg = %d, y2_alg = %d\n", x1_alg, y1_alg, x2_alg, y2_alg);
-    printf("HW  POINTS: x1_hw  = %d, y1_hw  = %d, x2_hw  = %d, y2_hw  = %d\n", x1, y1, x2, y2);
-
-    cout << " Calculating RGB bitmap\n";
+    cout << "Calculating difference between output points: \n" << endl;
+    //printf("ALG POINTS: x1_alg = %d, y1_alg = %d, x2_alg = %d, y2_alg = %d\n", x1_alg, y1_alg, x2_alg, y2_alg);
+	cout << "HW  POINTS: x1_hw  = " << x1 << ", y1_hw = " << y1 << ", x2_hw = " << x2 << ", y2_hw = " << y2 << endl;
+    cout << "Calculating RGB bitmap\n";
     cnt = 0;
     for (int y = 0; y < iH; y++){
         for (int x = 0; x < iW; x++){
             int alg = (int)*(dat_in_orig+cnt);
 
-            int ln  = (int)*(line+cnt);
+            int ln  = (int)*(line2+cnt);
             cnt++;
             rarray[cnt] = (ln==0) ? alg :  0;
             garray[cnt] = (ln==0) ? alg : ln;
@@ -116,6 +117,8 @@ CCS_MAIN(int argc, char *argv[]){
     cout << "Finished" << endl;
     CCS_RETURN(0);
 }
+
+
 
 void plotLine(unsigned char *data_in, int x1, int y1, int x2, int y2, int iW){
     // auto tmp = data_in;
