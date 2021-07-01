@@ -2,7 +2,7 @@
 #define _INCLUDED_HOUGH_H_HW
 
 
-
+#include <cmath>
 #include <ac_fixed.h>
 #include <ac_channel.h>
 #include <ac_math/ac_sincos_cordic.h>
@@ -102,7 +102,7 @@ private:
                         // printf("r + rho_len = %f\n", r + rho_len);
                         // printf("index = %d\n", (int)((round(r + rho_len) * 180.0)) + t);
                         //cout << (unsigned int)((int)((round((r + rho_len).to_double()) * 180.0)) + t) << endl;
-                        acc_tmp[(int)(((round((r + rho_len).to_double())) * 180.0)) + t]++;
+                        acc_tmp[(int)(((r + rho_len).to_double()) * 180.0) + t]++;
                         // printf("%d\n", ++count);
                     }
                 }

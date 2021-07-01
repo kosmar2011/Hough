@@ -11,9 +11,9 @@ using namespace std;
 #include <stdio.h>
 #include "assert.h"
 
-#include "HoughHW.h"
+#include "../include/HoughHW.h"
 //#include "HoughAlg.h"
-#include "bmp_io.hpp"
+#include "../include/bmp_io.hpp"
 
 #include <mc_scverify.h>
 
