@@ -6,6 +6,7 @@
 #include <ac_fixed.h>
 #include <ac_channel.h>
 #include <ac_math/ac_sincos_cordic.h>
+#include <ac_math/ac_div.h>
 
 
 #include <mc_scverify.h>
@@ -75,8 +76,8 @@ private:
         maxW_f rho_len = ( ((1.41421356) * (imageHeight > imageWidth ? imageHeight : imageWidth)) / 2); //thelei prosoxi i diairesi kai o poll/smos
         maxW_f_x2 rho_len_acc = rho_len * 2;
 		
-		int acc_tmp_len = 329908; 
-		pixelType2x acc_tmp[acc_tmp_len]; //must have constant value 
+		int acc_tmp_len = 400000; 
+		pixelType2x acc_tmp[400000]; //must have constant value 
 		
 		for (int i = 0; i < acc_tmp_len; i++){
             acc_tmp[i] = 0;
@@ -111,7 +112,9 @@ private:
                         ind = round(ind);
                         ind = (int)((ind) * 180.0);
                         acc_tmp[(ind) + t]++;*/
-                        int idx = (int)((round((r + rho_len).to_double()) * 180.0)) + t;
+                        //int idx = (int)((int)((r + rho_len).to_double()) * 180.0)) + t;
+                        int idx = (int)(((int)((r + rho_len).to_double()) * 180.0)) + t;
+
                         acc_tmp[idx]++;
                         //printf("count is = d\n", count);
                         //count+=1;
@@ -183,20 +186,39 @@ private:
                     
                     if ( t>= 45 && t<=135){
                         // y = (r - x cos(t)) / sin(t)
-                        x1_t = 0;
-                        y1_t = (r-(rho_len_acc/2) - ((x1_t - (imageWidth/2) ) * cos_t)) / sin_t + (imageHeight / 2);
-                        cout << "x1_t = " << x1_t << ", y1_t = " << y1_t << endl;
+                        ac_fixed<20,15,true> dividend1 = (r-(rho_len_acc/2) - ((x1_t - (imageWidth/2) ) * cos_t));
+                        ac_fixed<20,15,true> result1;
+                        ac_math::ac_div(dividend1, sin_t, result1);
 
+                        x1_t = 0;
+                        y1_t =  result1  + (imageHeight / 2);
+                        cout << "x1_t = " << x1_t << ", y1_t = " << y1_t << endl;
+                        
+                        
+						ac_fixed<20,15,true> dividend2 = (r-(rho_len_acc/2) - ((x2_t - (imageWidth/2) ) * cos_t));
+                        ac_fixed<20,15,true> result2;
+                        ac_math::ac_div(dividend2, sin_t, result2);
+                        
+                        
                         x2_t = imageWidth - 0;
-                        y2_t = (r-(rho_len_acc/2) - ((x2_t - (imageWidth/2) ) * cos_t)) / sin_t + (imageHeight / 2);
+                        y2_t = result2 + (imageHeight / 2);
                     } else {
                         // x = (r - y sin(t)) / cos(t);
+                        ac_fixed<20,15,true> dividend1 = (r-(rho_len_acc/2) - ((y1_t - (imageHeight/2) ) * sin_t));
+                        ac_fixed<20,15,true> result1;                        
+                        ac_math::ac_div(dividend1, cos_t, result1);
+
                         y1_t = 0;
-                        x1_t = (r-(rho_len_acc/2) - ((y1_t - (imageHeight/2) ) * sin_t)) / cos_t + (imageWidth / 2);
+                        x1_t =  result1  + (imageWidth / 2);
 						cout << "x1_t = " << x1_t << ", y1_t = " << y1_t << endl;
 
+
+                        ac_fixed<20,15,true> dividend2 = (r-(rho_len_acc/2) - ((y2_t - (imageHeight/2) ) * sin_t));
+                        ac_fixed<20,15,true> result2;                        
+                        ac_math::ac_div(dividend2, cos_t, result2);
+                        
 						y2_t = imageHeight - 0;
-						x2_t = (r-(rho_len_acc/2) - ((y2_t - (imageHeight/2) ) * sin_t)) / cos_t + (imageWidth / 2);
+						x2_t = result2 + (imageWidth / 2);
                     }
                 }
                 // printf("x1_t = %d, y1_t = %d, x2_t = %d, y2_t = %d\n", x1_t, y1_t, x2_t, y2_t);

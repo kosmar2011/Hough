@@ -1,0 +1,21 @@
+
+# Messages from "go new"
+
+
+# Messages from "go analyze"
+
+# Info: Completed transformation 'analyze' on solution 'solution.v1': elapsed time 2.70 seconds, memory usage 1578340kB, peak memory usage 1578340kB (SOL-9)
+solution design set {Hough_Algorithm_HW<1296, 864>::houghTransform} -block (HC-8)
+# Warning:             instantiation of "void Hough_Algorithm_HW<imageWidth, imageHeight>::run(ac_channel<ac_intN::uint8> &, Hough_Algorithm_HW<imageWidth, imageHeight>::maxW &, Hough_Algorithm_HW<imageWidth, imageHeight>::maxH &, ac_channel<Hough_Algorithm_HW<imageWidth, imageHeight>::maxW> &, ac_channel<Hough_Algorithm_HW<imageWidth, imageHeight>::maxH> &, ac_channel<Hough_Algorithm_HW<imageWidth, imageHeight>::maxW> &, ac_channel<Hough_Algorithm_HW<imageWidth, imageHeight>::maxH> &) [with imageWidth=1296, imageHeight=864]" at line 79 of "/home/user2/Desktop/Hough/hough/Hough_tb.cpp" (CRD-1290)
+Front End called with arguments: -- /home/user2/Desktop/Hough/hough/Hough_tb.cpp (CIN-69)
+# Warning: a class type that is not trivially copyable passed through ellipsis (CRD-1290)
+Edison Design Group C++/C Front End - Version 5.1 (CIN-1)
+# Info: Starting transformation 'analyze' on solution 'solution.v1' (SOL-8)
+Moving session transcript to file "/home/user2/Desktop/Hough/catapult.log"
+solution file add ./hough/Hough_tb.cpp
+go compile
+Source file analysis completed (CIN-68)
+/INPUTFILES/1
+solution design set {Hough_Algorithm_HW<1296, 864>::getMaxLine} -block (HC-8)
+# Warning:             instantiation of "void Hough_Algorithm_HW<imageWidth, imageHeight>::houghTransform(ac_channel<ac_intN::uint8> &, Hough_Algorithm_HW<imageWidth, imageHeight>::maxW &, Hough_Algorithm_HW<imageWidth, imageHeight>::maxH &, ac_channel<ac_intN::uint16> &) [with imageWidth=1296, imageHeight=864]" at line 46 (CRD-1290)
+# Warning:           detected during: (CRD-1290)
