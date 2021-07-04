@@ -24,7 +24,7 @@ int main(int argc, char *argv[]){
     const unsigned short iH = 864;
     int bsize = 8;
 
-    Hough_Algorithm inst0;
+    Hough_Algorithm_Alg inst0;
 
     int width = iW;
     int height = iH;
