@@ -27,8 +27,8 @@ public:
     typedef ac_int<ac::nbits<imageHeight+1>::val, false> maxH;
     typedef ac_fixed<ac::nbits<imageWidth+1>::val, ac::nbits<imageWidth+1>::val>  			maxW_f;  //evgala ta false 
     typedef ac_fixed<ac::nbits<imageHeight+1>::val, ac::nbits<imageHeight+1>::val>  			maxH_f;
-    typedef ac_fixed<ac::nbits<imageWidth+1>::val + 8, ac::nbits<imageWidth+1>::val + 1>  	maxW_f_x2;
-	typedef ac_fixed<ac::nbits<imageHeight+1>::val + 8, ac::nbits<imageHeight+1>::val + 1>  	maxH_f_x2;
+    typedef ac_fixed<ac::nbits<imageWidth+1>::val + 48, ac::nbits<imageWidth+1>::val + 20>  	maxW_f_x2;
+	typedef ac_fixed<ac::nbits<imageHeight+1>::val + 48, ac::nbits<imageHeight+1>::val + 20>  	maxH_f_x2;
 	
     Hough_Algorithm_HW() {};
 
@@ -61,8 +61,8 @@ private:
                         ac_channel<pixelType2x> &acc){
         
 
-        maxW_f center_x = widthIn  / 2;
-		maxH_f center_y = heightIn / 2;
+        maxW_f_x2 center_x = widthIn  / 2;
+		maxW_f_x2 center_y = heightIn / 2;
         ac_fixed<35, 25, true> r = 0;
         
 
@@ -99,7 +99,7 @@ private:
                         ac_math::ac_cos_cordic((ac_fixed<27,9>)t* DEG2RAD, cos_out);
                         ac_math::ac_sin_cordic((ac_fixed<27,9>)t* DEG2RAD, sin_out);
                         //cout << "in = " << in << endl;
-                        r = ( x - center_x) * cos_out + (y - center_y) * sin_out;
+                        r = ( (maxW_f_x2)x - center_x) * cos_out + ((maxH_f_x2)y - center_y) * sin_out;
                         //if(t==150) 
 						//	break;
 						//cout << "r = " << r << endl;
@@ -111,8 +111,8 @@ private:
                         ind = round(ind);
                         ind = (int)((ind) * 180.0);
                         acc_tmp[(ind) + t]++;*/
-                        
-                        acc_tmp[((r + rho_len) * 180).to_uint() + t]++;
+                        int idx = (int)((round((r + rho_len).to_double()) * 180.0)) + t;
+                        acc_tmp[idx]++;
                         //printf("count is = d\n", count);
                         //count+=1;
                     }
@@ -124,7 +124,7 @@ private:
                 break;
         }
 
-        for (uint19 i = 0; i < acc_tmp_len; i++){
+        for (int i = 0; i < acc_tmp_len; i++){
             acc.write(acc_tmp[i]);
         }
    
@@ -152,7 +152,7 @@ private:
 
 		//cout << "rho_len = " << rho_len << endl;
 
-        maxW_f_x2 rho_len_acc = rho_len * 2;
+        maxW_f_x2 rho_len_acc = rho_len * (ac_fixed<2,2,false>)2;
 		//cout << "rho_len_acc = " << rho_len_acc << endl;
         R_LINE: for (int r = 0; r < rho_len_acc; r++){   
             T_LINE: for (int t = 0; t < 180; t++){
@@ -160,6 +160,7 @@ private:
                 pixelType2x acc_in = acc.read();
                 cout << "acc_in = " << acc_in << endl;
                 if (acc_in >= threshold){
+					threshold = acc_in;
                     //ac_fixed<15,9,true> in = (ac_fixed<9,9,false>)t; //* DEG2RAD;
                     //ac_fixed<16,9,true> in = (ac_fixed<9,9>)t * DEG2RAD;
 
@@ -183,18 +184,19 @@ private:
                     if ( t>= 45 && t<=135){
                         // y = (r - x cos(t)) / sin(t)
                         x1_t = 0;
-                        y1_t = ((r-rho_len) - ((x1_t - (widthIn/2) ) * cos_t)) / sin_t + (heightIn / 2);
+                        y1_t = (r-(rho_len_acc/2) - ((x1_t - (imageWidth/2) ) * cos_t)) / sin_t + (imageHeight / 2);
                         cout << "x1_t = " << x1_t << ", y1_t = " << y1_t << endl;
-                        x2_t = widthIn - 0;
-                        y2_t = ((r-rho_len) - ((x2_t - (widthIn/2) ) * cos_t)) / sin_t + (heightIn / 2);
+
+                        x2_t = imageWidth - 0;
+                        y2_t = (r-(rho_len_acc/2) - ((x2_t - (imageWidth/2) ) * cos_t)) / sin_t + (imageHeight / 2);
                     } else {
                         // x = (r - y sin(t)) / cos(t);
                         y1_t = 0;
-                        x1_t = ((r-rho_len) - ((y1_t - (heightIn/2) ) * sin_t)) / cos_t + (widthIn / 2);
+                        x1_t = (r-(rho_len_acc/2) - ((y1_t - (imageHeight/2) ) * sin_t)) / cos_t + (imageWidth / 2);
 						cout << "x1_t = " << x1_t << ", y1_t = " << y1_t << endl;
 
-						y2_t = heightIn - 0;
-						x2_t = ((r-rho_len) - ((y2_t - (heightIn/2) ) * sin_t)) / cos_t + (widthIn / 2);
+						y2_t = imageHeight - 0;
+						x2_t = (r-(rho_len_acc/2) - ((y2_t - (imageHeight/2) ) * sin_t)) / cos_t + (imageWidth / 2);
                     }
                 }
                 // printf("x1_t = %d, y1_t = %d, x2_t = %d, y2_t = %d\n", x1_t, y1_t, x2_t, y2_t);
