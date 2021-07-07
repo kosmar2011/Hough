@@ -14,110 +14,14 @@
 //                       CDS_OASYS v19.1_3.7, CDS_PSR v19.2_0.9, 
 //                       DesignPad v2.78_1.0
 //  
-//  Start time Wed Jul  7 19:06:35 2021
+//  Start time Wed Jul  7 21:11:24 2021
 # -------------------------------------------------
-# Logging session transcript to file "/tmp/log14939ac2b917b.0"
+# Logging session transcript to file "/tmp/log32478a02bd5fe.0"
 # Loading options from '$HOME/.catapult/10.5a-871028.aol.reg'.
 project load /home/user2/Desktop/Hough/Catapult.ccs
 # Moving session transcript to file "/home/user2/Desktop/Hough/catapult.log"
-go extract
-# Info: Starting transformation 'extract' on solution 'Hough_Algorithm_HW<1296,864>.v9' (SOL-8)
-# Report written to file 'rtl.rpt'
-# ROM component 'mgc_rom(23,70,32,1,60)' initialization mode: inline. (MEM-76)
-# ROM component 'mgc_rom(22,70,32,1,60)' initialization mode: inline. (MEM-76)
-# Netlist written to file 'rtl.vhdl' (NET-4)
-# generate concat
-# order file name is: rtl.vhdl_order.txt
-# Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/siflibs/ccs_in_wait_v1.vhd
-# Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/siflibs/ccs_out_wait_v1.vhd
-# Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/siflibs/mgc_io_sync_v2.vhd
-# Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/hls_pkgs/src/funcs.vhd
-# Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/siflibs/mgc_shift_comps_v5.vhd
-# Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/siflibs/mgc_shift_r_beh_v5.vhd
-# Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/siflibs/ccs_in_v1.vhd
-# Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/siflibs/ram_sync_dualRW_be_generic.vhd
-# Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/siflibs/ccs_genreg_v1.vhd
-# Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/siflibs/ccs_fifo_wait_core_v5.vhd
-# Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/siflibs/ccs_pipe_v5.vhd
-# Add dependent file: ./rtl_hough_algorithm_hw_1296_864mgc_rom_23_70_32_1_60.vhdl
-# Add dependent file: ./rtl_hough_algorithm_hw_1296_864mgc_rom_22_70_32_1_60.vhdl
-# Add dependent file: ./rtl.vhdl
-# Finished writing concatenated file: /home/user2/Desktop/Hough/Catapult/Hough_Algorithm_HWless_1296comma_864greater_.v9/concat_rtl.vhdl
-# order file name is: rtl.vhdl_order_sim.txt
-# Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/siflibs/ccs_in_wait_v1.vhd
-# Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/siflibs/ccs_out_wait_v1.vhd
-# Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/siflibs/mgc_io_sync_v2.vhd
-# Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/hls_pkgs/src/funcs.vhd
-# Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/siflibs/mgc_shift_comps_v5.vhd
-# Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/siflibs/mgc_shift_r_beh_v5.vhd
-# Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/siflibs/ccs_in_v1.vhd
-# Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/siflibs/ram_sync_dualRW_be_generic.vhd
-# Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/siflibs/ccs_genreg_v1.vhd
-# Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/siflibs/ccs_fifo_wait_core_v5.vhd
-# Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/siflibs/ccs_pipe_v5.vhd
-# Add dependent file: ./rtl_hough_algorithm_hw_1296_864mgc_rom_23_70_32_1_60.vhdl
-# Add dependent file: ./rtl_hough_algorithm_hw_1296_864mgc_rom_22_70_32_1_60.vhdl
-# Add dependent file: ./rtl.vhdl
-# Finished writing concatenated simulation file: /home/user2/Desktop/Hough/Catapult/Hough_Algorithm_HWless_1296comma_864greater_.v9/concat_sim_rtl.vhdl
-# Makefile for RTL VHDL output 'rtl.vhdl' vs Untimed C++ written to file './scverify/Verify_rtl_vhdl_msim.mk'
-# Warning: RAM module 'ram_sync_dualRW_be' is a Catapult sample RAM and is assumed to be a black-box
-# Info: Found the following black-box RAM modules: ram_sync_dualRW_be
-# Warning: RAM module 'ram_sync_dualRW_be' is a Catapult sample RAM and is assumed to be a black-box
-# Info: Found the following black-box RAM modules: ram_sync_dualRW_be
-# Makefile for Concat RTL VHDL output 'concat_sim_rtl.vhdl' vs Untimed C++ written to file './scverify/Verify_concat_sim_rtl_vhdl_msim.mk'
-# ROM component 'mgc_rom(23,70,32,1,60)' initialization mode: inline. (MEM-76)
-# ROM component 'mgc_rom(22,70,32,1,60)' initialization mode: inline. (MEM-76)
-# Netlist written to file 'rtl.v' (NET-4)
-# generate concat
-# order file name is: rtl.v_order.txt
-# Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/siflibs/ccs_in_wait_v1.v
-# Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/siflibs/ccs_out_wait_v1.v
-# Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/siflibs/mgc_io_sync_v2.v
-# Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/siflibs/mgc_shift_r_beh_v5.v
-# Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/siflibs/ccs_in_v1.v
-# Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/siflibs/ram_sync_dualRW_be_generic.v
-# Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/siflibs/ccs_genreg_v1.v
-# Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/siflibs/ccs_fifo_wait_core_v5.v
-# Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/siflibs/ccs_pipe_v5.v
-# Add dependent file: ./rtl_Hough_Algorithm_HW_1296_864mgc_rom_23_70_32_1_60.v
-# Add dependent file: ./rtl_Hough_Algorithm_HW_1296_864mgc_rom_22_70_32_1_60.v
-# Add dependent file: ./rtl.v
-# Finished writing concatenated file: /home/user2/Desktop/Hough/Catapult/Hough_Algorithm_HWless_1296comma_864greater_.v9/concat_rtl.v
-# order file name is: rtl.v_order_sim.txt
-# Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/siflibs/ccs_in_wait_v1.v
-# Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/siflibs/ccs_out_wait_v1.v
-# Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/siflibs/mgc_io_sync_v2.v
-# Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/siflibs/mgc_shift_r_beh_v5.v
-# Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/siflibs/ccs_in_v1.v
-# Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/siflibs/ram_sync_dualRW_be_generic.v
-# Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/siflibs/ccs_genreg_v1.v
-# Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/siflibs/ccs_fifo_wait_core_v5.v
-# Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/siflibs/ccs_pipe_v5.v
-# Add dependent file: ./rtl_Hough_Algorithm_HW_1296_864mgc_rom_23_70_32_1_60.v
-# Add dependent file: ./rtl_Hough_Algorithm_HW_1296_864mgc_rom_22_70_32_1_60.v
-# Add dependent file: ./rtl.v
-# Finished writing concatenated simulation file: /home/user2/Desktop/Hough/Catapult/Hough_Algorithm_HWless_1296comma_864greater_.v9/concat_sim_rtl.v
-# Makefile for RTL Verilog output 'rtl.v' vs Untimed C++ written to file './scverify/Verify_rtl_v_msim.mk'
-# Warning: RAM module 'ram_sync_dualRW_be' is a Catapult sample RAM and is assumed to be a black-box
-# Info: Found the following black-box RAM modules: ram_sync_dualRW_be
-# Warning: RAM module 'ram_sync_dualRW_be' is a Catapult sample RAM and is assumed to be a black-box
-# Info: Found the following black-box RAM modules: ram_sync_dualRW_be
-# Makefile for Concat RTL Verilog output 'concat_sim_rtl.v' vs Untimed C++ written to file './scverify/Verify_concat_sim_rtl_v_msim.mk'
-# Warning: Extrapolation detected. Script '/home/user2/Desktop/Hough/Catapult/Hough_Algorithm_HWless_1296comma_864greater_.v9/adjust_char_library.tcl' generated. (LIB-142)
-# Info: Completed transformation 'extract' on solution 'Hough_Algorithm_HW<1296,864>.v9': elapsed time 19.95 seconds, memory usage 1795140kB, peak memory usage 1795140kB (SOL-9)
-# Info: Design complexity at end of 'extract': Total ops = 3893, Real ops = 1699, Vars = 895 (SOL-21)
-# Warning: Library component 'mgc_rom', parameter 'mux_delay_scaling_factor' is marked USER_SELECTABLE but has a value range (999) > max value (128). (LIB-207)
-# Warning: Library component 'mgc_rom_sync_regin', parameter 'mux_delay_scaling_factor' is marked USER_SELECTABLE but has a value range (999) > max value (128). (LIB-207)
-# Warning: Library component 'mgc_rom_sync_regout', parameter 'mux_delay_scaling_factor' is marked USER_SELECTABLE but has a value range (999) > max value (128). (LIB-207)
-# Warning: Library component 'mgc_rom', parameter 'mux_delay_scaling_factor' is marked USER_SELECTABLE but has a value range (999) > max value (128). (LIB-207)
-# Warning: Library component 'mgc_rom_sync_regin', parameter 'mux_delay_scaling_factor' is marked USER_SELECTABLE but has a value range (999) > max value (128). (LIB-207)
-# Warning: Library component 'mgc_rom_sync_regout', parameter 'mux_delay_scaling_factor' is marked USER_SELECTABLE but has a value range (999) > max value (128). (LIB-207)
-# Warning: Library component 'mgc_rom', parameter 'mux_delay_scaling_factor' is marked USER_SELECTABLE but has a value range (999) > max value (128). (LIB-207)
-# Warning: Library component 'mgc_rom_sync_regin', parameter 'mux_delay_scaling_factor' is marked USER_SELECTABLE but has a value range (999) > max value (128). (LIB-207)
-# Warning: Library component 'mgc_rom_sync_regout', parameter 'mux_delay_scaling_factor' is marked USER_SELECTABLE but has a value range (999) > max value (128). (LIB-207)
-# Warning: Library component 'mgc_rom', parameter 'mux_delay_scaling_factor' is marked USER_SELECTABLE but has a value range (999) > max value (128). (LIB-207)
-# Warning: Library component 'mgc_rom_sync_regin', parameter 'mux_delay_scaling_factor' is marked USER_SELECTABLE but has a value range (999) > max value (128). (LIB-207)
-# Warning: Library component 'mgc_rom_sync_regout', parameter 'mux_delay_scaling_factor' is marked USER_SELECTABLE but has a value range (999) > max value (128). (LIB-207)
+solution remove -solution Hough_Algorithm_HW<1296,864>.v27
+# Hough_Algorithm_HW<1296,864>.v27
 quit
 # Saving project file '/home/user2/Desktop/Hough/Catapult.ccs'. (PRJ-5)
-// Finish time Wed Jul  7 19:08:25 2021, time elapsed 1:50, peak memory 1.77GB, exit status 0
+// Finish time Wed Jul  7 23:43:19 2021, time elapsed 2:31:55, peak memory 1.75GB, exit status 0

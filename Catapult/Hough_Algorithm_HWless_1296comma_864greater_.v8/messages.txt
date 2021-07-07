@@ -1,0 +1,43 @@
+
+# Messages from "go new"
+
+
+# Messages from "go analyze"
+
+# Info: Completed transformation 'analyze' on solution 'Hough_Algorithm_HW<1296,864>.v8': elapsed time 2.76 seconds, memory usage 2167484kB, peak memory usage 2167484kB (SOL-9)
+# Warning:             instantiation of "void Hough_Algorithm_HW<imageWidth, imageHeight>::run(ac_channel<ac_intN::uint8> &, Hough_Algorithm_HW<imageWidth, imageHeight>::maxW &, Hough_Algorithm_HW<imageWidth, imageHeight>::maxH &, ac_channel<Hough_Algorithm_HW<imageWidth, imageHeight>::maxW> &, ac_channel<Hough_Algorithm_HW<imageWidth, imageHeight>::maxH> &, ac_channel<Hough_Algorithm_HW<imageWidth, imageHeight>::maxW> &, ac_channel<Hough_Algorithm_HW<imageWidth, imageHeight>::maxH> &) [with imageWidth=1296, imageHeight=864]" at line 79 of "/home/user2/Desktop/Hough/hough/Hough_tb.cpp" (CRD-1290)
+go libraries
+# Warning:             instantiation of "void Hough_Algorithm_HW<imageWidth, imageHeight>::houghTransform(ac_channel<ac_intN::uint8> &, Hough_Algorithm_HW<imageWidth, imageHeight>::maxW &, Hough_Algorithm_HW<imageWidth, imageHeight>::maxH &, ac_channel<ac_intN::uint16> &) [with imageWidth=1296, imageHeight=864]" at line 48 (CRD-1290)
+Source file analysis completed (CIN-68)
+Edison Design Group C++/C Front End - Version 5.1 (CIN-1)
+Hough_Algorithm_HW<1296,864>.v8
+Front End called with arguments: -- /home/user2/Desktop/Hough/hough/Hough_tb.cpp (CIN-69)
+# Info: Branching solution 'Hough_Algorithm_HW<1296,864>.v8' at state 'new' (PRJ-2)
+# Warning:           detected during: (CRD-1290)
+# Warning: a class type that is not trivially copyable passed through ellipsis (CRD-1290)
+# Info: Starting transformation 'analyze' on solution 'Hough_Algorithm_HW<1296,864>.v8' (SOL-8)
+
+# Messages from "go compile"
+
+Generating synthesis internal form... (CIN-3)
+# Info: Starting transformation 'compile' on solution 'Hough_Algorithm_HW<1296,864>.v8' (SOL-8)
+# Error: Compilation aborted (CIN-5)
+# Error: Design hierarchy must be selected interactively or using pragma 'hls_design top' (CIN-21)
+# Error: No design detected (CIN-21)
+go libraries
+# Error: go compile: Failed compile
+# Info: Completed transformation 'analyze' on solution 'Hough_Algorithm_HW<1296,864>.v8': elapsed time 1.62 seconds, memory usage 2167484kB, peak memory usage 2167484kB (SOL-9)
+quit
+Generating synthesis internal form... (CIN-3)
+# Info: Starting transformation 'compile' on solution 'Hough_Algorithm_HW<1296,864>.v8' (SOL-8)
+# Error: Design hierarchy must be selected interactively or using pragma 'hls_design top' (CIN-21)
+# Error: Compilation aborted (CIN-5)
+# Error: No design detected (CIN-21)
+go compile
+# Error: go compile: Failed compile
+# Error: Design hierarchy must be selected interactively or using pragma 'hls_design top' (CIN-21)
+Generating synthesis internal form... (CIN-3)
+# Error: No design detected (CIN-21)
+# Info: Starting transformation 'compile' on solution 'Hough_Algorithm_HW<1296,864>.v8' (SOL-8)
+# Info: Completed transformation 'analyze' on solution 'Hough_Algorithm_HW<1296,864>.v8': elapsed time 1.65 seconds, memory usage 2167484kB, peak memory usage 2167484kB (SOL-9)
+# Error: Compilation aborted (CIN-5)

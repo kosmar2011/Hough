@@ -12,9 +12,6 @@ library set /LIBS/nangate-45nm_beh/MODS/mgc_shift_r/PARAMETERS/width_a -- -CHAR_
 library set /LIBS/nangate-45nm_beh/MODS/mgc_shift_r/PARAMETERS/width_z -- -CHAR_RANGE {4 to 32 by 7, 39}
 library set /LIBS/nangate-45nm_beh/MODS/mgc_shift_br/PARAMETERS/width_a -- -CHAR_RANGE {4 to 32 by 7, 39}
 library set /LIBS/nangate-45nm_beh/MODS/mgc_shift_br/PARAMETERS/width_z -- -CHAR_RANGE {4 to 32 by 7, 39}
-library set /LIBS/nangate-45nm_beh/MODS/mgc_reg_pos/PARAMETERS/has_enable -- -CHAR_RANGE {0 to 0, 1}
-library set /LIBS/nangate-45nm_beh/MODS/mgc_reg_pos/PARAMETERS/enable_on -- -CHAR_RANGE {0 to 0, 1}
-library set /LIBS/nangate-45nm_beh/MODS/mgc_mux1hot/PARAMETERS/ctrlw -- -CHAR_RANGE {1, 2 to 2, 4 to 32}
 # The "library characterize" command below requires that: 
 #   1. characterization directory set in the library exists and write accessible;
 #   2. paths to technology libraries are set to correct locations;

@@ -240,8 +240,8 @@ public:
     , out_sync("out_sync")
     , inout_sync("inout_sync")
     , wait_for_init("wait_for_init")
-    , sync_generator_INST("sync_generator", true, false, false, false, 14598494189, 14598494189, 0)
-    , catapult_monitor_INST("Monitor", clk, true, 14598494189LL, 14515722594LL)
+    , sync_generator_INST("sync_generator", true, false, false, false, 679018697, 679018697, 0)
+    , catapult_monitor_INST("Monitor", clk, true, 679018697LL, 616351482LL)
     , ccs_probe_monitor_INST(NULL)
     , deadlocked("deadlocked")
     , maxsimtime("maxsimtime")
@@ -695,7 +695,7 @@ void scverify_top::deadlock_watch() {
       && (OFS_y2_rsc_rdy.read() == SC_LOGIC_1)
     ) {
       deadlocked.write(SC_LOGIC_1);
-      deadlock_event.notify(131386447657, SC_NS);
+      deadlock_event.notify(6111069409, SC_NS);
     } else {
       if (deadlocked.read() == SC_LOGIC_1)
         deadlock_event.cancel();

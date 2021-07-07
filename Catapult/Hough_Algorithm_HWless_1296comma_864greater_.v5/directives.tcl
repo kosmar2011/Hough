@@ -80,11 +80,7 @@ solution library add ccs_fpga_hic
 go libraries
 directive set -CLOCKS {clk {-CLOCK_PERIOD 1.0 -CLOCK_EDGE rising -CLOCK_UNCERTAINTY 0.0 -CLOCK_HIGH_TIME 0.5 -RESET_SYNC_NAME rst -RESET_ASYNC_NAME arst_n -RESET_KIND sync -RESET_SYNC_ACTIVE high -RESET_ASYNC_ACTIVE low -ENABLE_ACTIVE high}}
 go assembly
-directive set /Hough_Algorithm_HW<1296,864>/getMaxLine/core/T_LINE -PIPELINE_INIT_INTERVAL 1
-directive set /Hough_Algorithm_HW<1296,864>/houghTransform/core/HROW -PIPELINE_INIT_INTERVAL 0
-directive set /Hough_Algorithm_HW<1296,864>/houghTransform/core/HCOL -PIPELINE_INIT_INTERVAL 0
-directive set /Hough_Algorithm_HW<1296,864>/houghTransform/core/HROW -ITERATIONS 400000
-directive set /Hough_Algorithm_HW<1296,864>/houghTransform/core/HCOL -ITERATIONS 400000
-directive set /Hough_Algorithm_HW<1296,864>/houghTransform/core/HACC -PIPELINE_INIT_INTERVAL 0
-directive set /Hough_Algorithm_HW<1296,864>/getMaxLine/core/R_LINE -UNROLL yes
-go loops
+directive set /Hough_Algorithm_HW<1296,864>/houghTransform/core/HROW -ITERATIONS 864
+directive set /Hough_Algorithm_HW<1296,864>/houghTransform/core/HCOL -ITERATIONS 1296
+go architect
+go extract

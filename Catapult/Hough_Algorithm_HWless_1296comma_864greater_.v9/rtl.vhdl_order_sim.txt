@@ -9,6 +9,6 @@
 /opt/mentor/catapult_10.5a/Mgc_home/pkgs/siflibs/ccs_genreg_v1.vhd
 /opt/mentor/catapult_10.5a/Mgc_home/pkgs/siflibs/ccs_fifo_wait_core_v5.vhd
 /opt/mentor/catapult_10.5a/Mgc_home/pkgs/siflibs/ccs_pipe_v5.vhd
-./rtl_hough_algorithm_hw_1296_864mgc_rom_23_70_32_1_60.vhdl
-./rtl_hough_algorithm_hw_1296_864mgc_rom_22_70_32_1_60.vhdl
+./rtl_hough_algorithm_hw_1296_864mgc_rom_27_70_32_1_60.vhdl
+./rtl_hough_algorithm_hw_1296_864mgc_rom_26_70_32_1_60.vhdl
 ./rtl.vhdl

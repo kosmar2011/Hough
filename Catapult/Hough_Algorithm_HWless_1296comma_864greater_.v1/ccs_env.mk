@@ -15,7 +15,7 @@ Option_CppStandard                                  := c++98
 export Option_CppStandard
 endif
 ifeq "$(SYN_DIR)" ""
-SYN_DIR                                             := gate_synthesis_or
+SYN_DIR                                             := gate_synthesis_
 export SYN_DIR
 endif
 ifeq "$(HLD_CONSTRAINT_FNAME)" ""
@@ -829,114 +829,6 @@ endif
 ifeq "$(CDesignChecker_XTERM_CMD)" ""
 CDesignChecker_XTERM_CMD                            := xterm
 export CDesignChecker_XTERM_CMD
-endif
-ifeq "$(OasysRTL_SynthesisFlowType)" ""
-OasysRTL_SynthesisFlowType                          := asic
-export OasysRTL_SynthesisFlowType
-endif
-ifeq "$(OasysRTL_FOLDERNAME)" ""
-OasysRTL_FOLDERNAME                                 := Oasys-RTL
-export OasysRTL_FOLDERNAME
-endif
-ifeq "$(OasysRTL_Path)" ""
-OasysRTL_Path                                       := can't read "OASYS_HOME": no such variable
-export OasysRTL_Path
-endif
-ifeq "$(OasysRTL_ShellExe)" ""
-OasysRTL_ShellExe                                   := oasys
-export OasysRTL_ShellExe
-endif
-ifeq "$(OasysRTL_Flags)" ""
-OasysRTL_Flags                                      := 
-export OasysRTL_Flags
-endif
-ifeq "$(OasysRTL_LicenseServer)" ""
-OasysRTL_LicenseServer                              := 
-export OasysRTL_LicenseServer
-endif
-ifeq "$(OasysRTL_OutNetlistName)" ""
-OasysRTL_OutNetlistName                             := gate.or
-export OasysRTL_OutNetlistName
-endif
-ifeq "$(OasysRTL_OutNetlistFormat)" ""
-OasysRTL_OutNetlistFormat                           := verilog
-export OasysRTL_OutNetlistFormat
-endif
-ifeq "$(OasysRTL_TimingReportingMode)" ""
-OasysRTL_TimingReportingMode                        := base
-export OasysRTL_TimingReportingMode
-endif
-ifeq "$(OasysRTL_ImportantBits)" ""
-OasysRTL_ImportantBits                              := 
-export OasysRTL_ImportantBits
-endif
-ifeq "$(OasysRTL_GenerateGateSdc)" ""
-OasysRTL_GenerateGateSdc                            := true
-export OasysRTL_GenerateGateSdc
-endif
-ifeq "$(OasysRTL_ReportMapping)" ""
-OasysRTL_ReportMapping                              := true
-export OasysRTL_ReportMapping
-endif
-ifeq "$(OasysRTL_MaxLoopIterations)" ""
-OasysRTL_MaxLoopIterations                          := 10000
-export OasysRTL_MaxLoopIterations
-endif
-ifeq "$(OasysRTL_EnableClockGating)" ""
-OasysRTL_EnableClockGating                          := false
-export OasysRTL_EnableClockGating
-endif
-ifeq "$(OasysRTL_EnableRetiming)" ""
-OasysRTL_EnableRetiming                             := true
-export OasysRTL_EnableRetiming
-endif
-ifeq "$(OasysRTL_ClockGatingMinWidth)" ""
-OasysRTL_ClockGatingMinWidth                        := 4
-export OasysRTL_ClockGatingMinWidth
-endif
-ifeq "$(OasysRTL_MultiStageClockGating)" ""
-OasysRTL_MultiStageClockGating                      := false
-export OasysRTL_MultiStageClockGating
-endif
-ifeq "$(OasysRTL_EnablePhysicalView)" ""
-OasysRTL_EnablePhysicalView                         := false
-export OasysRTL_EnablePhysicalView
-endif
-ifeq "$(OasysRTL_EnableCapReporting)" ""
-OasysRTL_EnableCapReporting                         := true
-export OasysRTL_EnableCapReporting
-endif
-ifeq "$(OasysRTL_CustomScriptDirPath)" ""
-OasysRTL_CustomScriptDirPath                        := 
-export OasysRTL_CustomScriptDirPath
-endif
-ifeq "$(OasysRTL_ChipUtil)" ""
-OasysRTL_ChipUtil                                   := 60
-export OasysRTL_ChipUtil
-endif
-ifeq "$(OasysRTL_AspectRatio)" ""
-OasysRTL_AspectRatio                                := 1.0
-export OasysRTL_AspectRatio
-endif
-ifeq "$(OasysRTL_AreaEffort)" ""
-OasysRTL_AreaEffort                                 := 1
-export OasysRTL_AreaEffort
-endif
-ifeq "$(OasysRTL_TimingEffort)" ""
-OasysRTL_TimingEffort                               := 1
-export OasysRTL_TimingEffort
-endif
-ifeq "$(OasysRTL_OasysCommMode)" ""
-OasysRTL_OasysCommMode                              := Script
-export OasysRTL_OasysCommMode
-endif
-ifeq "$(OasysRTL_CharacterizationEffort)" ""
-OasysRTL_CharacterizationEffort                     := 0
-export OasysRTL_CharacterizationEffort
-endif
-ifeq "$(OasysRTL_AreaOptParallelism)" ""
-OasysRTL_AreaOptParallelism                         := 1
-export OasysRTL_AreaOptParallelism
 endif
 ifeq "$(INLINEDPROPERTYLANG)" ""
 INLINEDPROPERTYLANG                                 := psl

@@ -62,8 +62,6 @@ directive set -CLUSTER_FAST_MODE false
 directive set -CLUSTER_TYPE combinational
 directive set -PIPELINE_RAMP_UP true
 go new
-solution design set {Hough_Algorithm_HW<1296, 864>::houghTransform} -block
-solution design set {Hough_Algorithm_HW<1296, 864>::getMaxLine} -block
 solution library add nangate-45nm_beh -- -rtlsyntool OasysRTL -vendor Nangate -technology 045nm
 solution library add ram_nangate-45nm_pipe_beh
 solution library add ram_nangate-45nm-dualport_beh
@@ -77,15 +75,4 @@ solution library add ccs_sample_mem
 solution library add amba
 solution library add ML_amba
 solution library add ccs_fpga_hic
-go libraries
-directive set -CLOCKS {clk {-CLOCK_PERIOD 1.0 -CLOCK_EDGE rising -CLOCK_UNCERTAINTY 0.0 -CLOCK_HIGH_TIME 0.5 -RESET_SYNC_NAME rst -RESET_ASYNC_NAME arst_n -RESET_KIND sync -RESET_SYNC_ACTIVE high -RESET_ASYNC_ACTIVE low -ENABLE_ACTIVE high}}
-go assembly
-directive set /Hough_Algorithm_HW<1296,864>/houghTransform/core/HROW -PIPELINE_INIT_INTERVAL 0
-directive set /Hough_Algorithm_HW<1296,864>/houghTransform/core/HCOL -PIPELINE_INIT_INTERVAL 0
-directive set /Hough_Algorithm_HW<1296,864>/houghTransform/core/HROW -ITERATIONS 864
-directive set /Hough_Algorithm_HW<1296,864>/houghTransform/core/HCOL -ITERATIONS 1296
-directive set /Hough_Algorithm_HW<1296,864>/houghTransform/core/HACC -PIPELINE_INIT_INTERVAL 0
-directive set /Hough_Algorithm_HW<1296,864>/houghTransform/core/HACC -UNROLL no
-directive set /Hough_Algorithm_HW<1296,864>/getMaxLine/core/T_LINE -PIPELINE_INIT_INTERVAL 0
-go architect
-go allocate
+go compile
