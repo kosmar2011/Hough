@@ -1,0 +1,12 @@
+digraph G {
+  size="7.5,10"; center=true; ratio=auto;
+  m1[fontname=Fixed,labeljust=left,label="--- Edge mode = (mode : cns_cycle) ----------------------\l  1: ctrlseq  - sequence in original inperative code     \l  2: chained  - dependency starts from end of predecessor\l  4: feedback - feedback edge                            \l  8: lpbranch - edge created from a next/exit            \l 16: soft     - constraint can be removed                \l 32: user     - user constraints                         \l 64: iomode   - constraint inherited from iomode         \l128: ctrldep  - control dependency                       \l256: datadep  - data dependency                          \l",shape=none];
+  n294[label="n294 : DOPER\n 28cy\n",shape=ellipse,style=filled,color=bisque];
+  n298[label="n298 : DOPER\n 28cy+0.8\n",shape=ellipse,style=filled,color=bisque];
+  n293[label="n293 : DOPER\n 26cy+0.8\n",shape=ellipse,style=filled,color=bisque];
+  m2[fontname=Fixed,labeljust=left,label="n294 : 0x7fd94e6e0210 HACC:HACC:acc\ln298 : 0x7fd94e911130 HACC:write_mem(acc_tmp:rsc.@)\ln293 : 0x7fd94f0e6240 HACC:read_mem(acc_tmp:rsc.@)\l",shape=none];
+  n294 -> n298[label="258 : 0",color=blue];
+  n293 -> n294[label="259 : 0",color=green2];
+  n298 -> n293[label="262 : 0",color=red, style=bold];
+}
+

@@ -28,8 +28,8 @@ public:
     typedef ac_int<ac::nbits<imageHeight+1>::val, false> maxH;
     typedef ac_fixed<ac::nbits<imageWidth+1>::val, ac::nbits<imageWidth+1>::val>  			maxW_f;  //evgala ta false 
     typedef ac_fixed<ac::nbits<imageHeight+1>::val, ac::nbits<imageHeight+1>::val>  			maxH_f;
-    typedef ac_fixed<ac::nbits<imageWidth+1>::val + 48, ac::nbits<imageWidth+1>::val + 20>  	maxW_f_x2;
-	typedef ac_fixed<ac::nbits<imageHeight+1>::val + 48, ac::nbits<imageHeight+1>::val + 20>  	maxH_f_x2;
+    typedef ac_fixed<ac::nbits<imageWidth+1>::val + 20, ac::nbits<imageWidth+1>::val>  	maxW_f_x2;
+	typedef ac_fixed<ac::nbits<imageHeight+1>::val + 20, ac::nbits<imageHeight+1>::val>  	maxH_f_x2;
 	
     Hough_Algorithm_HW() {};
 
@@ -97,8 +97,9 @@ private:
                     HACC: for (int t = 0; t < 180; t++){
                         //printf("t = %d\n", t);
                         //ac_fixed<16,9,true> in = (ac_fixed<9,9>)t * DEG2RAD;
-                        ac_math::ac_cos_cordic((ac_fixed<27,9>)t* DEG2RAD, cos_out);
-                        ac_math::ac_sin_cordic((ac_fixed<27,9>)t* DEG2RAD, sin_out);
+                        //ac_math::ac_cos_cordic((ac_fixed<27,9>)t* DEG2RAD, cos_out);
+                        //ac_math::ac_sin_cordic((ac_fixed<27,9>)t* DEG2RAD, sin_out);
+                        ac_math::ac_sincos_cordic((ac_fixed<27,9>)t* DEG2RAD, (angType)1, sin_out, cos_out);
                         //cout << "in = " << in << endl;
                         r = ( (maxW_f_x2)x - center_x) * cos_out + ((maxH_f_x2)y - center_y) * sin_out;
                         //if(t==150) 
@@ -127,7 +128,7 @@ private:
                 break;
         }
 
-        for (int i = 0; i < acc_tmp_len; i++){
+        WRITE: for (int i = 0; i < acc_tmp_len; i++){
             acc.write(acc_tmp[i]);
         }
    
@@ -167,11 +168,12 @@ private:
                     //ac_fixed<15,9,true> in = (ac_fixed<9,9,false>)t; //* DEG2RAD;
                     //ac_fixed<16,9,true> in = (ac_fixed<9,9>)t * DEG2RAD;
 
-                    ac_math::ac_cos_cordic((ac_fixed<9,9>)t* DEG2RAD, cos_t);
-                    cout << "cos_t = " << cos_t << endl;
-                    ac_math::ac_sin_cordic((ac_fixed<9,9>)t* DEG2RAD, sin_t);
-                    cout << "sin_t = " << sin_t << endl;
-                    
+                    //ac_math::ac_cos_cordic((ac_fixed<9,9>)t* DEG2RAD, cos_t);
+                    //cout << "cos_t = " << cos_t << endl;
+                    //ac_math::ac_sin_cordic((ac_fixed<9,9>)t* DEG2RAD, sin_t);
+                    //cout << "sin_t = " << sin_t << endl;
+                    ac_math::ac_sincos_cordic((ac_fixed<27,9>)t* DEG2RAD, (angType)1, sin_t, cos_t);
+
                     /*if (cos_t==0){
 						cos_t = (angType)0.000001;
 						cout << "t = " << t << endl;
