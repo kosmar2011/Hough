@@ -1,0 +1,795 @@
+
+# Messages from "go new"
+
+
+# Messages from "go analyze"
+
+# Info: Completed transformation 'analyze' on solution 'Hough_Algorithm_HW<1296,864>.v28': elapsed time 3.51 seconds, memory usage 2102368kB, peak memory usage 2102368kB (SOL-9)
+# Warning:           detected during: (CRD-1290)
+go libraries
+# Warning: a class type that is not trivially copyable passed through ellipsis (CRD-1290)
+# Warning:             instantiation of "void Hough_Algorithm_HW<imageWidth, imageHeight>::run(ac_channel<ac_intN::uint8> &, Hough_Algorithm_HW<imageWidth, imageHeight>::maxW &, Hough_Algorithm_HW<imageWidth, imageHeight>::maxH &, ac_channel<Hough_Algorithm_HW<imageWidth, imageHeight>::maxW> &, ac_channel<Hough_Algorithm_HW<imageWidth, imageHeight>::maxH> &, ac_channel<Hough_Algorithm_HW<imageWidth, imageHeight>::maxW> &, ac_channel<Hough_Algorithm_HW<imageWidth, imageHeight>::maxH> &) [with imageWidth=1296, imageHeight=864]" at line 79 of "/home/user2/Desktop/Hough/hough/Hough_tb.cpp" (CRD-1290)
+# Warning:             instantiation of "void Hough_Algorithm_HW<imageWidth, imageHeight>::houghTransform(ac_channel<ac_intN::uint8> &, Hough_Algorithm_HW<imageWidth, imageHeight>::maxW &, Hough_Algorithm_HW<imageWidth, imageHeight>::maxH &, ac_channel<ac_intN::uint16> &) [with imageWidth=1296, imageHeight=864]" at line 48 (CRD-1290)
+Source file analysis completed (CIN-68)
+Hough_Algorithm_HW<1296,864>.v28
+Edison Design Group C++/C Front End - Version 5.1 (CIN-1)
+# Info: Branching solution 'Hough_Algorithm_HW<1296,864>.v28' at state 'new' (PRJ-2)
+Front End called with arguments: -- /home/user2/Desktop/Hough/hough/Hough_tb.cpp (CIN-69)
+# Info: Starting transformation 'analyze' on solution 'Hough_Algorithm_HW<1296,864>.v28' (SOL-8)
+# Info: Completed transformation 'analyze' on solution 'Hough_Algorithm_HW<1296,864>.v7': elapsed time 3.16 seconds, memory usage 2038888kB, peak memory usage 2038888kB (SOL-9)
+# Info: Starting transformation 'analyze' on solution 'Hough_Algorithm_HW<1296,864>.v7' (SOL-8)
+go libraries
+Edison Design Group C++/C Front End - Version 5.1 (CIN-1)
+Front End called with arguments: -- /home/user2/Desktop/Hough/hough/Hough_tb.cpp (CIN-69)
+# Warning:             instantiation of "void Hough_Algorithm_HW<imageWidth, imageHeight>::run(ac_channel<ac_intN::uint8> &, Hough_Algorithm_HW<imageWidth, imageHeight>::maxW &, Hough_Algorithm_HW<imageWidth, imageHeight>::maxH &, ac_channel<Hough_Algorithm_HW<imageWidth, imageHeight>::maxW> &, ac_channel<Hough_Algorithm_HW<imageWidth, imageHeight>::maxH> &, ac_channel<Hough_Algorithm_HW<imageWidth, imageHeight>::maxW> &, ac_channel<Hough_Algorithm_HW<imageWidth, imageHeight>::maxH> &) [with imageWidth=1296, imageHeight=864]" at line 79 of "/home/user2/Desktop/Hough/hough/Hough_tb.cpp" (CRD-1290)
+# Warning:           detected during: (CRD-1290)
+# Warning:             instantiation of "void Hough_Algorithm_HW<imageWidth, imageHeight>::houghTransform(ac_channel<ac_intN::uint8> &, Hough_Algorithm_HW<imageWidth, imageHeight>::maxW &, Hough_Algorithm_HW<imageWidth, imageHeight>::maxH &, ac_channel<ac_intN::uint16> &) [with imageWidth=1296, imageHeight=864]" at line 48 (CRD-1290)
+# Warning: a class type that is not trivially copyable passed through ellipsis (CRD-1290)
+Hough_Algorithm_HW<1296,864>.v7
+Source file analysis completed (CIN-68)
+# Info: Branching solution 'Hough_Algorithm_HW<1296,864>.v7' at state 'new' (PRJ-2)
+# Info: Completed transformation 'analyze' on solution 'Hough_Algorithm_HW<1296,864>.v6': elapsed time 3.14 seconds, memory usage 1774416kB, peak memory usage 1774416kB (SOL-9)
+Front End called with arguments: -- /home/user2/Desktop/Hough/hough/Hough_tb.cpp (CIN-69)
+# Info: Starting transformation 'analyze' on solution 'Hough_Algorithm_HW<1296,864>.v6' (SOL-8)
+go libraries
+# Warning:           detected during: (CRD-1290)
+# Warning: a class type that is not trivially copyable passed through ellipsis (CRD-1290)
+# Warning:             instantiation of "void Hough_Algorithm_HW<imageWidth, imageHeight>::run(ac_channel<ac_intN::uint8> &, Hough_Algorithm_HW<imageWidth, imageHeight>::maxW &, Hough_Algorithm_HW<imageWidth, imageHeight>::maxH &, ac_channel<Hough_Algorithm_HW<imageWidth, imageHeight>::maxW> &, ac_channel<Hough_Algorithm_HW<imageWidth, imageHeight>::maxH> &, ac_channel<Hough_Algorithm_HW<imageWidth, imageHeight>::maxW> &, ac_channel<Hough_Algorithm_HW<imageWidth, imageHeight>::maxH> &) [with imageWidth=1296, imageHeight=864]" at line 79 of "/home/user2/Desktop/Hough/hough/Hough_tb.cpp" (CRD-1290)
+# Warning:             instantiation of "void Hough_Algorithm_HW<imageWidth, imageHeight>::houghTransform(ac_channel<ac_intN::uint8> &, Hough_Algorithm_HW<imageWidth, imageHeight>::maxW &, Hough_Algorithm_HW<imageWidth, imageHeight>::maxH &, ac_channel<ac_intN::uint16> &) [with imageWidth=1296, imageHeight=864]" at line 48 (CRD-1290)
+Source file analysis completed (CIN-68)
+Hough_Algorithm_HW<1296,864>.v6
+Edison Design Group C++/C Front End - Version 5.1 (CIN-1)
+# Info: Branching solution 'Hough_Algorithm_HW<1296,864>.v6' at state 'new' (PRJ-2)
+# Info: Completed transformation 'analyze' on solution 'Hough_Algorithm_HW<1296,864>.v5': elapsed time 2.93 seconds, memory usage 1905340kB, peak memory usage 1905340kB (SOL-9)
+Edison Design Group C++/C Front End - Version 5.1 (CIN-1)
+Front End called with arguments: -- /home/user2/Desktop/Hough/hough/Hough_tb.cpp (CIN-69)
+# Warning:             instantiation of "void Hough_Algorithm_HW<imageWidth, imageHeight>::run(ac_channel<ac_intN::uint8> &, Hough_Algorithm_HW<imageWidth, imageHeight>::maxW &, Hough_Algorithm_HW<imageWidth, imageHeight>::maxH &, ac_channel<Hough_Algorithm_HW<imageWidth, imageHeight>::maxW> &, ac_channel<Hough_Algorithm_HW<imageWidth, imageHeight>::maxH> &, ac_channel<Hough_Algorithm_HW<imageWidth, imageHeight>::maxW> &, ac_channel<Hough_Algorithm_HW<imageWidth, imageHeight>::maxH> &) [with imageWidth=1296, imageHeight=864]" at line 79 of "/home/user2/Desktop/Hough/hough/Hough_tb.cpp" (CRD-1290)
+# Warning:           detected during: (CRD-1290)
+# Warning:             instantiation of "void Hough_Algorithm_HW<imageWidth, imageHeight>::houghTransform(ac_channel<ac_intN::uint8> &, Hough_Algorithm_HW<imageWidth, imageHeight>::maxW &, Hough_Algorithm_HW<imageWidth, imageHeight>::maxH &, ac_channel<ac_intN::uint16> &) [with imageWidth=1296, imageHeight=864]" at line 48 (CRD-1290)
+# Warning: a class type that is not trivially copyable passed through ellipsis (CRD-1290)
+Hough_Algorithm_HW<1296,864>.v5
+Source file analysis completed (CIN-68)
+# Info: Branching solution 'Hough_Algorithm_HW<1296,864>.v5' at state 'new' (PRJ-2)
+# Info: Starting transformation 'analyze' on solution 'Hough_Algorithm_HW<1296,864>.v5' (SOL-8)
+go libraries
+# Info: Completed transformation 'analyze' on solution 'solution.v1': elapsed time 2.73 seconds, memory usage 1578440kB, peak memory usage 1578440kB (SOL-9)
+/INPUTFILES/1
+# Warning: a class type that is not trivially copyable passed through ellipsis (CRD-1290)
+Edison Design Group C++/C Front End - Version 5.1 (CIN-1)
+Source file analysis completed (CIN-68)
+solution design set {Hough_Algorithm_HW<1296, 864>::getMaxLine} -block (HC-8)
+# Warning:             instantiation of "void Hough_Algorithm_HW<imageWidth, imageHeight>::houghTransform(ac_channel<ac_intN::uint8> &, Hough_Algorithm_HW<imageWidth, imageHeight>::maxW &, Hough_Algorithm_HW<imageWidth, imageHeight>::maxH &, ac_channel<ac_intN::uint16> &) [with imageWidth=1296, imageHeight=864]" at line 48 (CRD-1290)
+# Warning:           detected during: (CRD-1290)
+solution design set {Hough_Algorithm_HW<1296, 864>::houghTransform} -block (HC-8)
+# Warning:             instantiation of "void Hough_Algorithm_HW<imageWidth, imageHeight>::run(ac_channel<ac_intN::uint8> &, Hough_Algorithm_HW<imageWidth, imageHeight>::maxW &, Hough_Algorithm_HW<imageWidth, imageHeight>::maxH &, ac_channel<Hough_Algorithm_HW<imageWidth, imageHeight>::maxW> &, ac_channel<Hough_Algorithm_HW<imageWidth, imageHeight>::maxH> &, ac_channel<Hough_Algorithm_HW<imageWidth, imageHeight>::maxW> &, ac_channel<Hough_Algorithm_HW<imageWidth, imageHeight>::maxH> &) [with imageWidth=1296, imageHeight=864]" at line 79 of "/home/user2/Desktop/Hough/hough/Hough_tb.cpp" (CRD-1290)
+# Info: Starting transformation 'analyze' on solution 'solution.v1' (SOL-8)
+Moving session transcript to file "/home/user2/Desktop/Hough/catapult.log"
+solution file add ./hough/Hough_tb.cpp
+go analyze
+Front End called with arguments: -- /home/user2/Desktop/Hough/hough/Hough_tb.cpp (CIN-69)
+
+# Messages from "go compile"
+
+# Info: Design complexity at end of 'compile': Total ops = 1401, Real ops = 275, Vars = 438 (SOL-21)
+# Info: Completed transformation 'compile' on solution 'Hough_Algorithm_HW<1296,864>.v28': elapsed time 13.53 seconds, memory usage 2110576kB, peak memory usage 2110576kB (SOL-9)
+# Warning:           Hierarchy Block 'houghTransform' Instance 'houghTransform:inst' $PROJECT_HOME/include/HoughHW.h:61
+# Warning: Hierarchical design detected - SLEC-CPC does not support design with hierarchy
+INOUT port 'data_in' is only used as an input. (OPT-10)
+# Info: Floating-point value of type 'double' represented as a 'signed' fixed-point 'variable' with parameters W = '27', I = '13' (CIN-226)
+Loop '/Hough_Algorithm_HW<1296,864>/getMaxLine/core/ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:for' iterated at most 28 times. (LOOP-2)
+Loop '/Hough_Algorithm_HW<1296,864>/getMaxLine/core/T_LINE' iterated at most 180 times. (LOOP-2)
+Loop '/Hough_Algorithm_HW<1296,864>/getMaxLine/core/ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#7:for' iterated at most 44 times. (LOOP-2)
+Loop '/Hough_Algorithm_HW<1296,864>/getMaxLine/core/R_LINE' iterated at most 1832 times. (LOOP-2)
+Loop '/Hough_Algorithm_HW<1296,864>/getMaxLine/core/ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:for' iterated at most 44 times. (LOOP-2)
+Loop '/Hough_Algorithm_HW<1296,864>/getMaxLine/core/for' iterated at most 180 times. (LOOP-2)
+Loop '/Hough_Algorithm_HW<1296,864>/getMaxLine/core/ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#5:for' iterated at most 44 times. (LOOP-2)
+Loop '/Hough_Algorithm_HW<1296,864>/getMaxLine/core/ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#3:for' iterated at most 44 times. (LOOP-2)
+Inlining routine 'ac_math::atan_pi_2mi' (CIN-14)
+Inlining routine 'ac_math::K' (CIN-14)
+Inlining routine 'operator>><33, 3, true, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator>><33, 3, true, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator/<10, false>' (CIN-14)
+Inlining routine 'operator/<11, false>' (CIN-14)
+Inlining routine 'ac_math::ac_sincos_cordic<52, 10, AC_TRN, AC_WRAP, 27, 3, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator*<11, 11, true, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'ac_math::K' (CIN-14)
+Inlining routine 'ac_math::ac_sincos_cordic<52, 10, AC_TRN, AC_WRAP, 27, 3, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator>><33, 3, true, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'ac_math::atan_pi_2mi' (CIN-14)
+Inlining routine 'operator-<11, false>' (CIN-14)
+Inlining routine 'operator<<8, false>' (CIN-14)
+Inlining member function 'Hough_Algorithm_HW<1296, 864>::getMaxLine' on object '' (CIN-64)
+Inlining routine 'operator-<10, false>' (CIN-14)
+Generating synthesis internal form... (CIN-3)
+# Info: Starting transformation 'compile' on solution 'Hough_Algorithm_HW<1296,864>.v28' (SOL-8)
+Inlining member function 'Hough_Algorithm_HW<1296, 864>::run' on object '' (CIN-64)
+Synthesizing method 'Hough_Algorithm_HW<1296, 864>::run' (CIN-13)
+Inlining member function 'Hough_Algorithm_HW<1296, 864>::houghTransform' on object '' (CIN-64)
+# Warning: ignoring 'printf' statement and all side effects of parameters for synthesis, additional encounters also ignored (CIN-263)
+# Warning: Instantiating global variable 'K_table' which may be accessed outside this scope (CIN-18)
+Found top design routine 'Hough_Algorithm_HW<1296, 864>' specified by directive (CIN-52)
+Inlining member function 'Hough_Algorithm_HW<1296, 864>::Hough_Algorithm_HW' on object '' (CIN-64)
+# Warning: Instantiating global variable 'atan_pi_pow2_table' which may be accessed outside this scope (CIN-18)
+Inlining routine 'operator>><20, false>' (CIN-14)
+Inlining routine 'operator!=<28, true>' (CIN-14)
+Inlining routine 'ac_math::ac_shift_right<45, 44, AC_TRN, AC_WRAP, 20, 15, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator!=<20, false>' (CIN-14)
+Inlining routine 'operator|<44, false>' (CIN-14)
+Inlining routine 'operator>=<28, true>' (CIN-14)
+Inlining routine 'operator<<28, true>' (CIN-14)
+Inlining routine 'operator<<=<20, false>' (CIN-14)
+Inlining routine 'operator-<28, 13, true, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator/<27, 12, true, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'ac_math::ac_div<20, 15, AC_TRN, AC_WRAP, 27, 3, AC_TRN, AC_WRAP, 20, 15, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator-<26, 11, true, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator==<27, 3, false, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator>><49, 44, false, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator+<20, 15, true, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator==<27, 3, true, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator<<27, 3, true, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator<<20, 15, true, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'ac_math::ac_shift_left<20, 15, AC_TRN, AC_WRAP, 20, 20, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'ac_math::ac_div<20, 15, AC_TRN, AC_WRAP, 27, 3, AC_TRN, AC_WRAP, 20, 15, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator-<28, 13, true, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator/<27, 12, true, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'ac_math::ac_div<20, 15, AC_TRN, AC_WRAP, 27, 3, AC_TRN, AC_WRAP, 20, 15, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator-<27, 12, true, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator&<20, false>' (CIN-14)
+Inlining routine 'operator>><20, false>' (CIN-14)
+Inlining routine 'operator<<<44, false>' (CIN-14)
+Inlining routine 'operator<<28, true>' (CIN-14)
+Inlining routine 'ac_math::ac_shift_left<27, 3, AC_TRN, AC_WRAP, 27, 27, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator<<<25, 20, false, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator<<<28, true>' (CIN-14)
+Inlining routine 'operator<<<51, 27, false, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator|<44, false>' (CIN-14)
+Inlining routine 'operator>=<28, true>' (CIN-14)
+Inlining routine 'operator<<28, true>' (CIN-14)
+Inlining routine 'operator<<=<20, false>' (CIN-14)
+Inlining routine 'operator&<20, false>' (CIN-14)
+Inlining routine 'operator>><20, false>' (CIN-14)
+Inlining routine 'operator<<<44, false>' (CIN-14)
+Inlining routine 'operator<<28, true>' (CIN-14)
+Inlining routine 'operator==<27, 3, false, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator>><49, 44, false, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator+<20, 15, true, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator==<27, 3, true, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator>><20, false>' (CIN-14)
+Inlining routine 'operator!=<28, true>' (CIN-14)
+Inlining routine 'ac_math::ac_shift_right<45, 44, AC_TRN, AC_WRAP, 20, 15, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator!=<20, false>' (CIN-14)
+Inlining routine 'operator-<28, 13, true, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator/<27, 12, true, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'ac_math::ac_div<20, 15, AC_TRN, AC_WRAP, 27, 3, AC_TRN, AC_WRAP, 20, 15, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator-<27, 12, true, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator<<27, 12, true, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator>><33, 3, true, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator>=<24, 16, false, AC_TRN, AC_WRAP, 16, false>' (CIN-14)
+# Warning: ignoring 'std::cout<<' statement and all side effects of parameters for synthesis, additional encounters also ignored (CIN-263)
+Inlining routine 'ac_math::ac_shift_left<27, 3, AC_TRN, AC_WRAP, 27, 27, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator<<<25, 20, false, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator<<<28, true>' (CIN-14)
+Inlining routine 'operator<<<51, 27, false, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator<<27, 3, true, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator<<20, 15, true, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'ac_math::ac_shift_left<20, 15, AC_TRN, AC_WRAP, 20, 20, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'ac_math::ac_div<20, 15, AC_TRN, AC_WRAP, 27, 3, AC_TRN, AC_WRAP, 20, 15, AC_TRN, AC_WRAP>' (CIN-14)
+INOUT port 'x1' is only used as an output. (OPT-11)
+Optimizing block '/Hough_Algorithm_HW<1296,864>' ... (CIN-4)
+INOUT port 'x2' is only used as an output. (OPT-11)
+INOUT port 'y1' is only used as an output. (OPT-11)
+Inlining routine 'operator==<27, 3, false, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator>><49, 44, false, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator+<20, 15, true, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator==<27, 3, true, AC_TRN, AC_WRAP>' (CIN-14)
+# Warning: channel 'x2#1' is never used. (OPT-4)
+# Warning: channel 'y1#1' is never used. (OPT-4)
+# Warning: Channel 'acc#2' is never driven. (OPT-3)
+# Warning: channel 'y2#1' is never used. (OPT-4)
+# Warning: Channel 'data_in#1' is never driven. (OPT-3)
+INOUT port 'y2' is only used as an output. (OPT-11)
+# Warning: channel 'x1#1' is never used. (OPT-4)
+# Warning: channel 'acc#1' is never used. (OPT-4)
+Inlining routine 'operator&<20, false>' (CIN-14)
+Inlining routine 'operator>><20, false>' (CIN-14)
+Inlining routine 'operator<<<44, false>' (CIN-14)
+Inlining routine 'operator<<28, true>' (CIN-14)
+Inlining routine 'ac_math::ac_shift_left<27, 3, AC_TRN, AC_WRAP, 27, 27, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator<<<25, 20, false, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator<<<28, true>' (CIN-14)
+Inlining routine 'operator<<<51, 27, false, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator>><20, false>' (CIN-14)
+Inlining routine 'operator!=<28, true>' (CIN-14)
+Inlining routine 'ac_math::ac_shift_right<45, 44, AC_TRN, AC_WRAP, 20, 15, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator!=<20, false>' (CIN-14)
+Inlining routine 'operator|<44, false>' (CIN-14)
+Inlining routine 'operator>=<28, true>' (CIN-14)
+Inlining routine 'operator<<28, true>' (CIN-14)
+Inlining routine 'operator<<=<20, false>' (CIN-14)
+Inlining routine 'operator==<27, 3, false, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator>><49, 44, false, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator+<20, 15, true, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator==<27, 3, true, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator>><20, false>' (CIN-14)
+Inlining routine 'operator!=<28, true>' (CIN-14)
+Inlining routine 'ac_math::ac_shift_right<45, 44, AC_TRN, AC_WRAP, 20, 15, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator!=<20, false>' (CIN-14)
+Inlining routine 'operator<<27, 3, true, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator<<20, 15, true, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'ac_math::ac_shift_left<20, 15, AC_TRN, AC_WRAP, 20, 20, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'ac_math::ac_div<20, 15, AC_TRN, AC_WRAP, 27, 3, AC_TRN, AC_WRAP, 20, 15, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator-<28, 13, true, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator/<27, 12, true, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'ac_math::ac_div<20, 15, AC_TRN, AC_WRAP, 27, 3, AC_TRN, AC_WRAP, 20, 15, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator-<26, 11, true, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'ac_math::ac_shift_left<27, 3, AC_TRN, AC_WRAP, 27, 27, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator<<<25, 20, false, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator<<<28, true>' (CIN-14)
+Inlining routine 'operator<<<51, 27, false, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator<<27, 3, true, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator<<20, 15, true, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'ac_math::ac_shift_left<20, 15, AC_TRN, AC_WRAP, 20, 20, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'ac_math::ac_div<20, 15, AC_TRN, AC_WRAP, 27, 3, AC_TRN, AC_WRAP, 20, 15, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator|<44, false>' (CIN-14)
+Inlining routine 'operator>=<28, true>' (CIN-14)
+Inlining routine 'operator<<28, true>' (CIN-14)
+Inlining routine 'operator<<=<20, false>' (CIN-14)
+Inlining routine 'operator&<20, false>' (CIN-14)
+Inlining routine 'operator>><20, false>' (CIN-14)
+Inlining routine 'operator<<<44, false>' (CIN-14)
+Inlining routine 'operator<<28, true>' (CIN-14)
+# Info: Partition '/Hough_Algorithm_HW<1296,864>/constructor' is found empty and is optimized away. (OPT-12)
+Loop '/Hough_Algorithm_HW<1296,864>/houghTransform/core/WRITE' iterated at most 400000 times. (LOOP-2)
+Loop '/Hough_Algorithm_HW<1296,864>/houghTransform/core/HACC' iterated at most 180 times. (LOOP-2)
+Detected constant initialization of array 'acc_tmp', optimizing loop 'for' (LOOP-12)
+Loop '/Hough_Algorithm_HW<1296,864>/houghTransform/core/for' iterated at most 400000 times. (LOOP-2)
+Loop '/Hough_Algorithm_HW<1296,864>/houghTransform/core/for#1' iterated at most 180 times. (LOOP-2)
+Loop '/Hough_Algorithm_HW<1296,864>/houghTransform/core/ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:for' iterated at most 28 times. (LOOP-2)
+# Warning: Toplevel found in header $PROJECT_HOME/include/HoughHW.h, using $PROJECT_HOME/hough/Hough_tb.cpp for header dependencies.
+Makefile for Original Design + Testbench written to file './scverify/Verify_orig_cxx_osci.mk'
+INOUT port 'heightIn' is only used as an input. (OPT-10)
+INOUT port 'widthIn' is only used as an input. (OPT-10)
+Design 'Hough_Algorithm_HW<1296,864>' was read (SOL-1)
+# Info: CDesignChecker Shell script written to '/home/user2/Desktop/Hough/Catapult/Hough_Algorithm_HWless_1296comma_864greater_.v28/CDesignChecker/design_checker.sh'
+# Warning:           Hierarchy Block 'getMaxLine' Instance 'getMaxLine:inst' $PROJECT_HOME/include/HoughHW.h:143
+
+# Messages from "go libraries"
+
+# Info: Design complexity at end of 'libraries': Total ops = 1401, Real ops = 275, Vars = 438 (SOL-21)
+# Info: Completed transformation 'libraries' on solution 'Hough_Algorithm_HW<1296,864>.v28': elapsed time 0.41 seconds, memory usage 2110576kB, peak memory usage 2110576kB (SOL-9)
+# Info: Please set ComponentLibs/TechLibSearchPath to enable flows that use downstream synthesis tools (LIB-220)
+# Info: Starting transformation 'libraries' on solution 'Hough_Algorithm_HW<1296,864>.v28' (SOL-8)
+
+# Messages from "go assembly"
+
+# Info: Design complexity at end of 'assembly': Total ops = 1423, Real ops = 287, Vars = 434 (SOL-21)
+# Info: Completed transformation 'assembly' on solution 'Hough_Algorithm_HW<1296,864>.v28': elapsed time 7.89 seconds, memory usage 2111076kB, peak memory usage 2111076kB (SOL-9)
+# Info: Partition '/Hough_Algorithm_HW<1296,864>/run' is found empty and is optimized away. (OPT-12)
+# Info: Starting transformation 'assembly' on solution 'Hough_Algorithm_HW<1296,864>.v28' (SOL-8)
+go extract
+# Warning: Channel 'acc#1' is never driven. (OPT-3)
+# Warning: Channel 'y1#1' is never driven. (OPT-3)
+# Warning: Channel 'x1#1' is never driven. (OPT-3)
+# Warning: Channel 'y2#1' is never driven. (OPT-3)
+# Warning: Channel 'x2#1' is never driven. (OPT-3)
+
+# Messages from "go architect"
+
+# Info: Design complexity at end of 'loops': Total ops = 1606, Real ops = 357, Vars = 462 (SOL-21)
+# Info: Completed transformation 'loops' on solution 'Hough_Algorithm_HW<1296,864>.v31': elapsed time 9.91 seconds, memory usage 2438756kB, peak memory usage 2438756kB (SOL-9)
+Loop '/Hough_Algorithm_HW<1296,864>/houghTransform/core/main' is left rolled. (LOOP-4)
+Loop '/Hough_Algorithm_HW<1296,864>/houghTransform/core/for#1' is being partially unrolled 4 times. (LOOP-3)
+Loop '/Hough_Algorithm_HW<1296,864>/houghTransform/core/ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:for' is left rolled. (LOOP-4)
+Loop '/Hough_Algorithm_HW<1296,864>/houghTransform/core/HCOL' is left rolled. (LOOP-4)
+Loop '/Hough_Algorithm_HW<1296,864>/houghTransform/core/HACC' is left rolled. (LOOP-4)
+Loop '/Hough_Algorithm_HW<1296,864>/getMaxLine/core/T_LINE' is left rolled. (LOOP-4)
+Loop '/Hough_Algorithm_HW<1296,864>/getMaxLine/core/ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#7:for' is left rolled. (LOOP-4)
+Loop '/Hough_Algorithm_HW<1296,864>/getMaxLine/core/main' is left rolled. (LOOP-4)
+Loop '/Hough_Algorithm_HW<1296,864>/getMaxLine/core/R_LINE' is left rolled. (LOOP-4)
+Loop '/Hough_Algorithm_HW<1296,864>/getMaxLine/core/ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:for' is left rolled. (LOOP-4)
+Loop '/Hough_Algorithm_HW<1296,864>/getMaxLine/core/for' is left rolled. (LOOP-4)
+Loop '/Hough_Algorithm_HW<1296,864>/getMaxLine/core/ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#5:for' is left rolled. (LOOP-4)
+Loop '/Hough_Algorithm_HW<1296,864>/getMaxLine/core/ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#3:for' is left rolled. (LOOP-4)
+# Info: CDesignChecker Shell script written to '/home/user2/Desktop/Hough/Catapult/Hough_Algorithm_HWless_1296comma_864greater_.v31/CDesignChecker/design_checker.sh'
+# Warning:           Hierarchy Block 'getMaxLine' Instance 'getMaxLine:inst' $PROJECT_HOME/include/HoughHW.h:143
+# Warning:           Hierarchy Block 'houghTransform' Instance 'houghTransform:inst' $PROJECT_HOME/include/HoughHW.h:61
+# Warning: Hierarchical design detected - SLEC-CPC does not support design with hierarchy
+# Warning: Library component 'mgc_rom_sync_regout', parameter 'mux_delay_scaling_factor' is marked USER_SELECTABLE but has a value range (999) > max value (128). (LIB-207)
+# Warning: Library component 'mgc_rom_sync_regin', parameter 'mux_delay_scaling_factor' is marked USER_SELECTABLE but has a value range (999) > max value (128). (LIB-207)
+# Info: Starting transformation 'loops' on solution 'Hough_Algorithm_HW<1296,864>.v31' (SOL-8)
+go extract
+directive set /Hough_Algorithm_HW<1296,864>/houghTransform/core/HROW -PIPELINE_INIT_INTERVAL 0
+/Hough_Algorithm_HW<1296,864>/houghTransform/core/for#1/UNROLL 4
+# Warning: Library component 'mgc_rom', parameter 'mux_delay_scaling_factor' is marked USER_SELECTABLE but has a value range (999) > max value (128). (LIB-207)
+/Hough_Algorithm_HW<1296,864>/houghTransform/core/HROW/PIPELINE_INIT_INTERVAL 0
+CU_DIRECTIVE sid30 SET /Hough_Algorithm_HW<1296,864>/houghTransform/core/HCOL {ITERATIONS 1296}: Race condition
+CU_DIRECTIVE sid30 SET /Hough_Algorithm_HW<1296,864>/houghTransform/core/HCOL {PIPELINE_INIT_INTERVAL 0}: Race condition
+CU_DIRECTIVE sid30 SET /Hough_Algorithm_HW<1296,864>/houghTransform/core/WRITE {PIPELINE_INIT_INTERVAL 1}: Race condition
+# Info: Branching solution 'Hough_Algorithm_HW<1296,864>.v31' at state 'assembly' (PRJ-2)
+# Warning: Toplevel found in header $PROJECT_HOME/include/HoughHW.h, using $PROJECT_HOME/hough/Hough_tb.cpp for header dependencies.
+Makefile for Original Design + Testbench written to file './scverify/Verify_orig_cxx_osci.mk'
+CU_DIRECTIVE sid30 SET /Hough_Algorithm_HW<1296,864>/houghTransform/core/HACC {PIPELINE_INIT_INTERVAL 1}: Race condition
+CU_DIRECTIVE sid30 SET /Hough_Algorithm_HW<1296,864>/houghTransform/core/HROW {PIPELINE_INIT_INTERVAL 0}: Race condition
+CU_DESIGN sid30 ADD {} {VERSION v31 SID sid30 BRANCH_SID sid29 BRANCH_STATE assembly INCREMENTAL 0 STATE assembly TRANSFORMING 0 SOLUTION_DIR {} CAT_DIR /home/user2/Desktop/Hough/Catapult/ SYNTHESIS_FLOWPKG OasysRTL UNITS {} STATES {} INPUTFILES {} OUTPUTFILES {} TECHCONFIG {/CONFIG/PARAMETERS/OasysRTL/PARAMETERS/Nangate/PARAMETERS/045nm/PARAMETERS/nangate-45nm_beh/93 /CONFIG/PARAMETERS/OasysRTL/PARAMETERS/Nangate/PARAMETERS/045nm/PARAMETERS/ram_nangate-45nm_pipe_beh/101 /CONFIG/PARAMETERS/OasysRTL/PARAMETERS/Nangate/PARAMETERS/045nm/PARAMETERS/ram_nangate-45nm-dualport_beh/94 /CONFIG/PARAMETERS/OasysRTL/PARAMETERS/Nangate/PARAMETERS/045nm/PARAMETERS/ram_nangate-45nm-separate_beh/96 /CONFIG/PARAMETERS/OasysRTL/PARAMETERS/Nangate/PARAMETERS/045nm/PARAMETERS/ram_nangate-45nm-singleport_beh/97 /CONFIG/PARAMETERS/OasysRTL/PARAMETERS/Nangate/PARAMETERS/045nm/PARAMETERS/ram_nangate-45nm-register-file_beh/95 /CONFIG/PARAMETERS/OasysRTL/PARAMETERS/Nangate/PARAMETERS/045nm/PARAMETERS/rom_nangate-45nm_beh/98 /CONFIG/PARAMETERS/OasysRTL/PARAMETERS/Nangate/PARAMETERS/045nm/PARAMETERS/rom_nangate-45nm-sync_regin_beh/99 /CONFIG/PARAMETERS/OasysRTL/PARAMETERS/Nangate/PARAMETERS/045nm/PARAMETERS/rom_nangate-45nm-sync_regout_beh/100 /CONFIG/PARAMETERS/OasysRTL/PARAMETERS/Nangate/PARAMETERS/045nm/PARAMETERS/ccs_sample_mem/1 /CONFIG/PARAMETERS/OasysRTL/PARAMETERS/amba/211 /CONFIG/PARAMETERS/OasysRTL/PARAMETERS/ML_amba/210 /CONFIG/PARAMETERS/OasysRTL/PARAMETERS/ccs_fpga_hic/3} HIERCONFIG {} TECHLIBS {} ESTIMATOR {} FLOWPKGS {} DATUM {} MESSAGES {} TOP {} SIF_DESIGN_HIER {} ALLOCS {} DIRAPPLIES {} SID_DATA {} SCOPED_C_INTERFACE {} FLOWS_API {} PROPERTIES {} OPT_INFOS {} name Hough_Algorithm_HW<1296,864>}: Race condition
+Loop '/Hough_Algorithm_HW<1296,864>/houghTransform/core/WRITE' is left rolled. (LOOP-4)
+CU_DIRECTIVE sid30 SET /Hough_Algorithm_HW<1296,864>/houghTransform/core/for#1 {UNROLL 2}: Race condition
+Loop '/Hough_Algorithm_HW<1296,864>/houghTransform/core/HROW' is left rolled. (LOOP-4)
+Loop '/Hough_Algorithm_HW<1296,864>/getMaxLine/core/ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:for' is left rolled. (LOOP-4)
+# Info: Design complexity at end of 'loops': Total ops = 1492, Real ops = 311, Vars = 446 (SOL-21)
+# Info: Completed transformation 'loops' on solution 'Hough_Algorithm_HW<1296,864>.v30': elapsed time 6.74 seconds, memory usage 2373220kB, peak memory usage 2373220kB (SOL-9)
+directive set /Hough_Algorithm_HW<1296,864>/houghTransform/core/HACC -UNROLL no
+/Hough_Algorithm_HW<1296,864>/houghTransform/core/HROW/PIPELINE_INIT_INTERVAL 1
+directive set /Hough_Algorithm_HW<1296,864>/houghTransform/core/HACC -PIPELINE_INIT_INTERVAL 1
+/Hough_Algorithm_HW<1296,864>/houghTransform/core/HACC/UNROLL no
+Loop '/Hough_Algorithm_HW<1296,864>/houghTransform/core/HCOL' is left rolled. (LOOP-4)
+Loop '/Hough_Algorithm_HW<1296,864>/houghTransform/core/HACC' is left rolled. (LOOP-4)
+Loop '/Hough_Algorithm_HW<1296,864>/houghTransform/core/WRITE' is left rolled. (LOOP-4)
+CU_DIRECTIVE sid29 SET /Hough_Algorithm_HW<1296,864>/houghTransform/core/HCOL {ITERATIONS 1296}: Race condition
+Loop '/Hough_Algorithm_HW<1296,864>/houghTransform/core/HROW' is left rolled. (LOOP-4)
+# Info: Starting transformation 'loops' on solution 'Hough_Algorithm_HW<1296,864>.v30' (SOL-8)
+CU_DIRECTIVE sid29 SET /Hough_Algorithm_HW<1296,864>/houghTransform/core/HCOL {PIPELINE_INIT_INTERVAL 0}: Race condition
+go extract
+CU_DIRECTIVE sid29 SET /Hough_Algorithm_HW<1296,864>/houghTransform/core/WRITE {PIPELINE_INIT_INTERVAL 1}: Race condition
+Loop '/Hough_Algorithm_HW<1296,864>/houghTransform/core/for#1' is being partially unrolled 2 times. (LOOP-3)
+Loop '/Hough_Algorithm_HW<1296,864>/houghTransform/core/ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:for' is left rolled. (LOOP-4)
+Loop '/Hough_Algorithm_HW<1296,864>/getMaxLine/core/ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#5:for' is left rolled. (LOOP-4)
+Loop '/Hough_Algorithm_HW<1296,864>/getMaxLine/core/ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#3:for' is left rolled. (LOOP-4)
+Loop '/Hough_Algorithm_HW<1296,864>/getMaxLine/core/T_LINE' is left rolled. (LOOP-4)
+Loop '/Hough_Algorithm_HW<1296,864>/getMaxLine/core/ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#7:for' is left rolled. (LOOP-4)
+# Info: Branching solution 'Hough_Algorithm_HW<1296,864>.v30' at state 'assembly' (PRJ-2)
+Loop '/Hough_Algorithm_HW<1296,864>/getMaxLine/core/ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:for' is left rolled. (LOOP-4)
+# Warning: Toplevel found in header $PROJECT_HOME/include/HoughHW.h, using $PROJECT_HOME/hough/Hough_tb.cpp for header dependencies.
+Loop '/Hough_Algorithm_HW<1296,864>/houghTransform/core/main' is left rolled. (LOOP-4)
+Makefile for Original Design + Testbench written to file './scverify/Verify_orig_cxx_osci.mk'
+Loop '/Hough_Algorithm_HW<1296,864>/getMaxLine/core/ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:for' is left rolled. (LOOP-4)
+CU_DIRECTIVE sid29 SET /Hough_Algorithm_HW<1296,864>/houghTransform/core/HACC {PIPELINE_INIT_INTERVAL 1}: Race condition
+Loop '/Hough_Algorithm_HW<1296,864>/getMaxLine/core/for' is left rolled. (LOOP-4)
+CU_DIRECTIVE sid29 SET /Hough_Algorithm_HW<1296,864>/houghTransform/core/HROW {PIPELINE_INIT_INTERVAL 0}: Race condition
+CU_DESIGN sid29 ADD {} {VERSION v30 SID sid29 BRANCH_SID sid28 BRANCH_STATE assembly INCREMENTAL 0 STATE assembly TRANSFORMING 0 SOLUTION_DIR {} CAT_DIR /home/user2/Desktop/Hough/Catapult/ SYNTHESIS_FLOWPKG OasysRTL UNITS {} STATES {} INPUTFILES {} OUTPUTFILES {} TECHCONFIG {/CONFIG/PARAMETERS/OasysRTL/PARAMETERS/Nangate/PARAMETERS/045nm/PARAMETERS/nangate-45nm_beh/93 /CONFIG/PARAMETERS/OasysRTL/PARAMETERS/Nangate/PARAMETERS/045nm/PARAMETERS/ram_nangate-45nm_pipe_beh/101 /CONFIG/PARAMETERS/OasysRTL/PARAMETERS/Nangate/PARAMETERS/045nm/PARAMETERS/ram_nangate-45nm-dualport_beh/94 /CONFIG/PARAMETERS/OasysRTL/PARAMETERS/Nangate/PARAMETERS/045nm/PARAMETERS/ram_nangate-45nm-separate_beh/96 /CONFIG/PARAMETERS/OasysRTL/PARAMETERS/Nangate/PARAMETERS/045nm/PARAMETERS/ram_nangate-45nm-singleport_beh/97 /CONFIG/PARAMETERS/OasysRTL/PARAMETERS/Nangate/PARAMETERS/045nm/PARAMETERS/ram_nangate-45nm-register-file_beh/95 /CONFIG/PARAMETERS/OasysRTL/PARAMETERS/Nangate/PARAMETERS/045nm/PARAMETERS/rom_nangate-45nm_beh/98 /CONFIG/PARAMETERS/OasysRTL/PARAMETERS/Nangate/PARAMETERS/045nm/PARAMETERS/rom_nangate-45nm-sync_regin_beh/99 /CONFIG/PARAMETERS/OasysRTL/PARAMETERS/Nangate/PARAMETERS/045nm/PARAMETERS/rom_nangate-45nm-sync_regout_beh/100 /CONFIG/PARAMETERS/OasysRTL/PARAMETERS/Nangate/PARAMETERS/045nm/PARAMETERS/ccs_sample_mem/1 /CONFIG/PARAMETERS/OasysRTL/PARAMETERS/amba/211 /CONFIG/PARAMETERS/OasysRTL/PARAMETERS/ML_amba/210 /CONFIG/PARAMETERS/OasysRTL/PARAMETERS/ccs_fpga_hic/3} HIERCONFIG {} TECHLIBS {} ESTIMATOR {} FLOWPKGS {} DATUM {} MESSAGES {} TOP {} SIF_DESIGN_HIER {} ALLOCS {} DIRAPPLIES {} SID_DATA {} SCOPED_C_INTERFACE {} FLOWS_API {} PROPERTIES {} OPT_INFOS {} name Hough_Algorithm_HW<1296,864>}: Race condition
+CU_DIRECTIVE sid29 SET /Hough_Algorithm_HW<1296,864>/houghTransform/core/for#1 {UNROLL 2}: Race condition
+# Info: CDesignChecker Shell script written to '/home/user2/Desktop/Hough/Catapult/Hough_Algorithm_HWless_1296comma_864greater_.v30/CDesignChecker/design_checker.sh'
+# Warning:           Hierarchy Block 'getMaxLine' Instance 'getMaxLine:inst' $PROJECT_HOME/include/HoughHW.h:143
+Loop '/Hough_Algorithm_HW<1296,864>/getMaxLine/core/main' is left rolled. (LOOP-4)
+Loop '/Hough_Algorithm_HW<1296,864>/getMaxLine/core/R_LINE' is left rolled. (LOOP-4)
+# Warning:           Hierarchy Block 'houghTransform' Instance 'houghTransform:inst' $PROJECT_HOME/include/HoughHW.h:61
+# Warning: Library component 'mgc_rom', parameter 'mux_delay_scaling_factor' is marked USER_SELECTABLE but has a value range (999) > max value (128). (LIB-207)
+# Warning: Hierarchical design detected - SLEC-CPC does not support design with hierarchy
+/Hough_Algorithm_HW<1296,864>/houghTransform/core/HACC/PIPELINE_INIT_INTERVAL 1
+# Warning: Library component 'mgc_rom_sync_regout', parameter 'mux_delay_scaling_factor' is marked USER_SELECTABLE but has a value range (999) > max value (128). (LIB-207)
+# Warning: Library component 'mgc_rom_sync_regin', parameter 'mux_delay_scaling_factor' is marked USER_SELECTABLE but has a value range (999) > max value (128). (LIB-207)
+# Info: Design complexity at end of 'loops': Total ops = 1611, Real ops = 344, Vars = 460 (SOL-21)
+# Info: Completed transformation 'loops' on solution 'Hough_Algorithm_HW<1296,864>.v29': elapsed time 7.22 seconds, memory usage 2110548kB, peak memory usage 2150140kB (SOL-9)
+# Info: CDesignChecker Shell script written to '/home/user2/Desktop/Hough/Catapult/Hough_Algorithm_HWless_1296comma_864greater_.v29/CDesignChecker/design_checker.sh'
+# Warning:           Hierarchy Block 'getMaxLine' Instance 'getMaxLine:inst' $PROJECT_HOME/include/HoughHW.h:143
+Loop '/Hough_Algorithm_HW<1296,864>/houghTransform/core/for#1' is being partially unrolled 2 times. (LOOP-3)
+Loop '/Hough_Algorithm_HW<1296,864>/houghTransform/core/ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:for' is left rolled. (LOOP-4)
+Loop '/Hough_Algorithm_HW<1296,864>/houghTransform/core/WRITE' is left rolled. (LOOP-4)
+Loop '/Hough_Algorithm_HW<1296,864>/houghTransform/core/HACC' is being partially unrolled 4 times. (LOOP-3)
+# Warning: Library component 'mgc_rom_sync_regout', parameter 'mux_delay_scaling_factor' is marked USER_SELECTABLE but has a value range (999) > max value (128). (LIB-207)
+# Warning: Library component 'mgc_rom_sync_regin', parameter 'mux_delay_scaling_factor' is marked USER_SELECTABLE but has a value range (999) > max value (128). (LIB-207)
+# Info: Starting transformation 'loops' on solution 'Hough_Algorithm_HW<1296,864>.v29' (SOL-8)
+go extract
+Loop '/Hough_Algorithm_HW<1296,864>/getMaxLine/core/ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:for' is left rolled. (LOOP-4)
+Loop '/Hough_Algorithm_HW<1296,864>/getMaxLine/core/for' is left rolled. (LOOP-4)
+Loop '/Hough_Algorithm_HW<1296,864>/getMaxLine/core/ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#5:for' is left rolled. (LOOP-4)
+Loop '/Hough_Algorithm_HW<1296,864>/getMaxLine/core/ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#3:for' is left rolled. (LOOP-4)
+Loop '/Hough_Algorithm_HW<1296,864>/houghTransform/core/HROW' is left rolled. (LOOP-4)
+Loop '/Hough_Algorithm_HW<1296,864>/houghTransform/core/HCOL' is left rolled. (LOOP-4)
+Loop '/Hough_Algorithm_HW<1296,864>/getMaxLine/core/ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:for' is left rolled. (LOOP-4)
+Loop '/Hough_Algorithm_HW<1296,864>/houghTransform/core/main' is left rolled. (LOOP-4)
+Loop '/Hough_Algorithm_HW<1296,864>/getMaxLine/core/T_LINE' is left rolled. (LOOP-4)
+Loop '/Hough_Algorithm_HW<1296,864>/getMaxLine/core/ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#7:for' is left rolled. (LOOP-4)
+Loop '/Hough_Algorithm_HW<1296,864>/getMaxLine/core/main' is left rolled. (LOOP-4)
+Loop '/Hough_Algorithm_HW<1296,864>/getMaxLine/core/R_LINE' is left rolled. (LOOP-4)
+CU_DIRECTIVE sid28 SET /Hough_Algorithm_HW<1296,864>/houghTransform/core/HACC {PIPELINE_INIT_INTERVAL 1}: Race condition
+CU_DIRECTIVE sid28 SET /Hough_Algorithm_HW<1296,864>/houghTransform/core/HROW {PIPELINE_INIT_INTERVAL 0}: Race condition
+CU_DESIGN sid28 ADD {} {VERSION v29 SID sid28 BRANCH_SID sid27 BRANCH_STATE assembly INCREMENTAL 0 STATE assembly TRANSFORMING 0 SOLUTION_DIR {} CAT_DIR /home/user2/Desktop/Hough/Catapult/ SYNTHESIS_FLOWPKG OasysRTL UNITS {} STATES {} INPUTFILES {} OUTPUTFILES {} TECHCONFIG {/CONFIG/PARAMETERS/OasysRTL/PARAMETERS/Nangate/PARAMETERS/045nm/PARAMETERS/nangate-45nm_beh/93 /CONFIG/PARAMETERS/OasysRTL/PARAMETERS/Nangate/PARAMETERS/045nm/PARAMETERS/ram_nangate-45nm_pipe_beh/101 /CONFIG/PARAMETERS/OasysRTL/PARAMETERS/Nangate/PARAMETERS/045nm/PARAMETERS/ram_nangate-45nm-dualport_beh/94 /CONFIG/PARAMETERS/OasysRTL/PARAMETERS/Nangate/PARAMETERS/045nm/PARAMETERS/ram_nangate-45nm-separate_beh/96 /CONFIG/PARAMETERS/OasysRTL/PARAMETERS/Nangate/PARAMETERS/045nm/PARAMETERS/ram_nangate-45nm-singleport_beh/97 /CONFIG/PARAMETERS/OasysRTL/PARAMETERS/Nangate/PARAMETERS/045nm/PARAMETERS/ram_nangate-45nm-register-file_beh/95 /CONFIG/PARAMETERS/OasysRTL/PARAMETERS/Nangate/PARAMETERS/045nm/PARAMETERS/rom_nangate-45nm_beh/98 /CONFIG/PARAMETERS/OasysRTL/PARAMETERS/Nangate/PARAMETERS/045nm/PARAMETERS/rom_nangate-45nm-sync_regin_beh/99 /CONFIG/PARAMETERS/OasysRTL/PARAMETERS/Nangate/PARAMETERS/045nm/PARAMETERS/rom_nangate-45nm-sync_regout_beh/100 /CONFIG/PARAMETERS/OasysRTL/PARAMETERS/Nangate/PARAMETERS/045nm/PARAMETERS/ccs_sample_mem/1 /CONFIG/PARAMETERS/OasysRTL/PARAMETERS/amba/211 /CONFIG/PARAMETERS/OasysRTL/PARAMETERS/ML_amba/210 /CONFIG/PARAMETERS/OasysRTL/PARAMETERS/ccs_fpga_hic/3} HIERCONFIG {} TECHLIBS {} ESTIMATOR {} FLOWPKGS {} DATUM {} MESSAGES {} TOP {} SIF_DESIGN_HIER {} ALLOCS {} DIRAPPLIES {} SID_DATA {} SCOPED_C_INTERFACE {} FLOWS_API {} PROPERTIES {} OPT_INFOS {} name Hough_Algorithm_HW<1296,864>}: Race condition
+CU_DIRECTIVE sid28 SET /Hough_Algorithm_HW<1296,864>/houghTransform/core/for#1 {UNROLL 2}: Race condition
+CU_DIRECTIVE sid28 SET /Hough_Algorithm_HW<1296,864>/houghTransform/core/HCOL {ITERATIONS 1296}: Race condition
+CU_DIRECTIVE sid28 SET /Hough_Algorithm_HW<1296,864>/houghTransform/core/HCOL {PIPELINE_INIT_INTERVAL 0}: Race condition
+CU_DIRECTIVE sid28 SET /Hough_Algorithm_HW<1296,864>/houghTransform/core/WRITE {PIPELINE_INIT_INTERVAL 1}: Race condition
+# Warning:           Hierarchy Block 'houghTransform' Instance 'houghTransform:inst' $PROJECT_HOME/include/HoughHW.h:61
+# Warning: Hierarchical design detected - SLEC-CPC does not support design with hierarchy
+# Info: Branching solution 'Hough_Algorithm_HW<1296,864>.v29' at state 'assembly' (PRJ-2)
+# Warning: Toplevel found in header $PROJECT_HOME/include/HoughHW.h, using $PROJECT_HOME/hough/Hough_tb.cpp for header dependencies.
+Makefile for Original Design + Testbench written to file './scverify/Verify_orig_cxx_osci.mk'
+directive set /Hough_Algorithm_HW<1296,864>/houghTransform/core/HACC -UNROLL 4
+/Hough_Algorithm_HW<1296,864>/houghTransform/core/HACC/PIPELINE_INIT_INTERVAL 0
+# Warning: Library component 'mgc_rom', parameter 'mux_delay_scaling_factor' is marked USER_SELECTABLE but has a value range (999) > max value (128). (LIB-207)
+/Hough_Algorithm_HW<1296,864>/houghTransform/core/HACC/UNROLL 4
+# Info: Design complexity at end of 'loops': Total ops = 1492, Real ops = 311, Vars = 446 (SOL-21)
+# Info: Completed transformation 'loops' on solution 'Hough_Algorithm_HW<1296,864>.v28': elapsed time 6.58 seconds, memory usage 2111076kB, peak memory usage 2150140kB (SOL-9)
+Loop '/Hough_Algorithm_HW<1296,864>/getMaxLine/core/ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#7:for' is left rolled. (LOOP-4)
+Loop '/Hough_Algorithm_HW<1296,864>/getMaxLine/core/ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#5:for' is left rolled. (LOOP-4)
+Loop '/Hough_Algorithm_HW<1296,864>/getMaxLine/core/R_LINE' is left rolled. (LOOP-4)
+Loop '/Hough_Algorithm_HW<1296,864>/getMaxLine/core/T_LINE' is left rolled. (LOOP-4)
+Loop '/Hough_Algorithm_HW<1296,864>/getMaxLine/core/for' is left rolled. (LOOP-4)
+Loop '/Hough_Algorithm_HW<1296,864>/getMaxLine/core/ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:for' is left rolled. (LOOP-4)
+Loop '/Hough_Algorithm_HW<1296,864>/getMaxLine/core/ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#3:for' is left rolled. (LOOP-4)
+Loop '/Hough_Algorithm_HW<1296,864>/getMaxLine/core/ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:for' is left rolled. (LOOP-4)
+Loop '/Hough_Algorithm_HW<1296,864>/getMaxLine/core/main' is left rolled. (LOOP-4)
+Loop '/Hough_Algorithm_HW<1296,864>/houghTransform/core/HROW' is left rolled. (LOOP-4)
+Loop '/Hough_Algorithm_HW<1296,864>/houghTransform/core/HCOL' is left rolled. (LOOP-4)
+Loop '/Hough_Algorithm_HW<1296,864>/houghTransform/core/main' is left rolled. (LOOP-4)
+Loop '/Hough_Algorithm_HW<1296,864>/houghTransform/core/WRITE' is left rolled. (LOOP-4)
+Loop '/Hough_Algorithm_HW<1296,864>/houghTransform/core/ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:for' is left rolled. (LOOP-4)
+# Info: Starting transformation 'loops' on solution 'Hough_Algorithm_HW<1296,864>.v28' (SOL-8)
+Loop '/Hough_Algorithm_HW<1296,864>/houghTransform/core/HACC' is left rolled. (LOOP-4)
+Loop '/Hough_Algorithm_HW<1296,864>/houghTransform/core/for#1' is being partially unrolled 2 times. (LOOP-3)
+# Info: Design complexity at end of 'memories': Total ops = 1627, Real ops = 359, Vars = 464 (SOL-21)
+# Info: Completed transformation 'memories' on solution 'Hough_Algorithm_HW<1296,864>.v31': elapsed time 8.80 seconds, memory usage 2438756kB, peak memory usage 2438756kB (SOL-9)
+Memory Resource '/Hough_Algorithm_HW<1296,864>/houghTransform/core/cos_out:rsc' (from var: cos_out) mapped to 'ram_nangate-45nm-dualport_beh.RAM_dualRW' (size: 180 x 27). (MEM-4)
+Memory Resource '/Hough_Algorithm_HW<1296,864>/houghTransform/core/acc_tmp:rsc' (from var: acc_tmp) mapped to 'ram_nangate-45nm-dualport_beh.RAM_dualRW' (size: 400000 x 16). (MEM-4)
+I/O-Port Resource '/Hough_Algorithm_HW<1296,864>/houghTransform/widthIn:rsc' (from var: widthIn) mapped to 'ccs_ioport.ccs_in' (size: 11). (MEM-2)
+Memory Resource '/Hough_Algorithm_HW<1296,864>/houghTransform/core/sin_out:rsc' (from var: sin_out) mapped to 'ram_nangate-45nm-dualport_beh.RAM_dualRW' (size: 180 x 27). (MEM-4)
+# Warning: Library component 'mgc_rom', parameter 'mux_delay_scaling_factor' is marked USER_SELECTABLE but has a value range (999) > max value (128). (LIB-207)
+# Info: Starting transformation 'memories' on solution 'Hough_Algorithm_HW<1296,864>.v31' (SOL-8)
+# Warning: Library component 'mgc_rom_sync_regout', parameter 'mux_delay_scaling_factor' is marked USER_SELECTABLE but has a value range (999) > max value (128). (LIB-207)
+# Warning: Library component 'mgc_rom_sync_regin', parameter 'mux_delay_scaling_factor' is marked USER_SELECTABLE but has a value range (999) > max value (128). (LIB-207)
+Memory Resource '/Hough_Algorithm_HW<1296,864>/getMaxLine/core/sin_out#1:rsc' (from var: sin_out#1) mapped to 'ram_nangate-45nm-dualport_beh.RAM_dualRW' (size: 180 x 27). (MEM-4)
+Memory Resource '/Hough_Algorithm_HW<1296,864>/getMaxLine/core/cos_out#1:rsc' (from var: cos_out#1) mapped to 'ram_nangate-45nm-dualport_beh.RAM_dualRW' (size: 180 x 27). (MEM-4)
+ROM Resource '/Hough_Algorithm_HW<1296,864>/getMaxLine/ac_math::atan_pi_pow2_table.rom:rsc' (from var: ac_math::atan_pi_pow2_table.rom) mapped to 'rom_nangate-45nm_beh.mgc_rom' (size: 70 x 32). (MEM-10)
+I/O-Port Resource '/Hough_Algorithm_HW<1296,864>/houghTransform/heightIn:rsc' (from var: heightIn) mapped to 'ccs_ioport.ccs_in' (size: 10). (MEM-2)
+I/O-Port Resource '/Hough_Algorithm_HW<1296,864>/widthIn:rsc' (from var: widthIn) mapped to 'ccs_ioport.ccs_in' (size: 11). (MEM-2)
+ROM Resource '/Hough_Algorithm_HW<1296,864>/houghTransform/ac_math::atan_pi_pow2_table.rom:rsc' (from var: ac_math::atan_pi_pow2_table.rom) mapped to 'rom_nangate-45nm_beh.mgc_rom' (size: 70 x 32). (MEM-10)
+I/O-Port Resource '/Hough_Algorithm_HW<1296,864>/heightIn:rsc' (from var: heightIn) mapped to 'ccs_ioport.ccs_in' (size: 10). (MEM-2)
+# Info: Design complexity at end of 'cluster': Total ops = 1627, Real ops = 359, Vars = 464 (SOL-21)
+# Info: Completed transformation 'cluster' on solution 'Hough_Algorithm_HW<1296,864>.v31': elapsed time 0.24 seconds, memory usage 2438756kB, peak memory usage 2438756kB (SOL-9)
+# Info: Starting transformation 'cluster' on solution 'Hough_Algorithm_HW<1296,864>.v31' (SOL-8)
+# Info: Design complexity at end of 'architect': Total ops = 2555, Real ops = 734, Vars = 493 (SOL-21)
+# Info: Completed transformation 'architect' on solution 'Hough_Algorithm_HW<1296,864>.v31': elapsed time 3.94 seconds, memory usage 2438756kB, peak memory usage 2438756kB (SOL-9)
+Design 'Hough_Algorithm_HW<1296,864>' contains '734' real operations. (SOL-11)
+# Info: Starting transformation 'architect' on solution 'Hough_Algorithm_HW<1296,864>.v31' (SOL-8)
+
+# Messages from "go allocate"
+
+# Info: Design complexity at end of 'allocate': Total ops = 2555, Real ops = 734, Vars = 493 (SOL-21)
+# Info: Completed transformation 'allocate' on solution 'Hough_Algorithm_HW<1296,864>.v31': elapsed time 13.84 seconds, memory usage 2438756kB, peak memory usage 2438756kB (SOL-9)
+# Info: Initial schedule of SEQUENTIAL '/Hough_Algorithm_HW<1296,864>/getMaxLine/core': Latency = 60677672, Area (Datapath, Register, Total) = 52449.41, 5367.75, 57817.16 (CRAAS-11)
+Prescheduled SEQUENTIAL '/Hough_Algorithm_HW<1296,864>/getMaxLine/core' (total length 60683434 c-steps) (SCHD-8)
+# Info: Symbolic simulation analysis was not able to find optimal depths for all FIFOs (HIER-24)
+# Info: Final schedule of SEQUENTIAL '/Hough_Algorithm_HW<1296,864>/getMaxLine/core': Latency = 63645512, Area (Datapath, Register, Total) = 48370.42, 5794.88, 54165.30 (CRAAS-12)
+Prescheduled LOOP '/Hough_Algorithm_HW<1296,864>/houghTransform/core/HCOL' (2 c-steps) (SCHD-7)
+Prescheduled LOOP '/Hough_Algorithm_HW<1296,864>/houghTransform/core/HACC' (8 c-steps) (SCHD-7)
+Prescheduled LOOP '/Hough_Algorithm_HW<1296,864>/houghTransform/core/for#1-3:ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:for' (1 c-steps) (SCHD-7)
+Prescheduled LOOP '/Hough_Algorithm_HW<1296,864>/houghTransform/core/for#1-4:ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:for' (1 c-steps) (SCHD-7)
+Performing concurrent resource allocation and scheduling on '/Hough_Algorithm_HW<1296,864>/houghTransform/core' (CRAAS-1)
+# Info: Starting transformation 'allocate' on solution 'Hough_Algorithm_HW<1296,864>.v31' (SOL-8)
+# Info: Apply resource constraints on data operations ... (CRAAS-4)
+# Info: Select qualified components for data operations ... (CRAAS-3)
+Prescheduled LOOP '/Hough_Algorithm_HW<1296,864>/houghTransform/core/acc_tmp:vinit' (1 c-steps) (SCHD-7)
+Prescheduled LOOP '/Hough_Algorithm_HW<1296,864>/houghTransform/core/for#1' (11 c-steps) (SCHD-7)
+Prescheduled LOOP '/Hough_Algorithm_HW<1296,864>/houghTransform/core/core:rlp' (1 c-steps) (SCHD-7)
+Prescheduled LOOP '/Hough_Algorithm_HW<1296,864>/houghTransform/core/main' (2 c-steps) (SCHD-7)
+Prescheduled LOOP '/Hough_Algorithm_HW<1296,864>/houghTransform/core/for#1-1:ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:for' (1 c-steps) (SCHD-7)
+Prescheduled LOOP '/Hough_Algorithm_HW<1296,864>/houghTransform/core/for#1-2:ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:for' (1 c-steps) (SCHD-7)
+Prescheduled LOOP '/Hough_Algorithm_HW<1296,864>/houghTransform/core/HROW' (1 c-steps) (SCHD-7)
+Prescheduled LOOP '/Hough_Algorithm_HW<1296,864>/houghTransform/core/WRITE' (3 c-steps) (SCHD-7)
+Performing concurrent resource allocation and scheduling on '/Hough_Algorithm_HW<1296,864>/getMaxLine/core' (CRAAS-1)
+Resource allocation and scheduling done. (CRAAS-2)
+Prescheduled LOOP '/Hough_Algorithm_HW<1296,864>/getMaxLine/core/ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#5:for' (1 c-steps) (SCHD-7)
+Prescheduled LOOP '/Hough_Algorithm_HW<1296,864>/getMaxLine/core/ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#7:for' (1 c-steps) (SCHD-7)
+# Info: Initial schedule of SEQUENTIAL '/Hough_Algorithm_HW<1296,864>/houghTransform/core': Latency = 212438017, Area (Datapath, Register, Total) = 57655140.75, 5259.38, 57660400.13 (CRAAS-11)
+Prescheduled SEQUENTIAL '/Hough_Algorithm_HW<1296,864>/houghTransform/core' (total length 1606981 c-steps) (SCHD-8)
+# Info: Final schedule of SEQUENTIAL '/Hough_Algorithm_HW<1296,864>/houghTransform/core': Latency = 212443237, Area (Datapath, Register, Total) = 57652508.35, 5571.75, 57658080.10 (CRAAS-12)
+At least one feasible schedule exists. (CRAAS-9)
+Prescheduled LOOP '/Hough_Algorithm_HW<1296,864>/getMaxLine/core/for' (4 c-steps) (SCHD-7)
+Prescheduled LOOP '/Hough_Algorithm_HW<1296,864>/getMaxLine/core/R_LINE' (1 c-steps) (SCHD-7)
+Prescheduled LOOP '/Hough_Algorithm_HW<1296,864>/getMaxLine/core/core:rlp' (0 c-steps) (SCHD-7)
+Prescheduled LOOP '/Hough_Algorithm_HW<1296,864>/getMaxLine/core/main' (2 c-steps) (SCHD-7)
+Prescheduled LOOP '/Hough_Algorithm_HW<1296,864>/getMaxLine/core/ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:for' (1 c-steps) (SCHD-7)
+Prescheduled LOOP '/Hough_Algorithm_HW<1296,864>/getMaxLine/core/ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#3:for' (1 c-steps) (SCHD-7)
+Prescheduled LOOP '/Hough_Algorithm_HW<1296,864>/getMaxLine/core/ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:for' (1 c-steps) (SCHD-7)
+Prescheduled LOOP '/Hough_Algorithm_HW<1296,864>/getMaxLine/core/T_LINE' (8 c-steps) (SCHD-7)
+Netlist written to file 'schedule.gnt' (NET-4)
+
+# Messages from "go schedule"
+
+# Info: Design complexity at end of 'schedule': Total ops = 5863, Real ops = 759, Vars = 1318 (SOL-21)
+# Info: Completed transformation 'schedule' on solution 'Hough_Algorithm_HW<1296,864>.v31': elapsed time 41.24 seconds, memory usage 2438756kB, peak memory usage 2477820kB (SOL-9)
+Global signal 'cos_out#1:rsc.data_out' added to design 'getMaxLine' for component 'cos_out#1:rsci' (LIB-3)
+Global signal 'cos_out#1:rsc.addr' added to design 'getMaxLine' for component 'cos_out#1:rsci' (LIB-3)
+Global signal 'cos_out#1:rsc.re' added to design 'getMaxLine' for component 'cos_out#1:rsci' (LIB-3)
+# Info: Loop '/Hough_Algorithm_HW<1296,864>/houghTransform/core/WRITE' is pipelined with initiation interval 1 and no flushing (SCHD-43)
+Global signal 'sin_out#1:rsc.addr' added to design 'getMaxLine' for component 'sin_out#1:rsci' (LIB-3)
+Global signal 'sin_out#1:rsc.re' added to design 'getMaxLine' for component 'sin_out#1:rsci' (LIB-3)
+# Info: Loop '/Hough_Algorithm_HW<1296,864>/houghTransform/core/HACC' is pipelined with initiation interval 1 and no flushing (SCHD-43)
+Global signal 'sin_out#1:rsc.data_in' added to design 'getMaxLine' for component 'sin_out#1:rsci' (LIB-3)
+# Info: Creating buffer for wait controller for component 'widthIn:rsc' (SCHD-46)
+Global signal 'widthIn:rsc.dat' added to design 'houghTransform' for component 'widthIn:rsci' (LIB-3)
+# Info: Creating buffer for wait controller for component 'heightIn:rsc' (SCHD-46)
+Global signal 'heightIn:rsc.dat' added to design 'houghTransform' for component 'heightIn:rsci' (LIB-3)
+Global signal 'data_in:rsc.vld' added to design 'houghTransform' for component 'data_in:rsci' (LIB-3)
+Global signal 'data_in:rsc.rdy' added to design 'houghTransform' for component 'data_in:rsci' (LIB-3)
+# Info: Creating buffer for wait controller for component 'data_in:rsc' (SCHD-46)
+Global signal 'data_in:rsc.dat' added to design 'houghTransform' for component 'data_in:rsci' (LIB-3)
+Global signal 'acc_tmp:rsc.we' added to design 'houghTransform' for component 'acc_tmp:rsci' (LIB-3)
+Global signal 'acc_tmp:rsc.data_out' added to design 'houghTransform' for component 'acc_tmp:rsci' (LIB-3)
+Global signal 'acc_tmp:rsc.addr' added to design 'houghTransform' for component 'acc_tmp:rsci' (LIB-3)
+Global signal 'acc_tmp:rsc.re' added to design 'houghTransform' for component 'acc_tmp:rsci' (LIB-3)
+Global signal 'acc:rsc.vld' added to design 'houghTransform' for component 'acc:rsci' (LIB-3)
+Global signal 'acc:rsc.rdy' added to design 'houghTransform' for component 'acc:rsci' (LIB-3)
+Global signal 'acc_tmp:rsc.en' added to design 'houghTransform' for component 'acc_tmp:rsci' (LIB-3)
+Global signal 'acc:rsc.dat' added to design 'houghTransform' for component 'acc:rsci' (LIB-3)
+# Info: Starting transformation 'schedule' on solution 'Hough_Algorithm_HW<1296,864>.v31' (SOL-8)
+Performing concurrent resource allocation and scheduling on '/Hough_Algorithm_HW<1296,864>/getMaxLine/core' (CRAAS-1)
+Performing concurrent resource allocation and scheduling on '/Hough_Algorithm_HW<1296,864>/houghTransform/core' (CRAAS-1)
+# Warning: Library component 'mgc_rom_sync_regin', parameter 'mux_delay_scaling_factor' is marked USER_SELECTABLE but has a value range (999) > max value (128). (LIB-207)
+# Warning: Library component 'mgc_rom', parameter 'mux_delay_scaling_factor' is marked USER_SELECTABLE but has a value range (999) > max value (128). (LIB-207)
+# Warning: Library component 'mgc_rom_sync_regout', parameter 'mux_delay_scaling_factor' is marked USER_SELECTABLE but has a value range (999) > max value (128). (LIB-207)
+# Info: Running transformation 'schedule' on solution 'Hough_Algorithm_HW<1296,864>.v31': elapsed time 25.84 seconds, memory usage 2438756kB, peak memory usage 2477820kB (SOL-15)
+Report written to file 'cycle.rpt'
+Global signal 'x2:rsc.rdy' added to design 'getMaxLine' for component 'x2:rsci' (LIB-3)
+Global signal 'y1:rsc.dat' added to design 'getMaxLine' for component 'y1:rsci' (LIB-3)
+Global signal 'x2:rsc.dat' added to design 'getMaxLine' for component 'x2:rsci' (LIB-3)
+Global signal 'x2:rsc.vld' added to design 'getMaxLine' for component 'x2:rsci' (LIB-3)
+Global signal 'x1:rsc.dat' added to design 'getMaxLine' for component 'x1:rsci' (LIB-3)
+Global signal 'x1:rsc.vld' added to design 'getMaxLine' for component 'x1:rsci' (LIB-3)
+Global signal 'y1:rsc.vld' added to design 'getMaxLine' for component 'y1:rsci' (LIB-3)
+Global signal 'y1:rsc.rdy' added to design 'getMaxLine' for component 'y1:rsci' (LIB-3)
+Global signal 'acc:rsc.dat' added to design 'getMaxLine' for component 'acc:rsci' (LIB-3)
+Global signal 'acc:rsc.vld' added to design 'getMaxLine' for component 'acc:rsci' (LIB-3)
+Global signal 'cos_out#1:rsc.en' added to design 'getMaxLine' for component 'cos_out#1:rsci' (LIB-3)
+# Info: Creating buffer for wait controller for component 'acc:rsc' (SCHD-46)
+Loop '/Hough_Algorithm_HW<1296,864>/houghTransform/houghTransform:core/core/WRITE' iterated at most 400002 times. (LOOP-2)
+Global signal 'y2:rsc.vld' added to design 'getMaxLine' for component 'y2:rsci' (LIB-3)
+Global signal 'y2:rsc.rdy' added to design 'getMaxLine' for component 'y2:rsci' (LIB-3)
+Global signal 'acc:rsc.rdy' added to design 'getMaxLine' for component 'acc:rsci' (LIB-3)
+Global signal 'y2:rsc.dat' added to design 'getMaxLine' for component 'y2:rsci' (LIB-3)
+Global signal 'cos_out:rsc.addr' added to design 'houghTransform' for component 'cos_out:rsci' (LIB-3)
+Global signal 'cos_out:rsc.re' added to design 'houghTransform' for component 'cos_out:rsci' (LIB-3)
+Global signal 'sin_out:rsc.en' added to design 'houghTransform' for component 'sin_out:rsci' (LIB-3)
+Global signal 'cos_out:rsc.data_in' added to design 'houghTransform' for component 'cos_out:rsci' (LIB-3)
+Global signal 'cos_out:rsc.en' added to design 'houghTransform' for component 'cos_out:rsci' (LIB-3)
+Global signal 'acc_tmp:rsc.data_in' added to design 'houghTransform' for component 'acc_tmp:rsci' (LIB-3)
+Global signal 'cos_out:rsc.we' added to design 'houghTransform' for component 'cos_out:rsci' (LIB-3)
+Global signal 'cos_out:rsc.data_out' added to design 'houghTransform' for component 'cos_out:rsci' (LIB-3)
+Global signal 'widthIn:rsc.triosy.lz' added to design 'houghTransform' for component 'widthIn:rsc.triosy:obj' (LIB-3)
+Global signal 'sin_out:rsc.data_in' added to design 'houghTransform' for component 'sin_out:rsci' (LIB-3)
+Global signal 'x1:rsc.rdy' added to design 'getMaxLine' for component 'x1:rsci' (LIB-3)
+Global signal 'heightIn:rsc.triosy.lz' added to design 'houghTransform' for component 'heightIn:rsc.triosy:obj' (LIB-3)
+Global signal 'sin_out:rsc.we' added to design 'houghTransform' for component 'sin_out:rsci' (LIB-3)
+Global signal 'sin_out:rsc.data_out' added to design 'houghTransform' for component 'sin_out:rsci' (LIB-3)
+Global signal 'sin_out:rsc.addr' added to design 'houghTransform' for component 'sin_out:rsci' (LIB-3)
+Global signal 'sin_out:rsc.re' added to design 'houghTransform' for component 'sin_out:rsci' (LIB-3)
+Global signal 'sin_out#1:rsc.en' added to design 'getMaxLine' for component 'sin_out#1:rsci' (LIB-3)
+Global signal 'cos_out#1:rsc.data_in' added to design 'getMaxLine' for component 'cos_out#1:rsci' (LIB-3)
+Global signal 'sin_out#1:rsc.we' added to design 'getMaxLine' for component 'sin_out#1:rsci' (LIB-3)
+Global signal 'sin_out#1:rsc.data_out' added to design 'getMaxLine' for component 'sin_out#1:rsci' (LIB-3)
+Global signal 'cos_out#1:rsc.we' added to design 'getMaxLine' for component 'cos_out#1:rsci' (LIB-3)
+
+# Messages from "go dpfsm"
+
+# Info: Design complexity at end of 'dpfsm': Total ops = 4976, Real ops = 2270, Vars = 1076 (SOL-21)
+# Info: Completed transformation 'dpfsm' on solution 'Hough_Algorithm_HW<1296,864>.v31': elapsed time 15.91 seconds, memory usage 2438756kB, peak memory usage 2477820kB (SOL-9)
+# Info: Starting transformation 'dpfsm' on solution 'Hough_Algorithm_HW<1296,864>.v31' (SOL-8)
+Performing FSM extraction... (FSM-1)
+Creating shared register 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#1.lpi#2.dfm#1(19)' for variables 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#1.lpi#2.dfm#1(19), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#2.lpi#2.dfm#1(19), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#3.lpi#2.dfm#1(19), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x.lpi#2.dfm#1(21)' (3 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#1.lpi#2.dfm#1(18)' for variables 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#1.lpi#2.dfm#1(18), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#2.lpi#2.dfm#1(18), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#3.lpi#2.dfm#1(18), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x.lpi#2.dfm#1(2)' (3 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#1.lpi#2.dfm#1(20)' for variables 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#1.lpi#2.dfm#1(20), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#2.lpi#2.dfm#1(20), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#3.lpi#2.dfm#1(20), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x.lpi#2.dfm#1(29)' (3 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#1.lpi#2.dfm#1(2)' for variables 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#1.lpi#2.dfm#1(2), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#2.lpi#2.dfm#1(2), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#3.lpi#2.dfm#1(2), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x.lpi#2.dfm#1(24)' (3 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#1.lpi#2.dfm#1(10)' for variables 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#1.lpi#2.dfm#1(10), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#2.lpi#2.dfm#1(10), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#3.lpi#2.dfm#1(10), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x.lpi#2.dfm#1(10)' (3 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#1.lpi#2.dfm#1(1)' for variables 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#1.lpi#2.dfm#1(1), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#2.lpi#2.dfm#1(1), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#3.lpi#2.dfm#1(1), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x.lpi#2.dfm#1(1), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:nor#30.cse' (4 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#1.lpi#2.dfm#1(17)' for variables 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#1.lpi#2.dfm#1(17), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#2.lpi#2.dfm#1(17), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#3.lpi#2.dfm#1(17), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x.lpi#2.dfm#1(17)' (3 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#1.lpi#2.dfm#1(16)' for variables 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#1.lpi#2.dfm#1(16), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#2.lpi#2.dfm#1(16), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#3.lpi#2.dfm#1(16), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x.lpi#2.dfm#1(16)' (3 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#1.lpi#2.dfm#1(26)' for variables 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#1.lpi#2.dfm#1(26), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#2.lpi#2.dfm#1(26), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#3.lpi#2.dfm#1(26), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y.lpi#2.dfm#1(16)' (3 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#1.lpi#2.dfm#1(25)' for variables 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#1.lpi#2.dfm#1(25), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#2.lpi#2.dfm#1(25), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#3.lpi#2.dfm#1(25), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y.lpi#2.dfm#1(10)' (3 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#1.lpi#2.dfm#1(3)' for variables 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#1.lpi#2.dfm#1(3), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#2.lpi#2.dfm#1(3), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#3.lpi#2.dfm#1(3), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y.lpi#2.dfm#1(21)' (3 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#1.lpi#2.dfm#1(29)' for variables 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#1.lpi#2.dfm#1(29), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#2.lpi#2.dfm#1(29), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#3.lpi#2.dfm#1(29), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y.lpi#2.dfm#1(17)' (3 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#4:mux#7.itm' for variables 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#4:mux#7.itm, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#6:mux#7.itm, ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#1.lpi#2.dfm#1(19)' (2 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#1.lpi#2.dfm#1(22)' for variables 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#1.lpi#2.dfm#1(22), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#2.lpi#2.dfm#1(22), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#3.lpi#2.dfm#1(22), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x.lpi#2.dfm#1(4)' (3 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#2:mux.itm' for variables 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#2:mux.itm, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#4:mux#6.itm, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#6:mux#6.itm, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>:mux.itm, ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#1.lpi#2.dfm#1(18)' (4 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#1.lpi#2.dfm#1(21)' for variables 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#1.lpi#2.dfm#1(21), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#2.lpi#2.dfm#1(21), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#3.lpi#2.dfm#1(21), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x.lpi#2.dfm#1(3)' (3 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#1.lpi#2.dfm#1(24)' for variables 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#1.lpi#2.dfm#1(24), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#2.lpi#2.dfm#1(24), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#3.lpi#2.dfm#1(24), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y.lpi#2.dfm#1(0)' (3 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#4:mux.itm' for variables 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#4:mux.itm, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#6:mux.itm, ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#1.lpi#2.dfm#1(2)' (2 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#1.lpi#2.dfm#1(23)' for variables 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#1.lpi#2.dfm#1(23), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#2.lpi#2.dfm#1(23), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#3.lpi#2.dfm#1(23), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x.lpi#2.dfm#1(7)' (3 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x.lpi#2.dfm#1(26:25)' for variables 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x.lpi#2.dfm#1(26:25), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#1.lpi#2.dfm#1(15:14), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#2.lpi#2.dfm#1(15:14), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#3.lpi#2.dfm#1(15:14), HACC:idx:slc(HACC:t)(1-0)#1.itm.2' (4 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#1.lpi#2.dfm#1(28:27)' for variables 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#1.lpi#2.dfm#1(28:27), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#2.lpi#2.dfm#1(28:27), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#3.lpi#2.dfm#1(28:27), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x.lpi#2.dfm#1(23:22), HACC:idx:slc(HACC:t)(1-0)#1.itm.1' (4 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x.lpi#2.dfm#1(6:5)' for variables 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x.lpi#2.dfm#1(6:5), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#1.lpi#2.dfm#1(26:25), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#2.lpi#2.dfm#1(26:25), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#3.lpi#2.dfm#1(26:25), HACC:idx:slc(HACC:t)(1-0)#1.itm.4' (4 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x.lpi#2.dfm#1(28:27)' for variables 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x.lpi#2.dfm#1(28:27), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#1.lpi#2.dfm#1(23:22), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#2.lpi#2.dfm#1(23:22), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#3.lpi#2.dfm#1(23:22), HACC:idx:slc(HACC:t)(1-0)#1.itm.3' (4 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#1.lpi#2.dfm#1(15:14)' for variables 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#1.lpi#2.dfm#1(15:14), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#2.lpi#2.dfm#1(15:14), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#3.lpi#2.dfm#1(15:14), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x.lpi#2.dfm#1(15:14), HACC:idx:acc#2.itm.1(1:0), for#1:acc#19.psp, for#1:acc#22.psp' (6 registers deleted). (FSM-3)
+Creating shared register 'WRITE:i(18:0).sva' for variables 'WRITE:i(18:0).sva, acc_tmp:vinit.ndx.sva, for#1:acc.psp' (2 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#1.lpi#2.dfm#1.dfm' for variables 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#1.lpi#2.dfm#1.dfm, ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#2.lpi#2.dfm#1.dfm, ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#3.lpi#2.dfm#1.dfm, ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y.lpi#2.dfm#1.dfm, HACC:slc(HACC:mul)(35-10).itm.1, for#1:acc#2.psp.sva, for#1:acc#4.psp.sva, for#1:acc#3.psp.sva, for#1:acc#8.itm' (4 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#2:uD:_qr.lpi#3.dfm' for variables 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#2:uD:_qr.lpi#3.dfm, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#4:uD:_qr.lpi#3.dfm, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#6:uD:_qr.lpi#3.dfm, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>:uD:_qr.lpi#3.dfm' (3 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#1.lpi#2.dfm#1(0)' for variables 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#1.lpi#2.dfm#1(0), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#2.lpi#2.dfm#1(0), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#3.lpi#2.dfm#1(0), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x.lpi#2.dfm#1(0)' (3 registers deleted). (FSM-3)
+Creating shared register 'threshold(23:8).lpi#3' for variables 'threshold(23:8).lpi#3, threshold(23:8).lpi#3.dfm, threshold(23:8).sva, T_LINE:acc_in.sva' (3 registers deleted). (FSM-3)
+Creating shared register 'for#1-1:ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:for:slc(ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:for:acc)(3).itm' for variables 'for#1-1:ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:for:slc(ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:for:acc)(3).itm, for#1-2:ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:for:slc(ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:for:acc)(3).itm, for#1-3:ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:for:slc(ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:for:acc)(3).itm, for#1-4:ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:for:slc(ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:for:acc)(3).itm, for#1-4:slc(for#1:acc)(6).itm' (4 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#1.lpi#2.dfm#1(6:5)' for variables 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#1.lpi#2.dfm#1(6:5), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#2.lpi#2.dfm#1(6:5), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#3.lpi#2.dfm#1(6:5), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y.lpi#2.dfm#1(15:14), HACC:idx:slc(HACC:t)(1-0).itm.6' (4 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x.lpi#2.dfm#1(9:8)' for variables 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x.lpi#2.dfm#1(9:8), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#1.lpi#2.dfm#1(2:1), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#2.lpi#2.dfm#1(2:1), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#3.lpi#2.dfm#1(2:1), HACC:idx:slc(HACC:t)(1-0).itm.5' (4 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:for:y_2mi#1.sva' for variables 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:for:y_2mi#1.sva, ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:for:y_2mi#2.sva, ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:for:y_2mi#3.sva, ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:for:y_2mi.sva, ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#1.lpi#2.dfm#1.dfm, ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#2.lpi#2.dfm#1.dfm, ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#3.lpi#2.dfm#1.dfm, ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x.lpi#2.dfm#1.dfm, HACC:slc(HACC:mul#1)(35-10).itm.1, ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:acc_a#1.lpi#2.dfm#1(31:0), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:acc_a#2.lpi#2.dfm#1(31:0), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:acc_a#3.lpi#2.dfm#1(31:0), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:acc_a.lpi#2.dfm#1(31:0)' (2 registers deleted). (FSM-3)
+Creating shared register 'for#1:t(7:2).sva' for variables 'for#1:t(7:2).sva, for#1:t(7:2).sva#1, HACC:idx:slc(HACC:t)(7-2).itm.1' (2 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#1.lpi#2.dfm#1(9:8)' for variables 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#1.lpi#2.dfm#1(9:8), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#2.lpi#2.dfm#1(9:8), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#3.lpi#2.dfm#1(9:8), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y.lpi#2.dfm#1(23:22)' (3 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#2:mux#3.itm' for variables 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#2:mux#3.itm, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#4:mux#3.itm, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#6:mux#3.itm, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>:mux#3.itm, ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#1.lpi#2.dfm#1(10)' (4 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#1.lpi#2.dfm#1(32:30)' for variables 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#1.lpi#2.dfm#1(32:30), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#2.lpi#2.dfm#1(32:30), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#3.lpi#2.dfm#1(32:30), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x.lpi#2.dfm#1(20:18)' (3 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#2:mux#2.itm' for variables 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#2:mux#2.itm, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#4:mux#2.itm, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#6:mux#2.itm, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>:mux#2.itm, ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#1.lpi#2.dfm#1(1)' (4 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#1.lpi#2.dfm#1(13:11)' for variables 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#1.lpi#2.dfm#1(13:11), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#2.lpi#2.dfm#1(13:11), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#3.lpi#2.dfm#1(13:11), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x.lpi#2.dfm#1(13:11)' (3 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#2:mux#5.itm' for variables 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#2:mux#5.itm, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#4:mux#5.itm, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#6:mux#5.itm, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>:mux#5.itm, ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#1.lpi#2.dfm#1(17)' (4 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#1.lpi#2.dfm#1(20:18)' for variables 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#1.lpi#2.dfm#1(20:18), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#2.lpi#2.dfm#1(20:18), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#3.lpi#2.dfm#1(20:18), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y.lpi#2.dfm#1(13:11)' (3 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#2:mux#4.itm' for variables 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#2:mux#4.itm, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#4:mux#4.itm, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#6:mux#4.itm, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>:mux#4.itm, ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#1.lpi#2.dfm#1(16)' (4 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x.lpi#2.dfm#1(32:30)' for variables 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x.lpi#2.dfm#1(32:30), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#1.lpi#2.dfm#1(13:11), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#2.lpi#2.dfm#1(13:11), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#3.lpi#2.dfm#1(13:11)' (3 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#2:else:else:lsb:operator!=<28,true>#1:nor.itm' for variables 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#2:else:else:lsb:operator!=<28,true>#1:nor.itm, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>:else:else:lsb:operator!=<28,true>:nor.itm, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#4:else:else:lsb:operator!=<28,true>#2:nor.itm, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#6:else:else:lsb:operator!=<28,true>#3:nor.itm' (3 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#1.lpi#2.dfm#1(7)' for variables 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#1.lpi#2.dfm#1(7), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#2.lpi#2.dfm#1(7), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#3.lpi#2.dfm#1(7)' (2 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:neg_D:acc.psp.sva' for variables 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:neg_D:acc.psp.sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#3:neg_D:acc.psp.sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#5:neg_D:acc.psp.sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#7:neg_D:acc.psp.sva' (3 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#1.lpi#2.dfm#1(4)' for variables 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#1.lpi#2.dfm#1(4), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#2.lpi#2.dfm#1(4), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#3.lpi#2.dfm#1(4)' (2 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#2:mux#1.itm' for variables 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#2:mux#1.itm, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#4:mux#1.itm, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#6:mux#1.itm, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>:mux#1.itm, ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#1.lpi#2.dfm#1(0)' (4 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:acc_a#1.lpi#2.dfm#1(34:32)' for variables 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:acc_a#1.lpi#2.dfm#1(34:32), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:acc_a#2.lpi#2.dfm#1(34:32), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:acc_a#3.lpi#2.dfm#1(34:32), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:acc_a.lpi#2.dfm#1(34:32)' (3 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:unequal.tmp' for variables 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:unequal.tmp, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#3:unequal.tmp, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#5:unequal.tmp, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#7:unequal.tmp' (3 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:N(1).sva' for variables 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:N(1).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#3:N(1).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#5:N(1).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#7:N(1).sva' (3 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:acc_a#1.lpi#2.dfm#1(31:0)' for variables 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:acc_a#1.lpi#2.dfm#1(31:0), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:acc_a#2.lpi#2.dfm#1(31:0), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:acc_a#3.lpi#2.dfm#1(31:0), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:acc_a.lpi#2.dfm#1(31:0)' (3 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:N(0).sva' for variables 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:N(0).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#3:N(0).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#5:N(0).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#7:N(0).sva, ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:for:if:slc(ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:for:if:acc#3)(35).svs' (4 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#1.lpi#2.dfm#1.dfm' for variables 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#1.lpi#2.dfm#1.dfm, ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#2.lpi#2.dfm#1.dfm, ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#3.lpi#2.dfm#1.dfm, ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y.lpi#2.dfm#1.dfm' (3 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:N(11).sva' for variables 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:N(11).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#3:N(11).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#5:N(11).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#7:N(11).sva' (3 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:for:y_2mi#1.sva' for variables 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:for:y_2mi#1.sva, ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:for:y_2mi#2.sva, ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:for:y_2mi#3.sva, ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:for:y_2mi.sva, ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#1.lpi#2.dfm#1.dfm, ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#2.lpi#2.dfm#1.dfm, ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#3.lpi#2.dfm#1.dfm, ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x.lpi#2.dfm#1.dfm' (7 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:N(10).sva' for variables 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:N(10).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#3:N(10).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#5:N(10).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#7:N(10).sva' (3 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:Q(1).sva' for variables 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:Q(1).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#3:Q(1).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#5:Q(1).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#7:Q(1).sva' (3 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:if:slc(ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:if:acc#1)(2).svs' for variables 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:if:slc(ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:if:acc#1)(2).svs, ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:if:slc(ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:if:acc#2)(2).svs, ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:if:slc(ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:if:acc#3)(2).svs, for#1-1:ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:for:if:slc(ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:for:if:acc#3)(35).svs, for#1-2:ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:for:if:slc(ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:for:if:acc#3)(35).svs, for#1-3:ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:for:if:slc(ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:for:if:acc#3)(35).svs, for#1-4:ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:for:if:slc(ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:for:if:acc#3)(35).svs' (6 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:Q(0).sva' for variables 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:Q(0).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#3:Q(0).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#5:Q(0).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#7:Q(0).sva' (3 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:acc_a#1.sva#3' for variables 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:acc_a#1.sva#3, ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:acc_a#1.sva#4, ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:acc_a#2.sva#3, ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:acc_a#2.sva#4, ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:acc_a#3.sva#3, ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:acc_a#3.sva#4, ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:acc_a.sva#3, ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:acc_a.sva#4' (7 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:Q(3).sva' for variables 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:Q(3).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#3:Q(3).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#5:Q(3).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#7:Q(3).sva' (3 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#1.lpi#2.dfm#1(32:30)' for variables 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#1.lpi#2.dfm#1(32:30), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#2.lpi#2.dfm#1(32:30), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#3.lpi#2.dfm#1(32:30), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y.lpi#2.dfm#1(20:18)' (3 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:Q(2).sva' for variables 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:Q(2).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#3:Q(2).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#5:Q(2).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#7:Q(2).sva' (3 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:for:i(4:0)#1.sva#1' for variables 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:for:i(4:0)#1.sva#1, ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:for:i(4:0)#2.sva#1, ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:for:i(4:0)#3.sva#1, ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:for:i(4:0).sva#1' (3 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:N(17).sva' for variables 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:N(17).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#3:N(17).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#5:N(17).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#7:N(17).sva' (3 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:for:i(4:0)#1.sva' for variables 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:for:i(4:0)#1.sva, ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:for:i(4:0)#2.sva, ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:for:i(4:0)#3.sva, ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:for:i(4:0).sva, for#1:acc#21.psp(4:0)' (4 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:N(16).sva' for variables 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:N(16).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#3:N(16).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#5:N(16).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#7:N(16).sva' (3 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#1.lpi#2.dfm#1(9)' for variables 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#1.lpi#2.dfm#1(9), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#2.lpi#2.dfm#1(9), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#3.lpi#2.dfm#1(9), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y.lpi#2.dfm#1(4)' (3 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:N(19).sva' for variables 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:N(19).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#3:N(19).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#5:N(19).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#7:N(19).sva' (3 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#1.lpi#2.dfm#1(8)' for variables 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#1.lpi#2.dfm#1(8), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#2.lpi#2.dfm#1(8), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#3.lpi#2.dfm#1(8), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y.lpi#2.dfm#1(3)' (3 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:N(18).sva' for variables 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:N(18).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#3:N(18).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#5:N(18).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#7:N(18).sva' (3 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#1.lpi#2.dfm#1(10)' for variables 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#1.lpi#2.dfm#1(10), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#2.lpi#2.dfm#1(10), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#3.lpi#2.dfm#1(10)' (2 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:N(13).sva' for variables 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:N(13).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#3:N(13).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#5:N(13).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#7:N(13).sva' (3 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#1.lpi#2.dfm#1(0)' for variables 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#1.lpi#2.dfm#1(0), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#2.lpi#2.dfm#1(0), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#3.lpi#2.dfm#1(0), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y.lpi#2.dfm#1(7)' (3 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:N(12).sva' for variables 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:N(12).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#3:N(12).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#5:N(12).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#7:N(12).sva' (3 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#1.lpi#2.dfm#1(5)' for variables 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#1.lpi#2.dfm#1(5), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#2.lpi#2.dfm#1(5), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#3.lpi#2.dfm#1(5), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y.lpi#2.dfm#1(27)' (3 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:N(15).sva' for variables 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:N(15).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#3:N(15).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#5:N(15).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#7:N(15).sva' (3 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#1.lpi#2.dfm#1(4)' for variables 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#1.lpi#2.dfm#1(4), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#2.lpi#2.dfm#1(4), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#3.lpi#2.dfm#1(4), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y.lpi#2.dfm#1(24)' (3 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:N(14).sva' for variables 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:N(14).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#3:N(14).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#5:N(14).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#7:N(14).sva' (3 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#1.lpi#2.dfm#1(7)' for variables 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#1.lpi#2.dfm#1(7), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#2.lpi#2.dfm#1(7), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#3.lpi#2.dfm#1(7), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y.lpi#2.dfm#1(29)' (3 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:Q(10).sva' for variables 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:Q(10).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#3:Q(10).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#5:Q(10).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#7:Q(10).sva' (3 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#1.lpi#2.dfm#1(6)' for variables 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#1.lpi#2.dfm#1(6), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#2.lpi#2.dfm#1(6), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:x#3.lpi#2.dfm#1(6), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y.lpi#2.dfm#1(28)' (3 registers deleted). (FSM-3)
+Creating shared register 'T_LINE:t(7:0).sva' for variables 'T_LINE:t(7:0).sva, T_LINE:t(7:0).sva#1, for:t(7:0).sva' (2 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#1.lpi#2.dfm#1(28)' for variables 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#1.lpi#2.dfm#1(28), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#2.lpi#2.dfm#1(28), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#3.lpi#2.dfm#1(28)' (2 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:Q(12).sva' for variables 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:Q(12).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#3:Q(12).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#5:Q(12).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#7:Q(12).sva' (3 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#1.lpi#2.dfm#1(27)' for variables 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#1.lpi#2.dfm#1(27), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#2.lpi#2.dfm#1(27), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#3.lpi#2.dfm#1(27)' (2 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:Q(11).sva' for variables 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:Q(11).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#3:Q(11).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#5:Q(11).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#7:Q(11).sva' (3 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#1.lpi#2.dfm#1(3)' for variables 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#1.lpi#2.dfm#1(3), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#2.lpi#2.dfm#1(3), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#3.lpi#2.dfm#1(3)' (2 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#1.lpi#2.dfm#1(29)' for variables 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#1.lpi#2.dfm#1(29), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#2.lpi#2.dfm#1(29), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#3.lpi#2.dfm#1(29)' (2 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#1.lpi#2.dfm#1(17)' for variables 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#1.lpi#2.dfm#1(17), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#2.lpi#2.dfm#1(17), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#3.lpi#2.dfm#1(17)' (2 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#1.lpi#2.dfm#1(16)' for variables 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#1.lpi#2.dfm#1(16), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#2.lpi#2.dfm#1(16), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#3.lpi#2.dfm#1(16)' (2 registers deleted). (FSM-3)
+Creating shared register 'x1_t(25:18).lpi#3' for variables 'x1_t(25:18).lpi#3, x1_t(25:18).lpi#3.dfm#1, x1_t(25:18).sva#2' (2 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#1.lpi#2.dfm#1(24)' for variables 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#1.lpi#2.dfm#1(24), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#2.lpi#2.dfm#1(24), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#3.lpi#2.dfm#1(24)' (2 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:Q(8).sva' for variables 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:Q(8).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#3:Q(8).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#5:Q(7).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#7:Q(7).sva' (3 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#1.lpi#2.dfm#1(21)' for variables 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#1.lpi#2.dfm#1(21), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#2.lpi#2.dfm#1(21), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y#3.lpi#2.dfm#1(21)' (2 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:Q(7).sva' for variables 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:Q(7).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#3:Q(7).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#5:Q(6).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#7:Q(6).sva' (3 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#5:Q(9).sva' for variables 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#5:Q(9).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#7:Q(9).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#7:quotient_temp(5).lpi#3.dfm' (2 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:Q(9).sva' for variables 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:Q(9).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#3:Q(9).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#5:Q(8).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#7:Q(8).sva' (3 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:Q(4).sva' for variables 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:Q(4).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#3:Q(4).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#5:Q(14).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#7:Q(14).sva' (3 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:Q(13).sva' for variables 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:Q(13).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#3:Q(13).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#5:Q(13).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#7:Q(13).sva' (3 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:Q(6).sva' for variables 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:Q(6).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#3:Q(6).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#5:Q(5).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#7:Q(5).sva' (3 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:Q(5).sva' for variables 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:Q(5).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#3:Q(5).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#5:Q(4).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#7:Q(4).sva' (3 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:acc_a#1.sva#3' for variables 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:acc_a#1.sva#3, ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:acc_a#1.sva#4, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:R.sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#3:R.sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#5:R.sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#7:R.sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:for:ac_int:cctor.sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#3:for:ac_int:cctor.sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#5:for:ac_int:cctor.sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#7:for:ac_int:cctor.sva, operator-<28,13,true,AC_TRN,AC_WRAP>#1:acc#3.itm(31:4), operator-<28,13,true,AC_TRN,AC_WRAP>#2:acc#2.itm(29:2), operator-<28,13,true,AC_TRN,AC_WRAP>:acc#3.itm(27:2), ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:acc_a#1.lpi#2.dfm#1(31:0)' (3 registers deleted). (FSM-3)
+Creating shared register 'operator-<28,13,true,AC_TRN,AC_WRAP>#3:acc#3.itm(27:3)' for variables 'operator-<28,13,true,AC_TRN,AC_WRAP>#3:acc#3.itm(27:3), operator-<28,13,true,AC_TRN,AC_WRAP>#3:acc#2.itm(25:3), operator-<28,13,true,AC_TRN,AC_WRAP>#1:acc#2.itm(27:6), for:acc#7.psp' (3 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:N(7).sva' for variables 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:N(7).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#3:N(7).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#5:N(7).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#7:N(7).sva' (3 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:N(6).sva' for variables 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:N(6).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#3:N(6).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#5:N(6).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#7:N(6).sva' (3 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:N(9).sva' for variables 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:N(9).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#3:N(9).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#5:N(9).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#7:N(9).sva' (3 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:N(8).sva' for variables 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:N(8).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#3:N(8).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#5:N(8).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#7:N(8).sva' (3 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:N(3).sva' for variables 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:N(3).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#3:N(3).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#5:N(3).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#7:N(3).sva' (3 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:N(2).sva' for variables 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:N(2).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#3:N(2).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#5:N(2).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#7:N(2).sva' (3 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:N(5).sva' for variables 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:N(5).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#3:N(5).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#5:N(5).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#7:N(5).sva' (3 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:N(4).sva' for variables 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:N(4).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#3:N(4).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#5:N(4).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#7:N(4).sva' (3 registers deleted). (FSM-3)
+Creating shared register 'operator-<28,13,true,AC_TRN,AC_WRAP>#1:slc(operator-<28,13,true,AC_TRN,AC_WRAP>#1:acc#1)(33-16).psp.sva' for variables 'operator-<28,13,true,AC_TRN,AC_WRAP>#1:slc(operator-<28,13,true,AC_TRN,AC_WRAP>#1:acc#1)(33-16).psp.sva, operator-<28,13,true,AC_TRN,AC_WRAP>:mul.sdt(33:16).sva, operator-<28,13,true,AC_TRN,AC_WRAP>#2:mul.sdt(31:15).sva, operator-<28,13,true,AC_TRN,AC_WRAP>#3:mul.sdt(31:15).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:for:i(5:0).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#3:for:i(5:0).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#5:for:i(5:0).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#7:for:i(5:0).sva, operator-<28,13,true,AC_TRN,AC_WRAP>#1:acc#2.itm(5:0)' (2 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:for:i(5:0).sva' for variables 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:for:i(5:0).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#3:for:i(5:0).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#5:for:i(5:0).sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#7:for:i(5:0).sva, operator-<28,13,true,AC_TRN,AC_WRAP>#1:acc#2.itm(5:0)' (4 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:R.sva' for variables 'ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:R.sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#3:R.sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#5:R.sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#7:R.sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#1:for:ac_int:cctor.sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#3:for:ac_int:cctor.sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#5:for:ac_int:cctor.sva, ac_math::ac_div<20,15,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP,20,15,AC_TRN,AC_WRAP>#7:for:ac_int:cctor.sva, operator-<28,13,true,AC_TRN,AC_WRAP>#1:acc#3.itm(31:4), operator-<28,13,true,AC_TRN,AC_WRAP>#2:acc#2.itm(29:2)' (9 registers deleted). (FSM-3)
+Creating shared register 'y1_t(24:19).lpi#3' for variables 'y1_t(24:19).lpi#3, y1_t(24:19).lpi#3.dfm#1, y1_t(24:19).sva#1' (2 registers deleted). (FSM-3)
+
+# Messages from "go extract"
+
+# Info: Design complexity at end of 'instance': Total ops = 5087, Real ops = 1906, Vars = 4808 (SOL-21)
+# Info: Completed transformation 'instance' on solution 'Hough_Algorithm_HW<1296,864>.v31': elapsed time 9.49 seconds, memory usage 2438756kB, peak memory usage 2477820kB (SOL-9)
+# Warning: Non-Constant object 'ac_math::ac_sincos_cordic<52,10,AC_TRN,AC_WRAP,27,3,AC_TRN,AC_WRAP>:y:mux1h#1:mox(32:26)' has no writes, treating as don't care (OPT-8)
+# Info: Starting transformation 'instance' on solution 'Hough_Algorithm_HW<1296,864>.v31' (SOL-8)
+Netlist written to file 'schematic.nlv' (NET-4)
+# Info: Design complexity at end of 'extract': Total ops = 4874, Real ops = 1813, Vars = 1017 (SOL-21)
+# Info: Completed transformation 'extract' on solution 'Hough_Algorithm_HW<1296,864>.v31': elapsed time 21.07 seconds, memory usage 2569828kB, peak memory usage 2569828kB (SOL-9)
+# Info: Starting transformation 'extract' on solution 'Hough_Algorithm_HW<1296,864>.v31' (SOL-8)
+Report written to file 'rtl.rpt'
+Makefile for RTL Verilog output 'rtl.v' vs Untimed C++ written to file './scverify/Verify_rtl_v_msim.mk'
+# Warning: RAM module 'ram_sync_dualRW_be' is a Catapult sample RAM and is assumed to be a black-box
+Add dependent file: ./rtl_Hough_Algorithm_HW_1296_864mgc_rom_26_70_32_1_60.v
+Add dependent file: ./rtl_Hough_Algorithm_HW_1296_864mgc_rom_27_70_32_1_60.v
+Finished writing concatenated simulation file: /home/user2/Desktop/Hough/Catapult/Hough_Algorithm_HWless_1296comma_864greater_.v31/concat_sim_rtl.v
+Add dependent file: ./rtl.v
+# Info: Found the following black-box RAM modules: ram_sync_dualRW_be
+# Warning: RAM module 'ram_sync_dualRW_be' is a Catapult sample RAM and is assumed to be a black-box
+# Warning: RAM module 'ram_sync_dualRW_be' is a Catapult sample RAM and is assumed to be a black-box
+# Warning: RAM module 'ram_sync_dualRW_be' is a Catapult sample RAM and is assumed to be a black-box
+# Warning: RAM module 'ram_sync_dualRW_be' is a Catapult sample RAM and is assumed to be a black-box
+# Warning: RAM module 'ram_sync_dualRW_be' is a Catapult sample RAM and is assumed to be a black-box
+Finished writing concatenated file: /home/user2/Desktop/Hough/Catapult/Hough_Algorithm_HWless_1296comma_864greater_.v31/concat_rtl.v
+Add dependent file: ./rtl.v
+Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/siflibs/ccs_in_wait_v1.v
+order file name is: rtl.v_order_sim.txt
+Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/siflibs/ccs_pipe_v5.v
+Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/siflibs/ccs_fifo_wait_core_v5.v
+# Warning: RAM module 'ram_sync_dualRW_be' is a Catapult sample RAM and is assumed to be a black-box
+Add dependent file: ./rtl_Hough_Algorithm_HW_1296_864mgc_rom_26_70_32_1_60.v
+# Warning: RAM module 'ram_sync_dualRW_be' is a Catapult sample RAM and is assumed to be a black-box
+Add dependent file: ./rtl_Hough_Algorithm_HW_1296_864mgc_rom_27_70_32_1_60.v
+# Warning: RAM module 'ram_sync_dualRW_be' is a Catapult sample RAM and is assumed to be a black-box
+Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/siflibs/ccs_genreg_v1.v
+# Warning: RAM module 'ram_sync_dualRW_be' is a Catapult sample RAM and is assumed to be a black-box
+Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/siflibs/ram_sync_dualRW_be_generic.v
+# Warning: A CCS_BLOCK intercept macro using resovled template types allows for one specialization.
+Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/siflibs/ccs_pipe_v5.v
+# Warning: CCS_BLOCK - consider replacing expressions with constants.
+Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/siflibs/ccs_fifo_wait_core_v5.v
+Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/siflibs/mgc_io_sync_v2.v
+Makefile for RTL VHDL output 'rtl.vhdl' vs Untimed C++ written to file './scverify/Verify_rtl_vhdl_msim.mk'
+Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/siflibs/ccs_out_wait_v1.v
+# Warning: RAM module 'ram_sync_dualRW_be' is a Catapult sample RAM and is assumed to be a black-box
+Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/siflibs/ccs_in_v1.v
+# Warning: RAM module 'ram_sync_dualRW_be' is a Catapult sample RAM and is assumed to be a black-box
+Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/siflibs/mgc_shift_r_beh_v5.v
+# Warning: RAM module 'ram_sync_dualRW_be' is a Catapult sample RAM and is assumed to be a black-box
+# Warning: RAM module 'ram_sync_dualRW_be' is a Catapult sample RAM and is assumed to be a black-box
+Netlist written to file 'rtl.v' (NET-4)
+# Info: Found the following black-box RAM modules: ram_sync_dualRW_be
+generate concat
+# Warning: RAM module 'ram_sync_dualRW_be' is a Catapult sample RAM and is assumed to be a black-box
+Add dependent file: ./rtl_hough_algorithm_hw_1296_864mgc_rom_26_70_32_1_60.vhdl
+Add dependent file: ./rtl_hough_algorithm_hw_1296_864mgc_rom_27_70_32_1_60.vhdl
+Finished writing concatenated simulation file: /home/user2/Desktop/Hough/Catapult/Hough_Algorithm_HWless_1296comma_864greater_.v31/concat_sim_rtl.vhdl
+Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/siflibs/ccs_in_v1.v
+Add dependent file: ./rtl.vhdl
+Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/siflibs/mgc_shift_r_beh_v5.v
+Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/siflibs/ccs_genreg_v1.vhd
+Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/siflibs/ccs_genreg_v1.v
+Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/siflibs/ram_sync_dualRW_be_generic.vhd
+Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/siflibs/ram_sync_dualRW_be_generic.v
+Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/siflibs/ccs_pipe_v5.vhd
+Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/siflibs/ccs_in_wait_v1.v
+Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/siflibs/ccs_fifo_wait_core_v5.vhd
+order file name is: rtl.v_order.txt
+Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/siflibs/mgc_io_sync_v2.v
+Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/siflibs/ccs_out_wait_v1.v
+# Warning: CCS_BLOCK template type parsing found an unresolved <expression> in the interface routine parameter list.
+Makefile for Concat RTL VHDL output 'concat_sim_rtl.vhdl' vs Untimed C++ written to file './scverify/Verify_concat_sim_rtl_vhdl_msim.mk'
+# Warning: Toplevel found in header $PROJECT_HOME/include/HoughHW.h, using $PROJECT_HOME/hough/Hough_tb.cpp for header dependencies.
+Generating SCVerify testbench files
+# Info: Found the following black-box RAM modules: ram_sync_dualRW_be
+# Warning: RAM module 'ram_sync_dualRW_be' is a Catapult sample RAM and is assumed to be a black-box
+Add dependent file: ./rtl_hough_algorithm_hw_1296_864mgc_rom_26_70_32_1_60.vhdl
+Add dependent file: ./rtl_hough_algorithm_hw_1296_864mgc_rom_27_70_32_1_60.vhdl
+Finished writing concatenated file: /home/user2/Desktop/Hough/Catapult/Hough_Algorithm_HWless_1296comma_864greater_.v31/concat_rtl.vhdl
+Add dependent file: ./rtl.vhdl
+Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/siflibs/ccs_genreg_v1.vhd
+Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/siflibs/ram_sync_dualRW_be_generic.vhd
+Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/siflibs/ccs_pipe_v5.vhd
+Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/siflibs/ccs_fifo_wait_core_v5.vhd
+Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/siflibs/mgc_shift_comps_v5.vhd
+Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/hls_pkgs/src/funcs.vhd
+Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/siflibs/ccs_in_v1.vhd
+Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/siflibs/mgc_shift_r_beh_v5.vhd
+Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/siflibs/ccs_in_wait_v1.vhd
+order file name is: rtl.vhdl_order_sim.txt
+Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/siflibs/mgc_io_sync_v2.vhd
+Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/siflibs/ccs_out_wait_v1.vhd
+Netlist written to file 'rtl.vhdl' (NET-4)
+generate concat
+ROM component 'mgc_rom(27,70,32,1,60)' initialization mode: inline. (MEM-76)
+Generating scverify_top.cpp ()
+ROM component 'mgc_rom(26,70,32,1,60)' initialization mode: inline. (MEM-76)
+Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/siflibs/mgc_shift_comps_v5.vhd
+Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/hls_pkgs/src/funcs.vhd
+Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/siflibs/ccs_in_v1.vhd
+Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/siflibs/mgc_shift_r_beh_v5.vhd
+Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/siflibs/ccs_in_wait_v1.vhd
+order file name is: rtl.vhdl_order.txt
+Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/siflibs/mgc_io_sync_v2.vhd
+Add dependent file: /opt/mentor/catapult_10.5a/Mgc_home/pkgs/siflibs/ccs_out_wait_v1.vhd
+# Info: Found the following black-box RAM modules: ram_sync_dualRW_be
+Makefile for Concat RTL Verilog output 'concat_sim_rtl.v' vs Untimed C++ written to file './scverify/Verify_concat_sim_rtl_v_msim.mk'
+# Warning: RAM module 'ram_sync_dualRW_be' is a Catapult sample RAM and is assumed to be a black-box
+# Warning: RAM module 'ram_sync_dualRW_be' is a Catapult sample RAM and is assumed to be a black-box
+# Warning: RAM module 'ram_sync_dualRW_be' is a Catapult sample RAM and is assumed to be a black-box
+# Warning: RAM module 'ram_sync_dualRW_be' is a Catapult sample RAM and is assumed to be a black-box

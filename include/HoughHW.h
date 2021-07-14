@@ -66,7 +66,7 @@ private:
 
         maxW_f_x2 center_x = widthIn  / 2;
 		maxW_f_x2 center_y = heightIn / 2;
-        ac_fixed<26, 12, true> r = 0;
+        ac_fixed<26, 12, true> r = 0, r1 = 0, r2 = 0;
         
         printf("transform_0\n");
         int count = 0;
@@ -106,7 +106,9 @@ private:
                         //ac_math::ac_sin_cordic((ac_fixed<27,9>)t* DEG2RAD, sin_out);
                         
                         //cout << "in = " << in << endl;
-                        r = ( (maxW_f_x2)x - center_x) * cos_out[t] + ((maxH_f_x2)y - center_y) * sin_out[t];
+                        r1 = ( (maxW_f_x2)x - center_x) * cos_out[t];
+                        r2 = ( (maxH_f_x2)y - center_y) * sin_out[t];
+                        r = r1 + r2;
                         //if(t==150) 
 						//	break;
 						//cout << "r = " << r << endl;

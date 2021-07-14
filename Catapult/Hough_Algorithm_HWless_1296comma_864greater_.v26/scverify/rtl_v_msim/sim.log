@@ -1,0 +1,190 @@
+# //  Questa Sim-64
+# //  Version 2019.3_1 linux_x86_64 Aug 24 2019
+# //
+# //  Copyright 1991-2019 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# vsim -i -t ps -wlf ./Catapult/Hough_Algorithm_HWless_1296comma_864greater_.v26/scverify/rtl_v_msim/vsim.wlf -l ./Catapult/Hough_Algorithm_HWless_1296comma_864greater_.v26/scverify/rtl_v_msim/sim.log -L ./Catapult/Hough_Algorithm_HWless_1296comma_864greater_.v26/scverify/rtl_v_msim/mgc_hls -L ./Catapult/Hough_Algorithm_HWless_1296comma_864greater_.v26/scverify/rtl_v_msim/work scverify_top_opt -do "do {./Catapult/Hough_Algorithm_HWless_1296comma_864greater_.v26/scverify/rtl_v_msim/scverify_msim_wave.tcl}" 
+# Start time: 09:48:53 on Jul 14,2021
+# Loading /tmp/user2@edatools.ee.duth.gr_dpi_8543/linux_x86_64_gcc-5.3.0/STUB_SYMS_OF_systemc.so
+# Loading /home/user2/Desktop/Hough/Catapult/Hough_Algorithm_HWless_1296comma_864greater_.v26/scverify/rtl_v_msim/work/_sc/linux_x86_64_gcc-5.3.0/systemc.so
+# Loading /home/user2/Desktop/Hough/Catapult/Hough_Algorithm_HWless_1296comma_864greater_.v26/scverify/rtl_v_msim/work.scverify_top
+# Info: CCS_CLK_CTOR: Clock 'clk' - Using default clock period '1 ns'
+# Loading work.Hough_Algorithm_HW_1296_864(fast)
+# ** Note: (vsim-17423) SystemC IEEE 1666 deprecated warnings are suppressed by default. Enable the 'ScShowIeeeDeprecationWarnings' modelsim.ini variable to get more information about the suppressed warnings.
+# Loading ./Catapult/Hough_Algorithm_HWless_1296comma_864greater_.v26/scverify/rtl_v_msim/mgc_hls.ccs_pipe_v5(fast)
+# Loading ./Catapult/Hough_Algorithm_HWless_1296comma_864greater_.v26/scverify/rtl_v_msim/mgc_hls.ccs_fifo_wait_core_v5(fast)
+# Loading ./Catapult/Hough_Algorithm_HWless_1296comma_864greater_.v26/scverify/rtl_v_msim/mgc_hls.ccs_genreg_v1(fast)
+# Loading ./Catapult/Hough_Algorithm_HWless_1296comma_864greater_.v26/scverify/rtl_v_msim/mgc_hls.ccs_genreg_v1(fast__1)
+# Loading ./Catapult/Hough_Algorithm_HWless_1296comma_864greater_.v26/scverify/rtl_v_msim/mgc_hls.ccs_genreg_v1(fast__2)
+# Loading work.houghTransform(fast)
+# Loading ./Catapult/Hough_Algorithm_HWless_1296comma_864greater_.v26/scverify/rtl_v_msim/mgc_hls.ccs_in_v1(fast)
+# Loading ./Catapult/Hough_Algorithm_HWless_1296comma_864greater_.v26/scverify/rtl_v_msim/mgc_hls.ccs_in_v1(fast__1)
+# Loading ./Catapult/Hough_Algorithm_HWless_1296comma_864greater_.v26/scverify/rtl_v_msim/mgc_hls.ram_sync_dualRW_be(fast)
+# Loading ./Catapult/Hough_Algorithm_HWless_1296comma_864greater_.v26/scverify/rtl_v_msim/mgc_hls.ram_sync_dualRW_be(fast__1)
+# Loading ./Catapult/Hough_Algorithm_HWless_1296comma_864greater_.v26/scverify/rtl_v_msim/mgc_hls.ram_sync_dualRW_be(fast__2)
+# Loading work.houghTransform_ram_nangate_45nm_dualport_beh_RAM_dualRW_rwport_en_13_400000_16_19_0_1_0_0_0_1_1_16_400000_2_gen(fast)
+# Loading work.houghTransform_ram_nangate_45nm_dualport_beh_RAM_dualRW_rwport_en_14_180_27_8_0_1_0_0_0_1_1_27_180_2_gen(fast)
+# Loading work.houghTransform_ram_nangate_45nm_dualport_beh_RAM_dualRW_rwport_en_15_180_27_8_0_1_0_0_0_1_1_27_180_2_gen(fast)
+# Loading work.houghTransform_core(fast)
+# Loading ./Catapult/Hough_Algorithm_HWless_1296comma_864greater_.v26/scverify/rtl_v_msim/mgc_hls.mgc_shift_r_v5(fast)
+# Loading ./Catapult/Hough_Algorithm_HWless_1296comma_864greater_.v26/scverify/rtl_v_msim/mgc_hls.Hough_Algorithm_HW_1296_864mgc_rom_26_70_32_1_60(fast)
+# Loading work.houghTransform_core_data_in_rsci(fast)
+# Loading ./Catapult/Hough_Algorithm_HWless_1296comma_864greater_.v26/scverify/rtl_v_msim/mgc_hls.ccs_in_wait_v1(fast)
+# Loading work.houghTransform_core_data_in_rsci_data_in_wait_ctrl(fast)
+# Loading work.houghTransform_core_data_in_rsci_data_in_wait_dp(fast)
+# Loading work.houghTransform_core_acc_rsci(fast)
+# Loading ./Catapult/Hough_Algorithm_HWless_1296comma_864greater_.v26/scverify/rtl_v_msim/mgc_hls.ccs_out_wait_v1(fast)
+# Loading work.houghTransform_core_acc_rsci_acc_wait_ctrl(fast)
+# Loading work.houghTransform_core_acc_rsci_acc_wait_dp(fast)
+# Loading work.houghTransform_core_wait_dp(fast)
+# Loading work.houghTransform_core_widthIn_rsc_triosy_obj(fast)
+# Loading ./Catapult/Hough_Algorithm_HWless_1296comma_864greater_.v26/scverify/rtl_v_msim/mgc_hls.mgc_io_sync_v2(fast)
+# Loading work.houghTransform_core_widthIn_rsc_triosy_obj_widthIn_rsc_triosy_wait_ctrl(fast)
+# Loading work.houghTransform_core_heightIn_rsc_triosy_obj(fast)
+# Loading work.houghTransform_core_heightIn_rsc_triosy_obj_heightIn_rsc_triosy_wait_ctrl(fast)
+# Loading work.houghTransform_core_staller(fast)
+# Loading work.houghTransform_core_core_fsm(fast)
+# Loading work.getMaxLine(fast)
+# Loading ./Catapult/Hough_Algorithm_HWless_1296comma_864greater_.v26/scverify/rtl_v_msim/mgc_hls.ram_sync_dualRW_be(fast__3)
+# Loading ./Catapult/Hough_Algorithm_HWless_1296comma_864greater_.v26/scverify/rtl_v_msim/mgc_hls.ram_sync_dualRW_be(fast__4)
+# Loading work.getMaxLine_ram_nangate_45nm_dualport_beh_RAM_dualRW_rwport_en_22_180_27_8_0_1_0_0_0_1_1_27_180_2_gen(fast)
+# Loading work.getMaxLine_ram_nangate_45nm_dualport_beh_RAM_dualRW_rwport_en_23_180_27_8_0_1_0_0_0_1_1_27_180_2_gen(fast)
+# Loading work.getMaxLine_core(fast)
+# Loading ./Catapult/Hough_Algorithm_HWless_1296comma_864greater_.v26/scverify/rtl_v_msim/mgc_hls.Hough_Algorithm_HW_1296_864mgc_rom_27_70_32_1_60(fast)
+# Loading work.getMaxLine_core_x1_rsci(fast)
+# Loading ./Catapult/Hough_Algorithm_HWless_1296comma_864greater_.v26/scverify/rtl_v_msim/mgc_hls.ccs_out_wait_v1(fast__1)
+# Loading work.getMaxLine_core_x1_rsci_x1_wait_ctrl(fast)
+# Loading work.getMaxLine_core_x1_rsci_x1_wait_dp(fast)
+# Loading work.getMaxLine_core_y1_rsci(fast)
+# Loading ./Catapult/Hough_Algorithm_HWless_1296comma_864greater_.v26/scverify/rtl_v_msim/mgc_hls.ccs_out_wait_v1(fast__2)
+# Loading work.getMaxLine_core_y1_rsci_y1_wait_ctrl(fast)
+# Loading work.getMaxLine_core_y1_rsci_y1_wait_dp(fast)
+# Loading work.getMaxLine_core_x2_rsci(fast)
+# Loading ./Catapult/Hough_Algorithm_HWless_1296comma_864greater_.v26/scverify/rtl_v_msim/mgc_hls.ccs_out_wait_v1(fast__3)
+# Loading work.getMaxLine_core_x2_rsci_x2_wait_ctrl(fast)
+# Loading work.getMaxLine_core_x2_rsci_x2_wait_dp(fast)
+# Loading work.getMaxLine_core_y2_rsci(fast)
+# Loading ./Catapult/Hough_Algorithm_HWless_1296comma_864greater_.v26/scverify/rtl_v_msim/mgc_hls.ccs_out_wait_v1(fast__4)
+# Loading work.getMaxLine_core_y2_rsci_y2_wait_ctrl(fast)
+# Loading work.getMaxLine_core_y2_rsci_y2_wait_dp(fast)
+# Loading work.getMaxLine_core_acc_rsci(fast)
+# Loading ./Catapult/Hough_Algorithm_HWless_1296comma_864greater_.v26/scverify/rtl_v_msim/mgc_hls.ccs_in_wait_v1(fast__1)
+# Loading work.getMaxLine_core_acc_rsci_acc_wait_ctrl(fast)
+# Loading work.getMaxLine_core_acc_rsci_acc_wait_dp(fast)
+# Loading work.getMaxLine_core_wait_dp(fast)
+# Loading work.getMaxLine_core_staller(fast)
+# Loading work.getMaxLine_core_core_fsm(fast)
+# ** Warning: (vsim-4029) The fifo '/scverify_top/user_tb/y2_golden'
+# (and any connected ports) is undebuggable as the tlm fifo size specified is '-1'. A tlm fifo with an infinite size is not debuggable.
+# ** Warning: (vsim-4029) The fifo '/scverify_top/user_tb/x2_golden'
+# (and any connected ports) is undebuggable as the tlm fifo size specified is '-1'. A tlm fifo with an infinite size is not debuggable.
+# ** Warning: (vsim-4029) The fifo '/scverify_top/user_tb/y1_golden'
+# (and any connected ports) is undebuggable as the tlm fifo size specified is '-1'. A tlm fifo with an infinite size is not debuggable.
+# ** Warning: (vsim-4029) The fifo '/scverify_top/user_tb/x1_golden'
+# (and any connected ports) is undebuggable as the tlm fifo size specified is '-1'. A tlm fifo with an infinite size is not debuggable.
+# ** Warning: (vsim-4029) The fifo '/scverify_top/TLS_in_wait_ctrl_fifo_heightIn'
+# (and any connected ports) is undebuggable as the tlm fifo size specified is '-1'. A tlm fifo with an infinite size is not debuggable.
+# ** Warning: (vsim-4029) The fifo '/scverify_top/TLS_in_fifo_heightIn'
+# (and any connected ports) is undebuggable as the tlm fifo size specified is '-1'. A tlm fifo with an infinite size is not debuggable.
+# ** Warning: (vsim-4029) The fifo '/scverify_top/TLS_in_wait_ctrl_fifo_widthIn'
+# (and any connected ports) is undebuggable as the tlm fifo size specified is '-1'. A tlm fifo with an infinite size is not debuggable.
+# ** Warning: (vsim-4029) The fifo '/scverify_top/TLS_in_fifo_widthIn'
+# (and any connected ports) is undebuggable as the tlm fifo size specified is '-1'. A tlm fifo with an infinite size is not debuggable.
+# ** Warning: (vsim-4029) The fifo '/scverify_top/TLS_out_wait_ctrl_fifo_y2'
+# (and any connected ports) is undebuggable as the tlm fifo size specified is '-1'. A tlm fifo with an infinite size is not debuggable.
+# ** Warning: (vsim-4029) The fifo '/scverify_top/TLS_out_fifo_y2'
+# (and any connected ports) is undebuggable as the tlm fifo size specified is '-1'. A tlm fifo with an infinite size is not debuggable.
+# ** Warning: (vsim-4029) The fifo '/scverify_top/TLS_out_wait_ctrl_fifo_x2'
+# (and any connected ports) is undebuggable as the tlm fifo size specified is '-1'. A tlm fifo with an infinite size is not debuggable.
+# ** Warning: (vsim-4029) The fifo '/scverify_top/TLS_out_fifo_x2'
+# (and any connected ports) is undebuggable as the tlm fifo size specified is '-1'. A tlm fifo with an infinite size is not debuggable.
+# ** Warning: (vsim-4029) The fifo '/scverify_top/TLS_out_wait_ctrl_fifo_y1'
+# (and any connected ports) is undebuggable as the tlm fifo size specified is '-1'. A tlm fifo with an infinite size is not debuggable.
+# ** Warning: (vsim-4029) The fifo '/scverify_top/TLS_out_fifo_y1'
+# (and any connected ports) is undebuggable as the tlm fifo size specified is '-1'. A tlm fifo with an infinite size is not debuggable.
+# ** Warning: (vsim-4029) The fifo '/scverify_top/TLS_out_wait_ctrl_fifo_x1'
+# (and any connected ports) is undebuggable as the tlm fifo size specified is '-1'. A tlm fifo with an infinite size is not debuggable.
+# ** Warning: (vsim-4029) The fifo '/scverify_top/TLS_out_fifo_x1'
+# (and any connected ports) is undebuggable as the tlm fifo size specified is '-1'. A tlm fifo with an infinite size is not debuggable.
+# ** Warning: (vsim-4029) The fifo '/scverify_top/TLS_in_wait_ctrl_fifo_data_in'
+# (and any connected ports) is undebuggable as the tlm fifo size specified is '-1'. A tlm fifo with an infinite size is not debuggable.
+# ** Warning: (vsim-4029) The fifo '/scverify_top/TLS_in_fifo_data_in'
+# (and any connected ports) is undebuggable as the tlm fifo size specified is '-1'. A tlm fifo with an infinite size is not debuggable.
+# Disabling STALL_FLAG toggling
+# do {./Catapult/Hough_Algorithm_HWless_1296comma_864greater_.v26/scverify/rtl_v_msim/scverify_msim_wave.tcl}
+# Reading SCVerify waveform database './Catapult/Hough_Algorithm_HWless_1296comma_864greater_.v26/scverify/ccs_wave_signals.dat'
+# Populating WAVE window...
+#                 DONE
+# 0
+# 
+# stdin: <EOF>
+run -all
+# Loading Input File
+# Usage: vsim <inputbmp> <outputbmp>
+# Info: Execution of user-supplied C++ testbench 'main()' has completed with exit code = -1
+# 
+# Info: Collecting data completed
+#    captured 0 values of data_in
+#    captured 0 values of widthIn
+#    captured 0 values of heightIn
+#    captured 0 values of x1
+#    captured 0 values of y1
+#    captured 0 values of x2
+#    captured 0 values of y2
+# Info: HW reset: TLS_rst active @ 0 s
+# Info: scverify_top/user_tb: Simulation completed
+# 
+# Checking results
+# 'x1'
+#    capture count        = 0
+#    comparison count     = 0
+#    ignore count         = 0
+#    error count          = 0
+#    stuck in dut fifo    = 0
+#    stuck in golden fifo = 0
+#    Warning: output 'x1' has no golden values to compare against
+# 'y1'
+#    capture count        = 0
+#    comparison count     = 0
+#    ignore count         = 0
+#    error count          = 0
+#    stuck in dut fifo    = 0
+#    stuck in golden fifo = 0
+#    Warning: output 'y1' has no golden values to compare against
+# 'x2'
+#    capture count        = 0
+#    comparison count     = 0
+#    ignore count         = 0
+#    error count          = 0
+#    stuck in dut fifo    = 0
+#    stuck in golden fifo = 0
+#    Warning: output 'x2' has no golden values to compare against
+# 'y2'
+#    capture count        = 0
+#    comparison count     = 0
+#    ignore count         = 0
+#    error count          = 0
+#    stuck in dut fifo    = 0
+#    stuck in golden fifo = 0
+#    Warning: output 'y2' has no golden values to compare against
+# 
+# Error: Nothing to compare, all output capture counts are zero.
+# Error: C++ Testbench 'main()' returned a non-zero exit code (-1). Check your testbench.
+# Info: scverify_top/user_tb: Simulation FAILED @ 0 s
+# ** Note: (vsim-6574) SystemC simulation stopped by user.
+# 1
+# 
+# Info: scverify_top/Monitor: runs with constant clock period 0 s
+# Info: scverify_top/Monitor: Throughput: 1 transaction per 0 s
+# Info: scverify_top/Monitor: No transactions completed.  Skipping latency and throughput reports
+# End time: 09:50:23 on Jul 14,2021, Elapsed time: 0:01:30
+# Errors: 0, Warnings: 18, Suppressed Warnings: 1
